@@ -3666,7 +3666,7 @@ _priv: ()
 #[allow(non_snake_case, unused_variables, dead_code)]
             #[inline] pub unsafe fn GetActiveAtomicCounterBufferiv(&self, program: types::GLuint, bufferIndex: types::GLuint, pname: enums::AtomicCounterBufferPName, params: *mut types::GLint) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLuint, types::GLuint, enums::AtomicCounterBufferPName, *mut types::GLint) -> ()>(self.ptrs.GetActiveAtomicCounterBufferiv.f)(program, bufferIndex, pname, params) }
 #[allow(non_snake_case, unused_variables, dead_code)]
-            #[inline] pub unsafe fn GetActiveAttrib(&self, program: types::GLuint, index: types::GLuint, bufSize: types::GLsizei, length: *mut types::GLsizei, size: *mut types::GLint, type_: enums::AttributeType, name: *mut types::GLchar) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLuint, types::GLuint, types::GLsizei, *mut types::GLsizei, *mut types::GLint, enums::AttributeType, *mut types::GLchar) -> ()>(self.ptrs.GetActiveAttrib.f)(program, index, bufSize, length, size, type_, name) }
+            #[inline] pub unsafe fn GetActiveAttrib(&self, program: types::GLuint, index: types::GLuint, bufSize: types::GLsizei, length: *mut types::GLsizei, size: *mut types::GLint, type_: *mut enums::AttributeType, name: *mut types::GLchar) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLuint, types::GLuint, types::GLsizei, *mut types::GLsizei, *mut types::GLint, *mut enums::AttributeType, *mut types::GLchar) -> ()>(self.ptrs.GetActiveAttrib.f)(program, index, bufSize, length, size, type_, name) }
 #[allow(non_snake_case, unused_variables, dead_code)]
             #[inline] pub unsafe fn GetActiveSubroutineName(&self, program: types::GLuint, shadertype: enums::ShaderType, index: types::GLuint, bufsize: types::GLsizei, length: *mut types::GLsizei, name: *mut types::GLchar) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLuint, enums::ShaderType, types::GLuint, types::GLsizei, *mut types::GLsizei, *mut types::GLchar) -> ()>(self.ptrs.GetActiveSubroutineName.f)(program, shadertype, index, bufsize, length, name) }
 #[allow(non_snake_case, unused_variables, dead_code)]
@@ -3674,7 +3674,7 @@ _priv: ()
 #[allow(non_snake_case, unused_variables, dead_code)]
             #[inline] pub unsafe fn GetActiveSubroutineUniformiv(&self, program: types::GLuint, shadertype: enums::ShaderType, index: types::GLuint, pname: enums::SubroutineParameterName, values: *mut types::GLint) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLuint, enums::ShaderType, types::GLuint, enums::SubroutineParameterName, *mut types::GLint) -> ()>(self.ptrs.GetActiveSubroutineUniformiv.f)(program, shadertype, index, pname, values) }
 #[allow(non_snake_case, unused_variables, dead_code)]
-            #[inline] pub unsafe fn GetActiveUniform(&self, program: types::GLuint, index: types::GLuint, bufSize: types::GLsizei, length: *mut types::GLsizei, size: *mut types::GLint, type_: enums::AttributeType, name: *mut types::GLchar) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLuint, types::GLuint, types::GLsizei, *mut types::GLsizei, *mut types::GLint, enums::AttributeType, *mut types::GLchar) -> ()>(self.ptrs.GetActiveUniform.f)(program, index, bufSize, length, size, type_, name) }
+            #[inline] pub unsafe fn GetActiveUniform(&self, program: types::GLuint, index: types::GLuint, bufSize: types::GLsizei, length: *mut types::GLsizei, size: *mut types::GLint, type_: *mut enums::AttributeType, name: *mut types::GLchar) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLuint, types::GLuint, types::GLsizei, *mut types::GLsizei, *mut types::GLint, *mut enums::AttributeType, *mut types::GLchar) -> ()>(self.ptrs.GetActiveUniform.f)(program, index, bufSize, length, size, type_, name) }
 #[allow(non_snake_case, unused_variables, dead_code)]
             #[inline] pub unsafe fn GetActiveUniformBlockName(&self, program: types::GLuint, uniformBlockIndex: types::GLuint, bufSize: types::GLsizei, length: *mut types::GLsizei, uniformBlockName: *mut types::GLchar) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLuint, types::GLuint, types::GLsizei, *mut types::GLsizei, *mut types::GLchar) -> ()>(self.ptrs.GetActiveUniformBlockName.f)(program, uniformBlockIndex, bufSize, length, uniformBlockName) }
 #[allow(non_snake_case, unused_variables, dead_code)]
@@ -3688,9 +3688,9 @@ _priv: ()
 #[allow(non_snake_case, unused_variables, dead_code)]
             #[inline] pub unsafe fn GetAttribLocation(&self, program: types::GLuint, name: *const types::GLchar) -> types::GLint { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLuint, *const types::GLchar) -> types::GLint>(self.ptrs.GetAttribLocation.f)(program, name) }
 #[allow(non_snake_case, unused_variables, dead_code)]
-            #[inline] pub unsafe fn GetBooleani_v(&self, target: enums::BufferTargetARB, index: types::GLuint, data: enums::Boolean) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(enums::BufferTargetARB, types::GLuint, enums::Boolean) -> ()>(self.ptrs.GetBooleani_v.f)(target, index, data) }
+            #[inline] pub unsafe fn GetBooleani_v(&self, target: enums::BufferTargetARB, index: types::GLuint, data: *mut enums::Boolean) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(enums::BufferTargetARB, types::GLuint, *mut enums::Boolean) -> ()>(self.ptrs.GetBooleani_v.f)(target, index, data) }
 #[allow(non_snake_case, unused_variables, dead_code)]
-            #[inline] pub unsafe fn GetBooleanv(&self, pname: enums::GetPName, data: enums::Boolean) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(enums::GetPName, enums::Boolean) -> ()>(self.ptrs.GetBooleanv.f)(pname, data) }
+            #[inline] pub unsafe fn GetBooleanv(&self, pname: enums::GetPName, data: *mut enums::Boolean) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(enums::GetPName, *mut enums::Boolean) -> ()>(self.ptrs.GetBooleanv.f)(pname, data) }
 #[allow(non_snake_case, unused_variables, dead_code)]
             #[inline] pub unsafe fn GetBufferParameteri64v(&self, target: enums::BufferTargetARB, pname: types::GLenum, params: *mut types::GLint64) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(enums::BufferTargetARB, types::GLenum, *mut types::GLint64) -> ()>(self.ptrs.GetBufferParameteri64v.f)(target, pname, params) }
 #[allow(non_snake_case, unused_variables, dead_code)]
@@ -3706,7 +3706,7 @@ _priv: ()
 #[allow(non_snake_case, unused_variables, dead_code)]
             #[inline] pub unsafe fn GetCompressedTextureSubImage(&self, texture: types::GLuint, level: types::GLint, xoffset: types::GLint, yoffset: types::GLint, zoffset: types::GLint, width: types::GLsizei, height: types::GLsizei, depth: types::GLsizei, bufSize: types::GLsizei, pixels: *mut __gl_imports::raw::c_void) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLuint, types::GLint, types::GLint, types::GLint, types::GLint, types::GLsizei, types::GLsizei, types::GLsizei, types::GLsizei, *mut __gl_imports::raw::c_void) -> ()>(self.ptrs.GetCompressedTextureSubImage.f)(texture, level, xoffset, yoffset, zoffset, width, height, depth, bufSize, pixels) }
 #[allow(non_snake_case, unused_variables, dead_code)]
-            #[inline] pub unsafe fn GetDebugMessageLog(&self, count: types::GLuint, bufSize: types::GLsizei, sources: enums::DebugSource, types: enums::DebugType, ids: *mut types::GLuint, severities: enums::DebugSeverity, lengths: *mut types::GLsizei, messageLog: *mut types::GLchar) -> types::GLuint { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLuint, types::GLsizei, enums::DebugSource, enums::DebugType, *mut types::GLuint, enums::DebugSeverity, *mut types::GLsizei, *mut types::GLchar) -> types::GLuint>(self.ptrs.GetDebugMessageLog.f)(count, bufSize, sources, types, ids, severities, lengths, messageLog) }
+            #[inline] pub unsafe fn GetDebugMessageLog(&self, count: types::GLuint, bufSize: types::GLsizei, sources: *mut enums::DebugSource, types: *mut enums::DebugType, ids: *mut types::GLuint, severities: *mut enums::DebugSeverity, lengths: *mut types::GLsizei, messageLog: *mut types::GLchar) -> types::GLuint { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLuint, types::GLsizei, *mut enums::DebugSource, *mut enums::DebugType, *mut types::GLuint, *mut enums::DebugSeverity, *mut types::GLsizei, *mut types::GLchar) -> types::GLuint>(self.ptrs.GetDebugMessageLog.f)(count, bufSize, sources, types, ids, severities, lengths, messageLog) }
 #[allow(non_snake_case, unused_variables, dead_code)]
             #[inline] pub unsafe fn GetDoublei_v(&self, target: enums::TypeEnum, index: types::GLuint, data: *mut types::GLdouble) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(enums::TypeEnum, types::GLuint, *mut types::GLdouble) -> ()>(self.ptrs.GetDoublei_v.f)(target, index, data) }
 #[allow(non_snake_case, unused_variables, dead_code)]
@@ -3952,11 +3952,11 @@ _priv: ()
 #[allow(non_snake_case, unused_variables, dead_code)]
             #[inline] pub unsafe fn InvalidateFramebuffer(&self, target: enums::FramebufferTarget, numAttachments: types::GLsizei, attachments: *const types::GLenum) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(enums::FramebufferTarget, types::GLsizei, *const types::GLenum) -> ()>(self.ptrs.InvalidateFramebuffer.f)(target, numAttachments, attachments) }
 #[allow(non_snake_case, unused_variables, dead_code)]
-            #[inline] pub unsafe fn InvalidateNamedFramebufferData(&self, framebuffer: types::GLuint, numAttachments: types::GLsizei, attachments: enums::FramebufferAttachment) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLuint, types::GLsizei, enums::FramebufferAttachment) -> ()>(self.ptrs.InvalidateNamedFramebufferData.f)(framebuffer, numAttachments, attachments) }
+            #[inline] pub unsafe fn InvalidateNamedFramebufferData(&self, framebuffer: types::GLuint, numAttachments: types::GLsizei, attachments: *const enums::FramebufferAttachment) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLuint, types::GLsizei, *const enums::FramebufferAttachment) -> ()>(self.ptrs.InvalidateNamedFramebufferData.f)(framebuffer, numAttachments, attachments) }
 #[allow(non_snake_case, unused_variables, dead_code)]
-            #[inline] pub unsafe fn InvalidateNamedFramebufferSubData(&self, framebuffer: types::GLuint, numAttachments: types::GLsizei, attachments: enums::FramebufferAttachment, x: types::GLint, y: types::GLint, width: types::GLsizei, height: types::GLsizei) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLuint, types::GLsizei, enums::FramebufferAttachment, types::GLint, types::GLint, types::GLsizei, types::GLsizei) -> ()>(self.ptrs.InvalidateNamedFramebufferSubData.f)(framebuffer, numAttachments, attachments, x, y, width, height) }
+            #[inline] pub unsafe fn InvalidateNamedFramebufferSubData(&self, framebuffer: types::GLuint, numAttachments: types::GLsizei, attachments: *const enums::FramebufferAttachment, x: types::GLint, y: types::GLint, width: types::GLsizei, height: types::GLsizei) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLuint, types::GLsizei, *const enums::FramebufferAttachment, types::GLint, types::GLint, types::GLsizei, types::GLsizei) -> ()>(self.ptrs.InvalidateNamedFramebufferSubData.f)(framebuffer, numAttachments, attachments, x, y, width, height) }
 #[allow(non_snake_case, unused_variables, dead_code)]
-            #[inline] pub unsafe fn InvalidateSubFramebuffer(&self, target: types::GLenum, numAttachments: types::GLsizei, attachments: enums::FramebufferAttachment, x: types::GLint, y: types::GLint, width: types::GLsizei, height: types::GLsizei) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLenum, types::GLsizei, enums::FramebufferAttachment, types::GLint, types::GLint, types::GLsizei, types::GLsizei) -> ()>(self.ptrs.InvalidateSubFramebuffer.f)(target, numAttachments, attachments, x, y, width, height) }
+            #[inline] pub unsafe fn InvalidateSubFramebuffer(&self, target: types::GLenum, numAttachments: types::GLsizei, attachments: *const enums::FramebufferAttachment, x: types::GLint, y: types::GLint, width: types::GLsizei, height: types::GLsizei) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLenum, types::GLsizei, *const enums::FramebufferAttachment, types::GLint, types::GLint, types::GLsizei, types::GLsizei) -> ()>(self.ptrs.InvalidateSubFramebuffer.f)(target, numAttachments, attachments, x, y, width, height) }
 #[allow(non_snake_case, unused_variables, dead_code)]
             #[inline] pub unsafe fn InvalidateTexImage(&self, texture: types::GLuint, level: types::GLint) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLuint, types::GLint) -> ()>(self.ptrs.InvalidateTexImage.f)(texture, level) }
 #[allow(non_snake_case, unused_variables, dead_code)]
@@ -4044,7 +4044,7 @@ _priv: ()
 #[allow(non_snake_case, unused_variables, dead_code)]
             #[inline] pub unsafe fn NamedFramebufferDrawBuffer(&self, framebuffer: types::GLuint, buf: enums::ColorBuffer) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLuint, enums::ColorBuffer) -> ()>(self.ptrs.NamedFramebufferDrawBuffer.f)(framebuffer, buf) }
 #[allow(non_snake_case, unused_variables, dead_code)]
-            #[inline] pub unsafe fn NamedFramebufferDrawBuffers(&self, framebuffer: types::GLuint, n: types::GLsizei, bufs: enums::ColorBuffer) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLuint, types::GLsizei, enums::ColorBuffer) -> ()>(self.ptrs.NamedFramebufferDrawBuffers.f)(framebuffer, n, bufs) }
+            #[inline] pub unsafe fn NamedFramebufferDrawBuffers(&self, framebuffer: types::GLuint, n: types::GLsizei, bufs: *const enums::ColorBuffer) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLuint, types::GLsizei, *const enums::ColorBuffer) -> ()>(self.ptrs.NamedFramebufferDrawBuffers.f)(framebuffer, n, bufs) }
 #[allow(non_snake_case, unused_variables, dead_code)]
             #[inline] pub unsafe fn NamedFramebufferParameteri(&self, framebuffer: types::GLuint, pname: enums::FramebufferParameterName, param: types::GLint) -> () { __gl_imports::mem::transmute::<_, extern "system" fn(types::GLuint, enums::FramebufferParameterName, types::GLint) -> ()>(self.ptrs.NamedFramebufferParameteri.f)(framebuffer, pname, param) }
 #[allow(non_snake_case, unused_variables, dead_code)]
@@ -4702,7 +4702,7 @@ pub mod enums {
 use super::types;
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct AccumOp(pub types::GLenum);
 
 impl AccumOp {
@@ -4719,7 +4719,7 @@ impl ::std::fmt::Debug for AccumOp {
 impl_enum_traits!(AccumOp);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct AlphaFunction(pub types::GLenum);
 
 impl AlphaFunction {
@@ -4736,14 +4736,14 @@ impl AlphaFunction {
 impl ::std::fmt::Debug for AlphaFunction {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
+            AlphaFunction::ALWAYS => write!(fmt, "AlphaFunction(ALWAYS)"),
+            AlphaFunction::EQUAL => write!(fmt, "AlphaFunction(EQUAL)"),
             AlphaFunction::GEQUAL => write!(fmt, "AlphaFunction(GEQUAL)"),
             AlphaFunction::GREATER => write!(fmt, "AlphaFunction(GREATER)"),
-            AlphaFunction::ALWAYS => write!(fmt, "AlphaFunction(ALWAYS)"),
             AlphaFunction::LEQUAL => write!(fmt, "AlphaFunction(LEQUAL)"),
             AlphaFunction::LESS => write!(fmt, "AlphaFunction(LESS)"),
-            AlphaFunction::NOTEQUAL => write!(fmt, "AlphaFunction(NOTEQUAL)"),
-            AlphaFunction::EQUAL => write!(fmt, "AlphaFunction(EQUAL)"),
             AlphaFunction::NEVER => write!(fmt, "AlphaFunction(NEVER)"),
+            AlphaFunction::NOTEQUAL => write!(fmt, "AlphaFunction(NOTEQUAL)"),
             _ => write!(fmt, "AlphaFunction({})", self.0),
         }
     }
@@ -4752,7 +4752,7 @@ impl ::std::fmt::Debug for AlphaFunction {
 impl_enum_traits!(AlphaFunction);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct AtomicCounterBufferPName(pub types::GLenum);
 
 impl AtomicCounterBufferPName {
@@ -4771,16 +4771,16 @@ impl AtomicCounterBufferPName {
 impl ::std::fmt::Debug for AtomicCounterBufferPName {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            AtomicCounterBufferPName::ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_CONTROL_SHADER => write!(fmt, "AtomicCounterBufferPName(ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_CONTROL_SHADER)"),
-            AtomicCounterBufferPName::ATOMIC_COUNTER_BUFFER_REFERENCED_BY_COMPUTE_SHADER => write!(fmt, "AtomicCounterBufferPName(ATOMIC_COUNTER_BUFFER_REFERENCED_BY_COMPUTE_SHADER)"),
-            AtomicCounterBufferPName::ATOMIC_COUNTER_BUFFER_DATA_SIZE => write!(fmt, "AtomicCounterBufferPName(ATOMIC_COUNTER_BUFFER_DATA_SIZE)"),
-            AtomicCounterBufferPName::ATOMIC_COUNTER_BUFFER_REFERENCED_BY_FRAGMENT_SHADER => write!(fmt, "AtomicCounterBufferPName(ATOMIC_COUNTER_BUFFER_REFERENCED_BY_FRAGMENT_SHADER)"),
-            AtomicCounterBufferPName::ATOMIC_COUNTER_BUFFER_REFERENCED_BY_VERTEX_SHADER => write!(fmt, "AtomicCounterBufferPName(ATOMIC_COUNTER_BUFFER_REFERENCED_BY_VERTEX_SHADER)"),
-            AtomicCounterBufferPName::ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_EVALUATION_SHADER => write!(fmt, "AtomicCounterBufferPName(ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_EVALUATION_SHADER)"),
-            AtomicCounterBufferPName::ATOMIC_COUNTER_BUFFER_REFERENCED_BY_GEOMETRY_SHADER => write!(fmt, "AtomicCounterBufferPName(ATOMIC_COUNTER_BUFFER_REFERENCED_BY_GEOMETRY_SHADER)"),
-            AtomicCounterBufferPName::ATOMIC_COUNTER_BUFFER_BINDING => write!(fmt, "AtomicCounterBufferPName(ATOMIC_COUNTER_BUFFER_BINDING)"),
             AtomicCounterBufferPName::ATOMIC_COUNTER_BUFFER_ACTIVE_ATOMIC_COUNTERS => write!(fmt, "AtomicCounterBufferPName(ATOMIC_COUNTER_BUFFER_ACTIVE_ATOMIC_COUNTERS)"),
             AtomicCounterBufferPName::ATOMIC_COUNTER_BUFFER_ACTIVE_ATOMIC_COUNTER_INDICES => write!(fmt, "AtomicCounterBufferPName(ATOMIC_COUNTER_BUFFER_ACTIVE_ATOMIC_COUNTER_INDICES)"),
+            AtomicCounterBufferPName::ATOMIC_COUNTER_BUFFER_BINDING => write!(fmt, "AtomicCounterBufferPName(ATOMIC_COUNTER_BUFFER_BINDING)"),
+            AtomicCounterBufferPName::ATOMIC_COUNTER_BUFFER_DATA_SIZE => write!(fmt, "AtomicCounterBufferPName(ATOMIC_COUNTER_BUFFER_DATA_SIZE)"),
+            AtomicCounterBufferPName::ATOMIC_COUNTER_BUFFER_REFERENCED_BY_COMPUTE_SHADER => write!(fmt, "AtomicCounterBufferPName(ATOMIC_COUNTER_BUFFER_REFERENCED_BY_COMPUTE_SHADER)"),
+            AtomicCounterBufferPName::ATOMIC_COUNTER_BUFFER_REFERENCED_BY_FRAGMENT_SHADER => write!(fmt, "AtomicCounterBufferPName(ATOMIC_COUNTER_BUFFER_REFERENCED_BY_FRAGMENT_SHADER)"),
+            AtomicCounterBufferPName::ATOMIC_COUNTER_BUFFER_REFERENCED_BY_GEOMETRY_SHADER => write!(fmt, "AtomicCounterBufferPName(ATOMIC_COUNTER_BUFFER_REFERENCED_BY_GEOMETRY_SHADER)"),
+            AtomicCounterBufferPName::ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_CONTROL_SHADER => write!(fmt, "AtomicCounterBufferPName(ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_CONTROL_SHADER)"),
+            AtomicCounterBufferPName::ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_EVALUATION_SHADER => write!(fmt, "AtomicCounterBufferPName(ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_EVALUATION_SHADER)"),
+            AtomicCounterBufferPName::ATOMIC_COUNTER_BUFFER_REFERENCED_BY_VERTEX_SHADER => write!(fmt, "AtomicCounterBufferPName(ATOMIC_COUNTER_BUFFER_REFERENCED_BY_VERTEX_SHADER)"),
             _ => write!(fmt, "AtomicCounterBufferPName({})", self.0),
         }
     }
@@ -4789,7 +4789,7 @@ impl ::std::fmt::Debug for AtomicCounterBufferPName {
 impl_enum_traits!(AtomicCounterBufferPName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct AttribMask(pub types::GLenum);
 
 impl AttribMask {
@@ -4815,7 +4815,7 @@ impl_enum_traits!(AttribMask);
 impl_enum_bitmask_traits!(AttribMask);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct AttributeType(pub types::GLenum);
 
 impl AttributeType {
@@ -4851,33 +4851,33 @@ impl AttributeType {
 impl ::std::fmt::Debug for AttributeType {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
+            AttributeType::BOOL => write!(fmt, "AttributeType(BOOL)"),
+            AttributeType::BOOL_VEC2 => write!(fmt, "AttributeType(BOOL_VEC2)"),
+            AttributeType::BOOL_VEC3 => write!(fmt, "AttributeType(BOOL_VEC3)"),
+            AttributeType::BOOL_VEC4 => write!(fmt, "AttributeType(BOOL_VEC4)"),
+            AttributeType::FLOAT_MAT2 => write!(fmt, "AttributeType(FLOAT_MAT2)"),
+            AttributeType::FLOAT_MAT2x3 => write!(fmt, "AttributeType(FLOAT_MAT2x3)"),
+            AttributeType::FLOAT_MAT2x4 => write!(fmt, "AttributeType(FLOAT_MAT2x4)"),
+            AttributeType::FLOAT_MAT3 => write!(fmt, "AttributeType(FLOAT_MAT3)"),
+            AttributeType::FLOAT_MAT3x2 => write!(fmt, "AttributeType(FLOAT_MAT3x2)"),
+            AttributeType::FLOAT_MAT3x4 => write!(fmt, "AttributeType(FLOAT_MAT3x4)"),
+            AttributeType::FLOAT_MAT4 => write!(fmt, "AttributeType(FLOAT_MAT4)"),
+            AttributeType::FLOAT_MAT4x2 => write!(fmt, "AttributeType(FLOAT_MAT4x2)"),
+            AttributeType::FLOAT_MAT4x3 => write!(fmt, "AttributeType(FLOAT_MAT4x3)"),
+            AttributeType::FLOAT_VEC2 => write!(fmt, "AttributeType(FLOAT_VEC2)"),
             AttributeType::FLOAT_VEC3 => write!(fmt, "AttributeType(FLOAT_VEC3)"),
+            AttributeType::FLOAT_VEC4 => write!(fmt, "AttributeType(FLOAT_VEC4)"),
+            AttributeType::INT_VEC2 => write!(fmt, "AttributeType(INT_VEC2)"),
             AttributeType::INT_VEC3 => write!(fmt, "AttributeType(INT_VEC3)"),
             AttributeType::INT_VEC4 => write!(fmt, "AttributeType(INT_VEC4)"),
-            AttributeType::FLOAT_MAT3x4 => write!(fmt, "AttributeType(FLOAT_MAT3x4)"),
-            AttributeType::INT_VEC2 => write!(fmt, "AttributeType(INT_VEC2)"),
-            AttributeType::BOOL_VEC2 => write!(fmt, "AttributeType(BOOL_VEC2)"),
-            AttributeType::FLOAT_MAT3 => write!(fmt, "AttributeType(FLOAT_MAT3)"),
-            AttributeType::FLOAT_MAT4 => write!(fmt, "AttributeType(FLOAT_MAT4)"),
-            AttributeType::FLOAT_MAT2x3 => write!(fmt, "AttributeType(FLOAT_MAT2x3)"),
-            AttributeType::SAMPLER_CUBE => write!(fmt, "AttributeType(SAMPLER_CUBE)"),
-            AttributeType::FLOAT_VEC4 => write!(fmt, "AttributeType(FLOAT_VEC4)"),
             AttributeType::SAMPLER_1D => write!(fmt, "AttributeType(SAMPLER_1D)"),
-            AttributeType::FLOAT_MAT2x4 => write!(fmt, "AttributeType(FLOAT_MAT2x4)"),
-            AttributeType::FLOAT_MAT3x2 => write!(fmt, "AttributeType(FLOAT_MAT3x2)"),
-            AttributeType::FLOAT_MAT4x2 => write!(fmt, "AttributeType(FLOAT_MAT4x2)"),
-            AttributeType::BOOL_VEC4 => write!(fmt, "AttributeType(BOOL_VEC4)"),
+            AttributeType::SAMPLER_1D_SHADOW => write!(fmt, "AttributeType(SAMPLER_1D_SHADOW)"),
+            AttributeType::SAMPLER_2D => write!(fmt, "AttributeType(SAMPLER_2D)"),
             AttributeType::SAMPLER_2D_RECT => write!(fmt, "AttributeType(SAMPLER_2D_RECT)"),
-            AttributeType::FLOAT_MAT2 => write!(fmt, "AttributeType(FLOAT_MAT2)"),
-            AttributeType::FLOAT_MAT4x3 => write!(fmt, "AttributeType(FLOAT_MAT4x3)"),
+            AttributeType::SAMPLER_2D_RECT_SHADOW => write!(fmt, "AttributeType(SAMPLER_2D_RECT_SHADOW)"),
             AttributeType::SAMPLER_2D_SHADOW => write!(fmt, "AttributeType(SAMPLER_2D_SHADOW)"),
             AttributeType::SAMPLER_3D => write!(fmt, "AttributeType(SAMPLER_3D)"),
-            AttributeType::SAMPLER_2D => write!(fmt, "AttributeType(SAMPLER_2D)"),
-            AttributeType::SAMPLER_2D_RECT_SHADOW => write!(fmt, "AttributeType(SAMPLER_2D_RECT_SHADOW)"),
-            AttributeType::BOOL_VEC3 => write!(fmt, "AttributeType(BOOL_VEC3)"),
-            AttributeType::SAMPLER_1D_SHADOW => write!(fmt, "AttributeType(SAMPLER_1D_SHADOW)"),
-            AttributeType::FLOAT_VEC2 => write!(fmt, "AttributeType(FLOAT_VEC2)"),
-            AttributeType::BOOL => write!(fmt, "AttributeType(BOOL)"),
+            AttributeType::SAMPLER_CUBE => write!(fmt, "AttributeType(SAMPLER_CUBE)"),
             _ => write!(fmt, "AttributeType({})", self.0),
         }
     }
@@ -4886,7 +4886,7 @@ impl ::std::fmt::Debug for AttributeType {
 impl_enum_traits!(AttributeType);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct BindTransformFeedbackTarget(pub types::GLenum);
 
 impl BindTransformFeedbackTarget {
@@ -4905,7 +4905,7 @@ impl ::std::fmt::Debug for BindTransformFeedbackTarget {
 impl_enum_traits!(BindTransformFeedbackTarget);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct BlendEquationModeEXT(pub types::GLenum);
 
 impl BlendEquationModeEXT {
@@ -4919,11 +4919,11 @@ impl BlendEquationModeEXT {
 impl ::std::fmt::Debug for BlendEquationModeEXT {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            BlendEquationModeEXT::FUNC_SUBTRACT => write!(fmt, "BlendEquationModeEXT(FUNC_SUBTRACT)"),
             BlendEquationModeEXT::FUNC_ADD => write!(fmt, "BlendEquationModeEXT(FUNC_ADD)"),
             BlendEquationModeEXT::FUNC_REVERSE_SUBTRACT => write!(fmt, "BlendEquationModeEXT(FUNC_REVERSE_SUBTRACT)"),
-            BlendEquationModeEXT::MIN => write!(fmt, "BlendEquationModeEXT(MIN)"),
+            BlendEquationModeEXT::FUNC_SUBTRACT => write!(fmt, "BlendEquationModeEXT(FUNC_SUBTRACT)"),
             BlendEquationModeEXT::MAX => write!(fmt, "BlendEquationModeEXT(MAX)"),
+            BlendEquationModeEXT::MIN => write!(fmt, "BlendEquationModeEXT(MIN)"),
             _ => write!(fmt, "BlendEquationModeEXT({})", self.0),
         }
     }
@@ -4932,7 +4932,7 @@ impl ::std::fmt::Debug for BlendEquationModeEXT {
 impl_enum_traits!(BlendEquationModeEXT);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct BlendingFactor(pub types::GLenum);
 
 impl BlendingFactor {
@@ -4960,25 +4960,25 @@ impl BlendingFactor {
 impl ::std::fmt::Debug for BlendingFactor {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            BlendingFactor::SRC1_COLOR => write!(fmt, "BlendingFactor(SRC1_COLOR)"),
-            BlendingFactor::SRC_ALPHA => write!(fmt, "BlendingFactor(SRC_ALPHA)"),
-            BlendingFactor::ONE_MINUS_SRC_ALPHA => write!(fmt, "BlendingFactor(ONE_MINUS_SRC_ALPHA)"),
+            BlendingFactor::CONSTANT_ALPHA => write!(fmt, "BlendingFactor(CONSTANT_ALPHA)"),
+            BlendingFactor::CONSTANT_COLOR => write!(fmt, "BlendingFactor(CONSTANT_COLOR)"),
+            BlendingFactor::DST_ALPHA => write!(fmt, "BlendingFactor(DST_ALPHA)"),
+            BlendingFactor::DST_COLOR => write!(fmt, "BlendingFactor(DST_COLOR)"),
+            BlendingFactor::ONE => write!(fmt, "BlendingFactor(ONE)"),
+            BlendingFactor::ONE_MINUS_CONSTANT_ALPHA => write!(fmt, "BlendingFactor(ONE_MINUS_CONSTANT_ALPHA)"),
             BlendingFactor::ONE_MINUS_CONSTANT_COLOR => write!(fmt, "BlendingFactor(ONE_MINUS_CONSTANT_COLOR)"),
+            BlendingFactor::ONE_MINUS_DST_ALPHA => write!(fmt, "BlendingFactor(ONE_MINUS_DST_ALPHA)"),
+            BlendingFactor::ONE_MINUS_DST_COLOR => write!(fmt, "BlendingFactor(ONE_MINUS_DST_COLOR)"),
+            BlendingFactor::ONE_MINUS_SRC1_ALPHA => write!(fmt, "BlendingFactor(ONE_MINUS_SRC1_ALPHA)"),
+            BlendingFactor::ONE_MINUS_SRC1_COLOR => write!(fmt, "BlendingFactor(ONE_MINUS_SRC1_COLOR)"),
+            BlendingFactor::ONE_MINUS_SRC_ALPHA => write!(fmt, "BlendingFactor(ONE_MINUS_SRC_ALPHA)"),
             BlendingFactor::ONE_MINUS_SRC_COLOR => write!(fmt, "BlendingFactor(ONE_MINUS_SRC_COLOR)"),
             BlendingFactor::SRC1_ALPHA => write!(fmt, "BlendingFactor(SRC1_ALPHA)"),
-            BlendingFactor::ONE_MINUS_SRC1_ALPHA => write!(fmt, "BlendingFactor(ONE_MINUS_SRC1_ALPHA)"),
-            BlendingFactor::DST_ALPHA => write!(fmt, "BlendingFactor(DST_ALPHA)"),
-            BlendingFactor::ONE_MINUS_DST_ALPHA => write!(fmt, "BlendingFactor(ONE_MINUS_DST_ALPHA)"),
-            BlendingFactor::CONSTANT_ALPHA => write!(fmt, "BlendingFactor(CONSTANT_ALPHA)"),
-            BlendingFactor::SRC_COLOR => write!(fmt, "BlendingFactor(SRC_COLOR)"),
+            BlendingFactor::SRC1_COLOR => write!(fmt, "BlendingFactor(SRC1_COLOR)"),
+            BlendingFactor::SRC_ALPHA => write!(fmt, "BlendingFactor(SRC_ALPHA)"),
             BlendingFactor::SRC_ALPHA_SATURATE => write!(fmt, "BlendingFactor(SRC_ALPHA_SATURATE)"),
-            BlendingFactor::ONE_MINUS_DST_COLOR => write!(fmt, "BlendingFactor(ONE_MINUS_DST_COLOR)"),
-            BlendingFactor::CONSTANT_COLOR => write!(fmt, "BlendingFactor(CONSTANT_COLOR)"),
-            BlendingFactor::ONE_MINUS_CONSTANT_ALPHA => write!(fmt, "BlendingFactor(ONE_MINUS_CONSTANT_ALPHA)"),
-            BlendingFactor::ONE => write!(fmt, "BlendingFactor(ONE)"),
+            BlendingFactor::SRC_COLOR => write!(fmt, "BlendingFactor(SRC_COLOR)"),
             BlendingFactor::ZERO => write!(fmt, "BlendingFactor(ZERO)"),
-            BlendingFactor::ONE_MINUS_SRC1_COLOR => write!(fmt, "BlendingFactor(ONE_MINUS_SRC1_COLOR)"),
-            BlendingFactor::DST_COLOR => write!(fmt, "BlendingFactor(DST_COLOR)"),
             _ => write!(fmt, "BlendingFactor({})", self.0),
         }
     }
@@ -4987,7 +4987,7 @@ impl ::std::fmt::Debug for BlendingFactor {
 impl_enum_traits!(BlendingFactor);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct BlitFramebufferFilter(pub types::GLenum);
 
 impl BlitFramebufferFilter {
@@ -5008,7 +5008,7 @@ impl ::std::fmt::Debug for BlitFramebufferFilter {
 impl_enum_traits!(BlitFramebufferFilter);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct Boolean(pub types::GLboolean);
 
 impl Boolean {
@@ -5029,7 +5029,7 @@ impl ::std::fmt::Debug for Boolean {
 impl_enum_traits!(Boolean);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct Buffer(pub types::GLenum);
 
 impl Buffer {
@@ -5052,7 +5052,7 @@ impl ::std::fmt::Debug for Buffer {
 impl_enum_traits!(Buffer);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct BufferAccessARB(pub types::GLenum);
 
 impl BufferAccessARB {
@@ -5065,8 +5065,8 @@ impl ::std::fmt::Debug for BufferAccessARB {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
             BufferAccessARB::READ_ONLY => write!(fmt, "BufferAccessARB(READ_ONLY)"),
-            BufferAccessARB::WRITE_ONLY => write!(fmt, "BufferAccessARB(WRITE_ONLY)"),
             BufferAccessARB::READ_WRITE => write!(fmt, "BufferAccessARB(READ_WRITE)"),
+            BufferAccessARB::WRITE_ONLY => write!(fmt, "BufferAccessARB(WRITE_ONLY)"),
             _ => write!(fmt, "BufferAccessARB({})", self.0),
         }
     }
@@ -5075,7 +5075,7 @@ impl ::std::fmt::Debug for BufferAccessARB {
 impl_enum_traits!(BufferAccessARB);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct BufferAccessMask(pub types::GLenum);
 
 impl BufferAccessMask {
@@ -5093,13 +5093,13 @@ impl BufferAccessMask {
 impl ::std::fmt::Debug for BufferAccessMask {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            BufferAccessMask::MAP_FLUSH_EXPLICIT_BIT => write!(fmt, "BufferAccessMask(MAP_FLUSH_EXPLICIT_BIT)"),
-            BufferAccessMask::MAP_INVALIDATE_RANGE_BIT => write!(fmt, "BufferAccessMask(MAP_INVALIDATE_RANGE_BIT)"),
-            BufferAccessMask::MAP_UNSYNCHRONIZED_BIT => write!(fmt, "BufferAccessMask(MAP_UNSYNCHRONIZED_BIT)"),
-            BufferAccessMask::MAP_READ_BIT => write!(fmt, "BufferAccessMask(MAP_READ_BIT)"),
-            BufferAccessMask::MAP_INVALIDATE_BUFFER_BIT => write!(fmt, "BufferAccessMask(MAP_INVALIDATE_BUFFER_BIT)"),
             BufferAccessMask::MAP_COHERENT_BIT => write!(fmt, "BufferAccessMask(MAP_COHERENT_BIT)"),
+            BufferAccessMask::MAP_FLUSH_EXPLICIT_BIT => write!(fmt, "BufferAccessMask(MAP_FLUSH_EXPLICIT_BIT)"),
+            BufferAccessMask::MAP_INVALIDATE_BUFFER_BIT => write!(fmt, "BufferAccessMask(MAP_INVALIDATE_BUFFER_BIT)"),
+            BufferAccessMask::MAP_INVALIDATE_RANGE_BIT => write!(fmt, "BufferAccessMask(MAP_INVALIDATE_RANGE_BIT)"),
             BufferAccessMask::MAP_PERSISTENT_BIT => write!(fmt, "BufferAccessMask(MAP_PERSISTENT_BIT)"),
+            BufferAccessMask::MAP_READ_BIT => write!(fmt, "BufferAccessMask(MAP_READ_BIT)"),
+            BufferAccessMask::MAP_UNSYNCHRONIZED_BIT => write!(fmt, "BufferAccessMask(MAP_UNSYNCHRONIZED_BIT)"),
             BufferAccessMask::MAP_WRITE_BIT => write!(fmt, "BufferAccessMask(MAP_WRITE_BIT)"),
             _ => write!(fmt, "BufferAccessMask({})", self.0),
         }
@@ -5111,7 +5111,7 @@ impl_enum_traits!(BufferAccessMask);
 impl_enum_bitmask_traits!(BufferAccessMask);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct BufferBitQCOM(pub types::GLenum);
 
 impl BufferBitQCOM {
@@ -5131,7 +5131,7 @@ impl_enum_traits!(BufferBitQCOM);
 impl_enum_bitmask_traits!(BufferBitQCOM);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct BufferStorageTarget(pub types::GLenum);
 
 impl BufferStorageTarget {
@@ -5154,19 +5154,19 @@ impl BufferStorageTarget {
 impl ::std::fmt::Debug for BufferStorageTarget {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            BufferStorageTarget::PIXEL_PACK_BUFFER => write!(fmt, "BufferStorageTarget(PIXEL_PACK_BUFFER)"),
-            BufferStorageTarget::TEXTURE_BUFFER => write!(fmt, "BufferStorageTarget(TEXTURE_BUFFER)"),
-            BufferStorageTarget::TRANSFORM_FEEDBACK_BUFFER => write!(fmt, "BufferStorageTarget(TRANSFORM_FEEDBACK_BUFFER)"),
-            BufferStorageTarget::ELEMENT_ARRAY_BUFFER => write!(fmt, "BufferStorageTarget(ELEMENT_ARRAY_BUFFER)"),
-            BufferStorageTarget::DRAW_INDIRECT_BUFFER => write!(fmt, "BufferStorageTarget(DRAW_INDIRECT_BUFFER)"),
-            BufferStorageTarget::SHADER_STORAGE_BUFFER => write!(fmt, "BufferStorageTarget(SHADER_STORAGE_BUFFER)"),
-            BufferStorageTarget::COPY_WRITE_BUFFER => write!(fmt, "BufferStorageTarget(COPY_WRITE_BUFFER)"),
             BufferStorageTarget::ARRAY_BUFFER => write!(fmt, "BufferStorageTarget(ARRAY_BUFFER)"),
-            BufferStorageTarget::PIXEL_UNPACK_BUFFER => write!(fmt, "BufferStorageTarget(PIXEL_UNPACK_BUFFER)"),
-            BufferStorageTarget::DISPATCH_INDIRECT_BUFFER => write!(fmt, "BufferStorageTarget(DISPATCH_INDIRECT_BUFFER)"),
             BufferStorageTarget::ATOMIC_COUNTER_BUFFER => write!(fmt, "BufferStorageTarget(ATOMIC_COUNTER_BUFFER)"),
             BufferStorageTarget::COPY_READ_BUFFER => write!(fmt, "BufferStorageTarget(COPY_READ_BUFFER)"),
+            BufferStorageTarget::COPY_WRITE_BUFFER => write!(fmt, "BufferStorageTarget(COPY_WRITE_BUFFER)"),
+            BufferStorageTarget::DISPATCH_INDIRECT_BUFFER => write!(fmt, "BufferStorageTarget(DISPATCH_INDIRECT_BUFFER)"),
+            BufferStorageTarget::DRAW_INDIRECT_BUFFER => write!(fmt, "BufferStorageTarget(DRAW_INDIRECT_BUFFER)"),
+            BufferStorageTarget::ELEMENT_ARRAY_BUFFER => write!(fmt, "BufferStorageTarget(ELEMENT_ARRAY_BUFFER)"),
+            BufferStorageTarget::PIXEL_PACK_BUFFER => write!(fmt, "BufferStorageTarget(PIXEL_PACK_BUFFER)"),
+            BufferStorageTarget::PIXEL_UNPACK_BUFFER => write!(fmt, "BufferStorageTarget(PIXEL_UNPACK_BUFFER)"),
             BufferStorageTarget::QUERY_BUFFER => write!(fmt, "BufferStorageTarget(QUERY_BUFFER)"),
+            BufferStorageTarget::SHADER_STORAGE_BUFFER => write!(fmt, "BufferStorageTarget(SHADER_STORAGE_BUFFER)"),
+            BufferStorageTarget::TEXTURE_BUFFER => write!(fmt, "BufferStorageTarget(TEXTURE_BUFFER)"),
+            BufferStorageTarget::TRANSFORM_FEEDBACK_BUFFER => write!(fmt, "BufferStorageTarget(TRANSFORM_FEEDBACK_BUFFER)"),
             BufferStorageTarget::UNIFORM_BUFFER => write!(fmt, "BufferStorageTarget(UNIFORM_BUFFER)"),
             _ => write!(fmt, "BufferStorageTarget({})", self.0),
         }
@@ -5176,7 +5176,7 @@ impl ::std::fmt::Debug for BufferStorageTarget {
 impl_enum_traits!(BufferStorageTarget);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct BufferTargetARB(pub types::GLenum);
 
 impl BufferTargetARB {
@@ -5199,20 +5199,20 @@ impl BufferTargetARB {
 impl ::std::fmt::Debug for BufferTargetARB {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
+            BufferTargetARB::ARRAY_BUFFER => write!(fmt, "BufferTargetARB(ARRAY_BUFFER)"),
+            BufferTargetARB::ATOMIC_COUNTER_BUFFER => write!(fmt, "BufferTargetARB(ATOMIC_COUNTER_BUFFER)"),
             BufferTargetARB::COPY_READ_BUFFER => write!(fmt, "BufferTargetARB(COPY_READ_BUFFER)"),
+            BufferTargetARB::COPY_WRITE_BUFFER => write!(fmt, "BufferTargetARB(COPY_WRITE_BUFFER)"),
+            BufferTargetARB::DISPATCH_INDIRECT_BUFFER => write!(fmt, "BufferTargetARB(DISPATCH_INDIRECT_BUFFER)"),
+            BufferTargetARB::DRAW_INDIRECT_BUFFER => write!(fmt, "BufferTargetARB(DRAW_INDIRECT_BUFFER)"),
+            BufferTargetARB::ELEMENT_ARRAY_BUFFER => write!(fmt, "BufferTargetARB(ELEMENT_ARRAY_BUFFER)"),
+            BufferTargetARB::PIXEL_PACK_BUFFER => write!(fmt, "BufferTargetARB(PIXEL_PACK_BUFFER)"),
+            BufferTargetARB::PIXEL_UNPACK_BUFFER => write!(fmt, "BufferTargetARB(PIXEL_UNPACK_BUFFER)"),
             BufferTargetARB::QUERY_BUFFER => write!(fmt, "BufferTargetARB(QUERY_BUFFER)"),
             BufferTargetARB::SHADER_STORAGE_BUFFER => write!(fmt, "BufferTargetARB(SHADER_STORAGE_BUFFER)"),
-            BufferTargetARB::COPY_WRITE_BUFFER => write!(fmt, "BufferTargetARB(COPY_WRITE_BUFFER)"),
-            BufferTargetARB::UNIFORM_BUFFER => write!(fmt, "BufferTargetARB(UNIFORM_BUFFER)"),
-            BufferTargetARB::ARRAY_BUFFER => write!(fmt, "BufferTargetARB(ARRAY_BUFFER)"),
-            BufferTargetARB::DRAW_INDIRECT_BUFFER => write!(fmt, "BufferTargetARB(DRAW_INDIRECT_BUFFER)"),
-            BufferTargetARB::PIXEL_UNPACK_BUFFER => write!(fmt, "BufferTargetARB(PIXEL_UNPACK_BUFFER)"),
-            BufferTargetARB::ATOMIC_COUNTER_BUFFER => write!(fmt, "BufferTargetARB(ATOMIC_COUNTER_BUFFER)"),
-            BufferTargetARB::ELEMENT_ARRAY_BUFFER => write!(fmt, "BufferTargetARB(ELEMENT_ARRAY_BUFFER)"),
-            BufferTargetARB::DISPATCH_INDIRECT_BUFFER => write!(fmt, "BufferTargetARB(DISPATCH_INDIRECT_BUFFER)"),
-            BufferTargetARB::PIXEL_PACK_BUFFER => write!(fmt, "BufferTargetARB(PIXEL_PACK_BUFFER)"),
             BufferTargetARB::TEXTURE_BUFFER => write!(fmt, "BufferTargetARB(TEXTURE_BUFFER)"),
             BufferTargetARB::TRANSFORM_FEEDBACK_BUFFER => write!(fmt, "BufferTargetARB(TRANSFORM_FEEDBACK_BUFFER)"),
+            BufferTargetARB::UNIFORM_BUFFER => write!(fmt, "BufferTargetARB(UNIFORM_BUFFER)"),
             _ => write!(fmt, "BufferTargetARB({})", self.0),
         }
     }
@@ -5221,7 +5221,7 @@ impl ::std::fmt::Debug for BufferTargetARB {
 impl_enum_traits!(BufferTargetARB);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct BufferUsageARB(pub types::GLenum);
 
 impl BufferUsageARB {
@@ -5240,14 +5240,14 @@ impl ::std::fmt::Debug for BufferUsageARB {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
             BufferUsageARB::DYNAMIC_COPY => write!(fmt, "BufferUsageARB(DYNAMIC_COPY)"),
-            BufferUsageARB::STATIC_READ => write!(fmt, "BufferUsageARB(STATIC_READ)"),
             BufferUsageARB::DYNAMIC_DRAW => write!(fmt, "BufferUsageARB(DYNAMIC_DRAW)"),
+            BufferUsageARB::DYNAMIC_READ => write!(fmt, "BufferUsageARB(DYNAMIC_READ)"),
             BufferUsageARB::STATIC_COPY => write!(fmt, "BufferUsageARB(STATIC_COPY)"),
             BufferUsageARB::STATIC_DRAW => write!(fmt, "BufferUsageARB(STATIC_DRAW)"),
-            BufferUsageARB::STREAM_READ => write!(fmt, "BufferUsageARB(STREAM_READ)"),
+            BufferUsageARB::STATIC_READ => write!(fmt, "BufferUsageARB(STATIC_READ)"),
             BufferUsageARB::STREAM_COPY => write!(fmt, "BufferUsageARB(STREAM_COPY)"),
-            BufferUsageARB::DYNAMIC_READ => write!(fmt, "BufferUsageARB(DYNAMIC_READ)"),
             BufferUsageARB::STREAM_DRAW => write!(fmt, "BufferUsageARB(STREAM_DRAW)"),
+            BufferUsageARB::STREAM_READ => write!(fmt, "BufferUsageARB(STREAM_READ)"),
             _ => write!(fmt, "BufferUsageARB({})", self.0),
         }
     }
@@ -5256,7 +5256,7 @@ impl ::std::fmt::Debug for BufferUsageARB {
 impl_enum_traits!(BufferUsageARB);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct CheckFramebufferStatusTarget(pub types::GLenum);
 
 impl CheckFramebufferStatusTarget {
@@ -5268,9 +5268,9 @@ impl CheckFramebufferStatusTarget {
 impl ::std::fmt::Debug for CheckFramebufferStatusTarget {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            CheckFramebufferStatusTarget::READ_FRAMEBUFFER => write!(fmt, "CheckFramebufferStatusTarget(READ_FRAMEBUFFER)"),
             CheckFramebufferStatusTarget::DRAW_FRAMEBUFFER => write!(fmt, "CheckFramebufferStatusTarget(DRAW_FRAMEBUFFER)"),
             CheckFramebufferStatusTarget::FRAMEBUFFER => write!(fmt, "CheckFramebufferStatusTarget(FRAMEBUFFER)"),
+            CheckFramebufferStatusTarget::READ_FRAMEBUFFER => write!(fmt, "CheckFramebufferStatusTarget(READ_FRAMEBUFFER)"),
             _ => write!(fmt, "CheckFramebufferStatusTarget({})", self.0),
         }
     }
@@ -5279,7 +5279,7 @@ impl ::std::fmt::Debug for CheckFramebufferStatusTarget {
 impl_enum_traits!(CheckFramebufferStatusTarget);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ClearBufferMask(pub types::GLenum);
 
 impl ClearBufferMask {
@@ -5293,8 +5293,8 @@ impl ::std::fmt::Debug for ClearBufferMask {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
             ClearBufferMask::COLOR_BUFFER_BIT => write!(fmt, "ClearBufferMask(COLOR_BUFFER_BIT)"),
-            ClearBufferMask::STENCIL_BUFFER_BIT => write!(fmt, "ClearBufferMask(STENCIL_BUFFER_BIT)"),
             ClearBufferMask::DEPTH_BUFFER_BIT => write!(fmt, "ClearBufferMask(DEPTH_BUFFER_BIT)"),
+            ClearBufferMask::STENCIL_BUFFER_BIT => write!(fmt, "ClearBufferMask(STENCIL_BUFFER_BIT)"),
             _ => write!(fmt, "ClearBufferMask({})", self.0),
         }
     }
@@ -5305,7 +5305,7 @@ impl_enum_traits!(ClearBufferMask);
 impl_enum_bitmask_traits!(ClearBufferMask);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ClientAttribMask(pub types::GLenum);
 
 impl ClientAttribMask {
@@ -5325,7 +5325,7 @@ impl_enum_traits!(ClientAttribMask);
 impl_enum_bitmask_traits!(ClientAttribMask);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ClipControlDepth(pub types::GLenum);
 
 impl ClipControlDepth {
@@ -5336,8 +5336,8 @@ impl ClipControlDepth {
 impl ::std::fmt::Debug for ClipControlDepth {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            ClipControlDepth::ZERO_TO_ONE => write!(fmt, "ClipControlDepth(ZERO_TO_ONE)"),
             ClipControlDepth::NEGATIVE_ONE_TO_ONE => write!(fmt, "ClipControlDepth(NEGATIVE_ONE_TO_ONE)"),
+            ClipControlDepth::ZERO_TO_ONE => write!(fmt, "ClipControlDepth(ZERO_TO_ONE)"),
             _ => write!(fmt, "ClipControlDepth({})", self.0),
         }
     }
@@ -5346,7 +5346,7 @@ impl ::std::fmt::Debug for ClipControlDepth {
 impl_enum_traits!(ClipControlDepth);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ClipControlOrigin(pub types::GLenum);
 
 impl ClipControlOrigin {
@@ -5357,8 +5357,8 @@ impl ClipControlOrigin {
 impl ::std::fmt::Debug for ClipControlOrigin {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            ClipControlOrigin::UPPER_LEFT => write!(fmt, "ClipControlOrigin(UPPER_LEFT)"),
             ClipControlOrigin::LOWER_LEFT => write!(fmt, "ClipControlOrigin(LOWER_LEFT)"),
+            ClipControlOrigin::UPPER_LEFT => write!(fmt, "ClipControlOrigin(UPPER_LEFT)"),
             _ => write!(fmt, "ClipControlOrigin({})", self.0),
         }
     }
@@ -5367,7 +5367,7 @@ impl ::std::fmt::Debug for ClipControlOrigin {
 impl_enum_traits!(ClipControlOrigin);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ClipPlaneName(pub types::GLenum);
 
 impl ClipPlaneName {
@@ -5384,14 +5384,14 @@ impl ClipPlaneName {
 impl ::std::fmt::Debug for ClipPlaneName {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            ClipPlaneName::CLIP_DISTANCE5 => write!(fmt, "ClipPlaneName(CLIP_DISTANCE5)"),
-            ClipPlaneName::CLIP_DISTANCE7 => write!(fmt, "ClipPlaneName(CLIP_DISTANCE7)"),
-            ClipPlaneName::CLIP_DISTANCE6 => write!(fmt, "ClipPlaneName(CLIP_DISTANCE6)"),
+            ClipPlaneName::CLIP_DISTANCE0 => write!(fmt, "ClipPlaneName(CLIP_DISTANCE0)"),
             ClipPlaneName::CLIP_DISTANCE1 => write!(fmt, "ClipPlaneName(CLIP_DISTANCE1)"),
+            ClipPlaneName::CLIP_DISTANCE2 => write!(fmt, "ClipPlaneName(CLIP_DISTANCE2)"),
             ClipPlaneName::CLIP_DISTANCE3 => write!(fmt, "ClipPlaneName(CLIP_DISTANCE3)"),
             ClipPlaneName::CLIP_DISTANCE4 => write!(fmt, "ClipPlaneName(CLIP_DISTANCE4)"),
-            ClipPlaneName::CLIP_DISTANCE0 => write!(fmt, "ClipPlaneName(CLIP_DISTANCE0)"),
-            ClipPlaneName::CLIP_DISTANCE2 => write!(fmt, "ClipPlaneName(CLIP_DISTANCE2)"),
+            ClipPlaneName::CLIP_DISTANCE5 => write!(fmt, "ClipPlaneName(CLIP_DISTANCE5)"),
+            ClipPlaneName::CLIP_DISTANCE6 => write!(fmt, "ClipPlaneName(CLIP_DISTANCE6)"),
+            ClipPlaneName::CLIP_DISTANCE7 => write!(fmt, "ClipPlaneName(CLIP_DISTANCE7)"),
             _ => write!(fmt, "ClipPlaneName({})", self.0),
         }
     }
@@ -5400,7 +5400,7 @@ impl ::std::fmt::Debug for ClipPlaneName {
 impl_enum_traits!(ClipPlaneName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ColorBuffer(pub types::GLenum);
 
 impl ColorBuffer {
@@ -5451,48 +5451,48 @@ impl ColorBuffer {
 impl ::std::fmt::Debug for ColorBuffer {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            ColorBuffer::COLOR_ATTACHMENT9 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT9)"),
-            ColorBuffer::COLOR_ATTACHMENT23 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT23)"),
-            ColorBuffer::RIGHT => write!(fmt, "ColorBuffer(RIGHT)"),
-            ColorBuffer::COLOR_ATTACHMENT10 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT10)"),
-            ColorBuffer::COLOR_ATTACHMENT5 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT5)"),
-            ColorBuffer::COLOR_ATTACHMENT2 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT2)"),
-            ColorBuffer::COLOR_ATTACHMENT8 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT8)"),
-            ColorBuffer::COLOR_ATTACHMENT24 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT24)"),
-            ColorBuffer::COLOR_ATTACHMENT4 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT4)"),
-            ColorBuffer::BACK_RIGHT => write!(fmt, "ColorBuffer(BACK_RIGHT)"),
             ColorBuffer::BACK => write!(fmt, "ColorBuffer(BACK)"),
+            ColorBuffer::BACK_LEFT => write!(fmt, "ColorBuffer(BACK_LEFT)"),
+            ColorBuffer::BACK_RIGHT => write!(fmt, "ColorBuffer(BACK_RIGHT)"),
+            ColorBuffer::COLOR_ATTACHMENT0 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT0)"),
+            ColorBuffer::COLOR_ATTACHMENT1 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT1)"),
+            ColorBuffer::COLOR_ATTACHMENT10 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT10)"),
+            ColorBuffer::COLOR_ATTACHMENT11 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT11)"),
+            ColorBuffer::COLOR_ATTACHMENT12 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT12)"),
+            ColorBuffer::COLOR_ATTACHMENT13 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT13)"),
+            ColorBuffer::COLOR_ATTACHMENT14 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT14)"),
+            ColorBuffer::COLOR_ATTACHMENT15 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT15)"),
+            ColorBuffer::COLOR_ATTACHMENT16 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT16)"),
+            ColorBuffer::COLOR_ATTACHMENT17 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT17)"),
+            ColorBuffer::COLOR_ATTACHMENT18 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT18)"),
+            ColorBuffer::COLOR_ATTACHMENT19 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT19)"),
+            ColorBuffer::COLOR_ATTACHMENT2 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT2)"),
+            ColorBuffer::COLOR_ATTACHMENT20 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT20)"),
             ColorBuffer::COLOR_ATTACHMENT21 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT21)"),
             ColorBuffer::COLOR_ATTACHMENT22 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT22)"),
-            ColorBuffer::COLOR_ATTACHMENT27 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT27)"),
-            ColorBuffer::FRONT_LEFT => write!(fmt, "ColorBuffer(FRONT_LEFT)"),
-            ColorBuffer::COLOR_ATTACHMENT26 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT26)"),
-            ColorBuffer::COLOR_ATTACHMENT7 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT7)"),
-            ColorBuffer::COLOR_ATTACHMENT6 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT6)"),
-            ColorBuffer::COLOR_ATTACHMENT19 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT19)"),
-            ColorBuffer::COLOR_ATTACHMENT16 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT16)"),
-            ColorBuffer::COLOR_ATTACHMENT18 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT18)"),
-            ColorBuffer::COLOR_ATTACHMENT30 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT30)"),
-            ColorBuffer::COLOR_ATTACHMENT0 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT0)"),
-            ColorBuffer::FRONT_AND_BACK => write!(fmt, "ColorBuffer(FRONT_AND_BACK)"),
-            ColorBuffer::COLOR_ATTACHMENT12 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT12)"),
-            ColorBuffer::COLOR_ATTACHMENT3 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT3)"),
-            ColorBuffer::COLOR_ATTACHMENT15 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT15)"),
-            ColorBuffer::NONE => write!(fmt, "ColorBuffer(NONE)"),
-            ColorBuffer::COLOR_ATTACHMENT1 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT1)"),
-            ColorBuffer::COLOR_ATTACHMENT17 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT17)"),
-            ColorBuffer::COLOR_ATTACHMENT13 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT13)"),
-            ColorBuffer::COLOR_ATTACHMENT31 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT31)"),
-            ColorBuffer::LEFT => write!(fmt, "ColorBuffer(LEFT)"),
-            ColorBuffer::FRONT_RIGHT => write!(fmt, "ColorBuffer(FRONT_RIGHT)"),
-            ColorBuffer::BACK_LEFT => write!(fmt, "ColorBuffer(BACK_LEFT)"),
-            ColorBuffer::FRONT => write!(fmt, "ColorBuffer(FRONT)"),
-            ColorBuffer::COLOR_ATTACHMENT14 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT14)"),
+            ColorBuffer::COLOR_ATTACHMENT23 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT23)"),
+            ColorBuffer::COLOR_ATTACHMENT24 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT24)"),
             ColorBuffer::COLOR_ATTACHMENT25 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT25)"),
-            ColorBuffer::COLOR_ATTACHMENT11 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT11)"),
-            ColorBuffer::COLOR_ATTACHMENT20 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT20)"),
+            ColorBuffer::COLOR_ATTACHMENT26 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT26)"),
+            ColorBuffer::COLOR_ATTACHMENT27 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT27)"),
             ColorBuffer::COLOR_ATTACHMENT28 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT28)"),
             ColorBuffer::COLOR_ATTACHMENT29 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT29)"),
+            ColorBuffer::COLOR_ATTACHMENT3 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT3)"),
+            ColorBuffer::COLOR_ATTACHMENT30 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT30)"),
+            ColorBuffer::COLOR_ATTACHMENT31 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT31)"),
+            ColorBuffer::COLOR_ATTACHMENT4 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT4)"),
+            ColorBuffer::COLOR_ATTACHMENT5 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT5)"),
+            ColorBuffer::COLOR_ATTACHMENT6 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT6)"),
+            ColorBuffer::COLOR_ATTACHMENT7 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT7)"),
+            ColorBuffer::COLOR_ATTACHMENT8 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT8)"),
+            ColorBuffer::COLOR_ATTACHMENT9 => write!(fmt, "ColorBuffer(COLOR_ATTACHMENT9)"),
+            ColorBuffer::FRONT => write!(fmt, "ColorBuffer(FRONT)"),
+            ColorBuffer::FRONT_AND_BACK => write!(fmt, "ColorBuffer(FRONT_AND_BACK)"),
+            ColorBuffer::FRONT_LEFT => write!(fmt, "ColorBuffer(FRONT_LEFT)"),
+            ColorBuffer::FRONT_RIGHT => write!(fmt, "ColorBuffer(FRONT_RIGHT)"),
+            ColorBuffer::LEFT => write!(fmt, "ColorBuffer(LEFT)"),
+            ColorBuffer::NONE => write!(fmt, "ColorBuffer(NONE)"),
+            ColorBuffer::RIGHT => write!(fmt, "ColorBuffer(RIGHT)"),
             _ => write!(fmt, "ColorBuffer({})", self.0),
         }
     }
@@ -5501,7 +5501,7 @@ impl ::std::fmt::Debug for ColorBuffer {
 impl_enum_traits!(ColorBuffer);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ColorMaterialFace(pub types::GLenum);
 
 impl ColorMaterialFace {
@@ -5513,8 +5513,8 @@ impl ColorMaterialFace {
 impl ::std::fmt::Debug for ColorMaterialFace {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            ColorMaterialFace::FRONT => write!(fmt, "ColorMaterialFace(FRONT)"),
             ColorMaterialFace::BACK => write!(fmt, "ColorMaterialFace(BACK)"),
+            ColorMaterialFace::FRONT => write!(fmt, "ColorMaterialFace(FRONT)"),
             ColorMaterialFace::FRONT_AND_BACK => write!(fmt, "ColorMaterialFace(FRONT_AND_BACK)"),
             _ => write!(fmt, "ColorMaterialFace({})", self.0),
         }
@@ -5524,7 +5524,7 @@ impl ::std::fmt::Debug for ColorMaterialFace {
 impl_enum_traits!(ColorMaterialFace);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ColorMaterialParameter(pub types::GLenum);
 
 impl ColorMaterialParameter {
@@ -5541,7 +5541,7 @@ impl ::std::fmt::Debug for ColorMaterialParameter {
 impl_enum_traits!(ColorMaterialParameter);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ColorPointerType(pub types::GLenum);
 
 impl ColorPointerType {
@@ -5558,13 +5558,13 @@ impl ColorPointerType {
 impl ::std::fmt::Debug for ColorPointerType {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            ColorPointerType::UNSIGNED_BYTE => write!(fmt, "ColorPointerType(UNSIGNED_BYTE)"),
-            ColorPointerType::INT => write!(fmt, "ColorPointerType(INT)"),
             ColorPointerType::BYTE => write!(fmt, "ColorPointerType(BYTE)"),
-            ColorPointerType::SHORT => write!(fmt, "ColorPointerType(SHORT)"),
-            ColorPointerType::FLOAT => write!(fmt, "ColorPointerType(FLOAT)"),
-            ColorPointerType::UNSIGNED_INT => write!(fmt, "ColorPointerType(UNSIGNED_INT)"),
             ColorPointerType::DOUBLE => write!(fmt, "ColorPointerType(DOUBLE)"),
+            ColorPointerType::FLOAT => write!(fmt, "ColorPointerType(FLOAT)"),
+            ColorPointerType::INT => write!(fmt, "ColorPointerType(INT)"),
+            ColorPointerType::SHORT => write!(fmt, "ColorPointerType(SHORT)"),
+            ColorPointerType::UNSIGNED_BYTE => write!(fmt, "ColorPointerType(UNSIGNED_BYTE)"),
+            ColorPointerType::UNSIGNED_INT => write!(fmt, "ColorPointerType(UNSIGNED_INT)"),
             ColorPointerType::UNSIGNED_SHORT => write!(fmt, "ColorPointerType(UNSIGNED_SHORT)"),
             _ => write!(fmt, "ColorPointerType({})", self.0),
         }
@@ -5574,7 +5574,7 @@ impl ::std::fmt::Debug for ColorPointerType {
 impl_enum_traits!(ColorPointerType);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ColorTableParameterPNameSGI(pub types::GLenum);
 
 impl ColorTableParameterPNameSGI {
@@ -5591,7 +5591,7 @@ impl ::std::fmt::Debug for ColorTableParameterPNameSGI {
 impl_enum_traits!(ColorTableParameterPNameSGI);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ColorTableTarget(pub types::GLenum);
 
 impl ColorTableTarget {
@@ -5608,7 +5608,7 @@ impl ::std::fmt::Debug for ColorTableTarget {
 impl_enum_traits!(ColorTableTarget);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ColorTableTargetSGI(pub types::GLenum);
 
 impl ColorTableTargetSGI {
@@ -5625,7 +5625,7 @@ impl ::std::fmt::Debug for ColorTableTargetSGI {
 impl_enum_traits!(ColorTableTargetSGI);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ContextFlagMask(pub types::GLenum);
 
 impl ContextFlagMask {
@@ -5651,7 +5651,7 @@ impl_enum_traits!(ContextFlagMask);
 impl_enum_bitmask_traits!(ContextFlagMask);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ContextProfileMask(pub types::GLenum);
 
 impl ContextProfileMask {
@@ -5663,8 +5663,8 @@ impl ContextProfileMask {
 impl ::std::fmt::Debug for ContextProfileMask {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            ContextProfileMask::CONTEXT_CORE_PROFILE_BIT => write!(fmt, "ContextProfileMask(CONTEXT_CORE_PROFILE_BIT)"),
             ContextProfileMask::CONTEXT_COMPATIBILITY_PROFILE_BIT => write!(fmt, "ContextProfileMask(CONTEXT_COMPATIBILITY_PROFILE_BIT)"),
+            ContextProfileMask::CONTEXT_CORE_PROFILE_BIT => write!(fmt, "ContextProfileMask(CONTEXT_CORE_PROFILE_BIT)"),
             _ => write!(fmt, "ContextProfileMask({})", self.0),
         }
     }
@@ -5675,7 +5675,7 @@ impl_enum_traits!(ContextProfileMask);
 impl_enum_bitmask_traits!(ContextProfileMask);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ConvolutionBorderModeEXT(pub types::GLenum);
 
 impl ConvolutionBorderModeEXT {
@@ -5692,7 +5692,7 @@ impl ::std::fmt::Debug for ConvolutionBorderModeEXT {
 impl_enum_traits!(ConvolutionBorderModeEXT);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ConvolutionParameterEXT(pub types::GLenum);
 
 impl ConvolutionParameterEXT {
@@ -5709,7 +5709,7 @@ impl ::std::fmt::Debug for ConvolutionParameterEXT {
 impl_enum_traits!(ConvolutionParameterEXT);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ConvolutionTarget(pub types::GLenum);
 
 impl ConvolutionTarget {
@@ -5726,7 +5726,7 @@ impl ::std::fmt::Debug for ConvolutionTarget {
 impl_enum_traits!(ConvolutionTarget);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ConvolutionTargetEXT(pub types::GLenum);
 
 impl ConvolutionTargetEXT {
@@ -5743,7 +5743,7 @@ impl ::std::fmt::Debug for ConvolutionTargetEXT {
 impl_enum_traits!(ConvolutionTargetEXT);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct CopyBufferSubDataTarget(pub types::GLenum);
 
 impl CopyBufferSubDataTarget {
@@ -5768,18 +5768,18 @@ impl ::std::fmt::Debug for CopyBufferSubDataTarget {
         match *self {
             CopyBufferSubDataTarget::ARRAY_BUFFER => write!(fmt, "CopyBufferSubDataTarget(ARRAY_BUFFER)"),
             CopyBufferSubDataTarget::ATOMIC_COUNTER_BUFFER => write!(fmt, "CopyBufferSubDataTarget(ATOMIC_COUNTER_BUFFER)"),
-            CopyBufferSubDataTarget::ELEMENT_ARRAY_BUFFER => write!(fmt, "CopyBufferSubDataTarget(ELEMENT_ARRAY_BUFFER)"),
-            CopyBufferSubDataTarget::DISPATCH_INDIRECT_BUFFER => write!(fmt, "CopyBufferSubDataTarget(DISPATCH_INDIRECT_BUFFER)"),
             CopyBufferSubDataTarget::COPY_READ_BUFFER => write!(fmt, "CopyBufferSubDataTarget(COPY_READ_BUFFER)"),
-            CopyBufferSubDataTarget::QUERY_BUFFER => write!(fmt, "CopyBufferSubDataTarget(QUERY_BUFFER)"),
-            CopyBufferSubDataTarget::DRAW_INDIRECT_BUFFER => write!(fmt, "CopyBufferSubDataTarget(DRAW_INDIRECT_BUFFER)"),
-            CopyBufferSubDataTarget::UNIFORM_BUFFER => write!(fmt, "CopyBufferSubDataTarget(UNIFORM_BUFFER)"),
-            CopyBufferSubDataTarget::TEXTURE_BUFFER => write!(fmt, "CopyBufferSubDataTarget(TEXTURE_BUFFER)"),
             CopyBufferSubDataTarget::COPY_WRITE_BUFFER => write!(fmt, "CopyBufferSubDataTarget(COPY_WRITE_BUFFER)"),
-            CopyBufferSubDataTarget::TRANSFORM_FEEDBACK_BUFFER => write!(fmt, "CopyBufferSubDataTarget(TRANSFORM_FEEDBACK_BUFFER)"),
+            CopyBufferSubDataTarget::DISPATCH_INDIRECT_BUFFER => write!(fmt, "CopyBufferSubDataTarget(DISPATCH_INDIRECT_BUFFER)"),
+            CopyBufferSubDataTarget::DRAW_INDIRECT_BUFFER => write!(fmt, "CopyBufferSubDataTarget(DRAW_INDIRECT_BUFFER)"),
+            CopyBufferSubDataTarget::ELEMENT_ARRAY_BUFFER => write!(fmt, "CopyBufferSubDataTarget(ELEMENT_ARRAY_BUFFER)"),
             CopyBufferSubDataTarget::PIXEL_PACK_BUFFER => write!(fmt, "CopyBufferSubDataTarget(PIXEL_PACK_BUFFER)"),
-            CopyBufferSubDataTarget::SHADER_STORAGE_BUFFER => write!(fmt, "CopyBufferSubDataTarget(SHADER_STORAGE_BUFFER)"),
             CopyBufferSubDataTarget::PIXEL_UNPACK_BUFFER => write!(fmt, "CopyBufferSubDataTarget(PIXEL_UNPACK_BUFFER)"),
+            CopyBufferSubDataTarget::QUERY_BUFFER => write!(fmt, "CopyBufferSubDataTarget(QUERY_BUFFER)"),
+            CopyBufferSubDataTarget::SHADER_STORAGE_BUFFER => write!(fmt, "CopyBufferSubDataTarget(SHADER_STORAGE_BUFFER)"),
+            CopyBufferSubDataTarget::TEXTURE_BUFFER => write!(fmt, "CopyBufferSubDataTarget(TEXTURE_BUFFER)"),
+            CopyBufferSubDataTarget::TRANSFORM_FEEDBACK_BUFFER => write!(fmt, "CopyBufferSubDataTarget(TRANSFORM_FEEDBACK_BUFFER)"),
+            CopyBufferSubDataTarget::UNIFORM_BUFFER => write!(fmt, "CopyBufferSubDataTarget(UNIFORM_BUFFER)"),
             _ => write!(fmt, "CopyBufferSubDataTarget({})", self.0),
         }
     }
@@ -5788,7 +5788,7 @@ impl ::std::fmt::Debug for CopyBufferSubDataTarget {
 impl_enum_traits!(CopyBufferSubDataTarget);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct CullFaceMode(pub types::GLenum);
 
 impl CullFaceMode {
@@ -5800,9 +5800,9 @@ impl CullFaceMode {
 impl ::std::fmt::Debug for CullFaceMode {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
+            CullFaceMode::BACK => write!(fmt, "CullFaceMode(BACK)"),
             CullFaceMode::FRONT => write!(fmt, "CullFaceMode(FRONT)"),
             CullFaceMode::FRONT_AND_BACK => write!(fmt, "CullFaceMode(FRONT_AND_BACK)"),
-            CullFaceMode::BACK => write!(fmt, "CullFaceMode(BACK)"),
             _ => write!(fmt, "CullFaceMode({})", self.0),
         }
     }
@@ -5811,7 +5811,7 @@ impl ::std::fmt::Debug for CullFaceMode {
 impl_enum_traits!(CullFaceMode);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct DataType(pub types::GLenum);
 
 impl DataType {
@@ -5828,7 +5828,7 @@ impl ::std::fmt::Debug for DataType {
 impl_enum_traits!(DataType);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct DebugSeverity(pub types::GLenum);
 
 impl DebugSeverity {
@@ -5842,11 +5842,11 @@ impl DebugSeverity {
 impl ::std::fmt::Debug for DebugSeverity {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            DebugSeverity::DONT_CARE => write!(fmt, "DebugSeverity(DONT_CARE)"),
-            DebugSeverity::DEBUG_SEVERITY_LOW => write!(fmt, "DebugSeverity(DEBUG_SEVERITY_LOW)"),
-            DebugSeverity::DEBUG_SEVERITY_NOTIFICATION => write!(fmt, "DebugSeverity(DEBUG_SEVERITY_NOTIFICATION)"),
             DebugSeverity::DEBUG_SEVERITY_HIGH => write!(fmt, "DebugSeverity(DEBUG_SEVERITY_HIGH)"),
+            DebugSeverity::DEBUG_SEVERITY_LOW => write!(fmt, "DebugSeverity(DEBUG_SEVERITY_LOW)"),
             DebugSeverity::DEBUG_SEVERITY_MEDIUM => write!(fmt, "DebugSeverity(DEBUG_SEVERITY_MEDIUM)"),
+            DebugSeverity::DEBUG_SEVERITY_NOTIFICATION => write!(fmt, "DebugSeverity(DEBUG_SEVERITY_NOTIFICATION)"),
+            DebugSeverity::DONT_CARE => write!(fmt, "DebugSeverity(DONT_CARE)"),
             _ => write!(fmt, "DebugSeverity({})", self.0),
         }
     }
@@ -5855,7 +5855,7 @@ impl ::std::fmt::Debug for DebugSeverity {
 impl_enum_traits!(DebugSeverity);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct DebugSource(pub types::GLenum);
 
 impl DebugSource {
@@ -5871,13 +5871,13 @@ impl DebugSource {
 impl ::std::fmt::Debug for DebugSource {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            DebugSource::DEBUG_SOURCE_APPLICATION => write!(fmt, "DebugSource(DEBUG_SOURCE_APPLICATION)"),
             DebugSource::DEBUG_SOURCE_API => write!(fmt, "DebugSource(DEBUG_SOURCE_API)"),
-            DebugSource::DEBUG_SOURCE_WINDOW_SYSTEM => write!(fmt, "DebugSource(DEBUG_SOURCE_WINDOW_SYSTEM)"),
+            DebugSource::DEBUG_SOURCE_APPLICATION => write!(fmt, "DebugSource(DEBUG_SOURCE_APPLICATION)"),
             DebugSource::DEBUG_SOURCE_OTHER => write!(fmt, "DebugSource(DEBUG_SOURCE_OTHER)"),
-            DebugSource::DEBUG_SOURCE_THIRD_PARTY => write!(fmt, "DebugSource(DEBUG_SOURCE_THIRD_PARTY)"),
-            DebugSource::DONT_CARE => write!(fmt, "DebugSource(DONT_CARE)"),
             DebugSource::DEBUG_SOURCE_SHADER_COMPILER => write!(fmt, "DebugSource(DEBUG_SOURCE_SHADER_COMPILER)"),
+            DebugSource::DEBUG_SOURCE_THIRD_PARTY => write!(fmt, "DebugSource(DEBUG_SOURCE_THIRD_PARTY)"),
+            DebugSource::DEBUG_SOURCE_WINDOW_SYSTEM => write!(fmt, "DebugSource(DEBUG_SOURCE_WINDOW_SYSTEM)"),
+            DebugSource::DONT_CARE => write!(fmt, "DebugSource(DONT_CARE)"),
             _ => write!(fmt, "DebugSource({})", self.0),
         }
     }
@@ -5886,7 +5886,7 @@ impl ::std::fmt::Debug for DebugSource {
 impl_enum_traits!(DebugSource);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct DebugType(pub types::GLenum);
 
 impl DebugType {
@@ -5905,16 +5905,16 @@ impl DebugType {
 impl ::std::fmt::Debug for DebugType {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            DebugType::DEBUG_TYPE_UNDEFINED_BEHAVIOR => write!(fmt, "DebugType(DEBUG_TYPE_UNDEFINED_BEHAVIOR)"),
-            DebugType::DEBUG_TYPE_POP_GROUP => write!(fmt, "DebugType(DEBUG_TYPE_POP_GROUP)"),
-            DebugType::DEBUG_TYPE_MARKER => write!(fmt, "DebugType(DEBUG_TYPE_MARKER)"),
             DebugType::DEBUG_TYPE_DEPRECATED_BEHAVIOR => write!(fmt, "DebugType(DEBUG_TYPE_DEPRECATED_BEHAVIOR)"),
-            DebugType::DONT_CARE => write!(fmt, "DebugType(DONT_CARE)"),
             DebugType::DEBUG_TYPE_ERROR => write!(fmt, "DebugType(DEBUG_TYPE_ERROR)"),
+            DebugType::DEBUG_TYPE_MARKER => write!(fmt, "DebugType(DEBUG_TYPE_MARKER)"),
             DebugType::DEBUG_TYPE_OTHER => write!(fmt, "DebugType(DEBUG_TYPE_OTHER)"),
             DebugType::DEBUG_TYPE_PERFORMANCE => write!(fmt, "DebugType(DEBUG_TYPE_PERFORMANCE)"),
-            DebugType::DEBUG_TYPE_PUSH_GROUP => write!(fmt, "DebugType(DEBUG_TYPE_PUSH_GROUP)"),
+            DebugType::DEBUG_TYPE_POP_GROUP => write!(fmt, "DebugType(DEBUG_TYPE_POP_GROUP)"),
             DebugType::DEBUG_TYPE_PORTABILITY => write!(fmt, "DebugType(DEBUG_TYPE_PORTABILITY)"),
+            DebugType::DEBUG_TYPE_PUSH_GROUP => write!(fmt, "DebugType(DEBUG_TYPE_PUSH_GROUP)"),
+            DebugType::DEBUG_TYPE_UNDEFINED_BEHAVIOR => write!(fmt, "DebugType(DEBUG_TYPE_UNDEFINED_BEHAVIOR)"),
+            DebugType::DONT_CARE => write!(fmt, "DebugType(DONT_CARE)"),
             _ => write!(fmt, "DebugType({})", self.0),
         }
     }
@@ -5923,7 +5923,7 @@ impl ::std::fmt::Debug for DebugType {
 impl_enum_traits!(DebugType);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct DepthFunction(pub types::GLenum);
 
 impl DepthFunction {
@@ -5940,14 +5940,14 @@ impl DepthFunction {
 impl ::std::fmt::Debug for DepthFunction {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            DepthFunction::NEVER => write!(fmt, "DepthFunction(NEVER)"),
-            DepthFunction::NOTEQUAL => write!(fmt, "DepthFunction(NOTEQUAL)"),
-            DepthFunction::GEQUAL => write!(fmt, "DepthFunction(GEQUAL)"),
             DepthFunction::ALWAYS => write!(fmt, "DepthFunction(ALWAYS)"),
             DepthFunction::EQUAL => write!(fmt, "DepthFunction(EQUAL)"),
-            DepthFunction::LESS => write!(fmt, "DepthFunction(LESS)"),
-            DepthFunction::LEQUAL => write!(fmt, "DepthFunction(LEQUAL)"),
+            DepthFunction::GEQUAL => write!(fmt, "DepthFunction(GEQUAL)"),
             DepthFunction::GREATER => write!(fmt, "DepthFunction(GREATER)"),
+            DepthFunction::LEQUAL => write!(fmt, "DepthFunction(LEQUAL)"),
+            DepthFunction::LESS => write!(fmt, "DepthFunction(LESS)"),
+            DepthFunction::NEVER => write!(fmt, "DepthFunction(NEVER)"),
+            DepthFunction::NOTEQUAL => write!(fmt, "DepthFunction(NOTEQUAL)"),
             _ => write!(fmt, "DepthFunction({})", self.0),
         }
     }
@@ -5956,7 +5956,7 @@ impl ::std::fmt::Debug for DepthFunction {
 impl_enum_traits!(DepthFunction);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct DrawBufferMode(pub types::GLenum);
 
 impl DrawBufferMode {
@@ -5975,16 +5975,16 @@ impl DrawBufferMode {
 impl ::std::fmt::Debug for DrawBufferMode {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            DrawBufferMode::LEFT => write!(fmt, "DrawBufferMode(LEFT)"),
-            DrawBufferMode::FRONT_AND_BACK => write!(fmt, "DrawBufferMode(FRONT_AND_BACK)"),
-            DrawBufferMode::BACK_RIGHT => write!(fmt, "DrawBufferMode(BACK_RIGHT)"),
-            DrawBufferMode::NONE => write!(fmt, "DrawBufferMode(NONE)"),
-            DrawBufferMode::BACK_LEFT => write!(fmt, "DrawBufferMode(BACK_LEFT)"),
-            DrawBufferMode::FRONT_LEFT => write!(fmt, "DrawBufferMode(FRONT_LEFT)"),
             DrawBufferMode::BACK => write!(fmt, "DrawBufferMode(BACK)"),
-            DrawBufferMode::RIGHT => write!(fmt, "DrawBufferMode(RIGHT)"),
+            DrawBufferMode::BACK_LEFT => write!(fmt, "DrawBufferMode(BACK_LEFT)"),
+            DrawBufferMode::BACK_RIGHT => write!(fmt, "DrawBufferMode(BACK_RIGHT)"),
             DrawBufferMode::FRONT => write!(fmt, "DrawBufferMode(FRONT)"),
+            DrawBufferMode::FRONT_AND_BACK => write!(fmt, "DrawBufferMode(FRONT_AND_BACK)"),
+            DrawBufferMode::FRONT_LEFT => write!(fmt, "DrawBufferMode(FRONT_LEFT)"),
             DrawBufferMode::FRONT_RIGHT => write!(fmt, "DrawBufferMode(FRONT_RIGHT)"),
+            DrawBufferMode::LEFT => write!(fmt, "DrawBufferMode(LEFT)"),
+            DrawBufferMode::NONE => write!(fmt, "DrawBufferMode(NONE)"),
+            DrawBufferMode::RIGHT => write!(fmt, "DrawBufferMode(RIGHT)"),
             _ => write!(fmt, "DrawBufferMode({})", self.0),
         }
     }
@@ -5993,7 +5993,7 @@ impl ::std::fmt::Debug for DrawBufferMode {
 impl_enum_traits!(DrawBufferMode);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct DrawElementsType(pub types::GLenum);
 
 impl DrawElementsType {
@@ -6006,8 +6006,8 @@ impl ::std::fmt::Debug for DrawElementsType {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
             DrawElementsType::UNSIGNED_BYTE => write!(fmt, "DrawElementsType(UNSIGNED_BYTE)"),
-            DrawElementsType::UNSIGNED_SHORT => write!(fmt, "DrawElementsType(UNSIGNED_SHORT)"),
             DrawElementsType::UNSIGNED_INT => write!(fmt, "DrawElementsType(UNSIGNED_INT)"),
+            DrawElementsType::UNSIGNED_SHORT => write!(fmt, "DrawElementsType(UNSIGNED_SHORT)"),
             _ => write!(fmt, "DrawElementsType({})", self.0),
         }
     }
@@ -6016,7 +6016,7 @@ impl ::std::fmt::Debug for DrawElementsType {
 impl_enum_traits!(DrawElementsType);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct EnableCap(pub types::GLenum);
 
 impl EnableCap {
@@ -6040,21 +6040,21 @@ impl EnableCap {
 impl ::std::fmt::Debug for EnableCap {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            EnableCap::TEXTURE_1D => write!(fmt, "EnableCap(TEXTURE_1D)"),
-            EnableCap::POLYGON_OFFSET_POINT => write!(fmt, "EnableCap(POLYGON_OFFSET_POINT)"),
-            EnableCap::VERTEX_ARRAY => write!(fmt, "EnableCap(VERTEX_ARRAY)"),
-            EnableCap::TEXTURE_2D => write!(fmt, "EnableCap(TEXTURE_2D)"),
-            EnableCap::DEPTH_TEST => write!(fmt, "EnableCap(DEPTH_TEST)"),
-            EnableCap::SCISSOR_TEST => write!(fmt, "EnableCap(SCISSOR_TEST)"),
             EnableCap::BLEND => write!(fmt, "EnableCap(BLEND)"),
-            EnableCap::POLYGON_OFFSET_FILL => write!(fmt, "EnableCap(POLYGON_OFFSET_FILL)"),
-            EnableCap::STENCIL_TEST => write!(fmt, "EnableCap(STENCIL_TEST)"),
-            EnableCap::CULL_FACE => write!(fmt, "EnableCap(CULL_FACE)"),
-            EnableCap::DITHER => write!(fmt, "EnableCap(DITHER)"),
-            EnableCap::POLYGON_OFFSET_LINE => write!(fmt, "EnableCap(POLYGON_OFFSET_LINE)"),
             EnableCap::COLOR_LOGIC_OP => write!(fmt, "EnableCap(COLOR_LOGIC_OP)"),
+            EnableCap::CULL_FACE => write!(fmt, "EnableCap(CULL_FACE)"),
+            EnableCap::DEPTH_TEST => write!(fmt, "EnableCap(DEPTH_TEST)"),
+            EnableCap::DITHER => write!(fmt, "EnableCap(DITHER)"),
             EnableCap::LINE_SMOOTH => write!(fmt, "EnableCap(LINE_SMOOTH)"),
+            EnableCap::POLYGON_OFFSET_FILL => write!(fmt, "EnableCap(POLYGON_OFFSET_FILL)"),
+            EnableCap::POLYGON_OFFSET_LINE => write!(fmt, "EnableCap(POLYGON_OFFSET_LINE)"),
+            EnableCap::POLYGON_OFFSET_POINT => write!(fmt, "EnableCap(POLYGON_OFFSET_POINT)"),
             EnableCap::POLYGON_SMOOTH => write!(fmt, "EnableCap(POLYGON_SMOOTH)"),
+            EnableCap::SCISSOR_TEST => write!(fmt, "EnableCap(SCISSOR_TEST)"),
+            EnableCap::STENCIL_TEST => write!(fmt, "EnableCap(STENCIL_TEST)"),
+            EnableCap::TEXTURE_1D => write!(fmt, "EnableCap(TEXTURE_1D)"),
+            EnableCap::TEXTURE_2D => write!(fmt, "EnableCap(TEXTURE_2D)"),
+            EnableCap::VERTEX_ARRAY => write!(fmt, "EnableCap(VERTEX_ARRAY)"),
             _ => write!(fmt, "EnableCap({})", self.0),
         }
     }
@@ -6063,7 +6063,7 @@ impl ::std::fmt::Debug for EnableCap {
 impl_enum_traits!(EnableCap);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ErrorCode(pub types::GLenum);
 
 impl ErrorCode {
@@ -6080,14 +6080,14 @@ impl ErrorCode {
 impl ::std::fmt::Debug for ErrorCode {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            ErrorCode::INVALID_FRAMEBUFFER_OPERATION => write!(fmt, "ErrorCode(INVALID_FRAMEBUFFER_OPERATION)"),
-            ErrorCode::STACK_UNDERFLOW => write!(fmt, "ErrorCode(STACK_UNDERFLOW)"),
             ErrorCode::INVALID_ENUM => write!(fmt, "ErrorCode(INVALID_ENUM)"),
-            ErrorCode::INVALID_VALUE => write!(fmt, "ErrorCode(INVALID_VALUE)"),
+            ErrorCode::INVALID_FRAMEBUFFER_OPERATION => write!(fmt, "ErrorCode(INVALID_FRAMEBUFFER_OPERATION)"),
             ErrorCode::INVALID_OPERATION => write!(fmt, "ErrorCode(INVALID_OPERATION)"),
-            ErrorCode::STACK_OVERFLOW => write!(fmt, "ErrorCode(STACK_OVERFLOW)"),
-            ErrorCode::OUT_OF_MEMORY => write!(fmt, "ErrorCode(OUT_OF_MEMORY)"),
+            ErrorCode::INVALID_VALUE => write!(fmt, "ErrorCode(INVALID_VALUE)"),
             ErrorCode::NO_ERROR => write!(fmt, "ErrorCode(NO_ERROR)"),
+            ErrorCode::OUT_OF_MEMORY => write!(fmt, "ErrorCode(OUT_OF_MEMORY)"),
+            ErrorCode::STACK_OVERFLOW => write!(fmt, "ErrorCode(STACK_OVERFLOW)"),
+            ErrorCode::STACK_UNDERFLOW => write!(fmt, "ErrorCode(STACK_UNDERFLOW)"),
             _ => write!(fmt, "ErrorCode({})", self.0),
         }
     }
@@ -6096,7 +6096,7 @@ impl ::std::fmt::Debug for ErrorCode {
 impl_enum_traits!(ErrorCode);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ExternalHandleType(pub types::GLenum);
 
 impl ExternalHandleType {
@@ -6113,7 +6113,7 @@ impl ::std::fmt::Debug for ExternalHandleType {
 impl_enum_traits!(ExternalHandleType);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct FeedBackToken(pub types::GLenum);
 
 impl FeedBackToken {
@@ -6130,7 +6130,7 @@ impl ::std::fmt::Debug for FeedBackToken {
 impl_enum_traits!(FeedBackToken);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct FeedbackType(pub types::GLenum);
 
 impl FeedbackType {
@@ -6147,7 +6147,7 @@ impl ::std::fmt::Debug for FeedbackType {
 impl_enum_traits!(FeedbackType);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct FfdMaskSGIX(pub types::GLenum);
 
 impl FfdMaskSGIX {
@@ -6167,7 +6167,7 @@ impl_enum_traits!(FfdMaskSGIX);
 impl_enum_bitmask_traits!(FfdMaskSGIX);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct FfdTargetSGIX(pub types::GLenum);
 
 impl FfdTargetSGIX {
@@ -6184,7 +6184,7 @@ impl ::std::fmt::Debug for FfdTargetSGIX {
 impl_enum_traits!(FfdTargetSGIX);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct FogCoordinatePointerType(pub types::GLenum);
 
 impl FogCoordinatePointerType {
@@ -6195,8 +6195,8 @@ impl FogCoordinatePointerType {
 impl ::std::fmt::Debug for FogCoordinatePointerType {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            FogCoordinatePointerType::FLOAT => write!(fmt, "FogCoordinatePointerType(FLOAT)"),
             FogCoordinatePointerType::DOUBLE => write!(fmt, "FogCoordinatePointerType(DOUBLE)"),
+            FogCoordinatePointerType::FLOAT => write!(fmt, "FogCoordinatePointerType(FLOAT)"),
             _ => write!(fmt, "FogCoordinatePointerType({})", self.0),
         }
     }
@@ -6205,7 +6205,7 @@ impl ::std::fmt::Debug for FogCoordinatePointerType {
 impl_enum_traits!(FogCoordinatePointerType);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct FogMode(pub types::GLenum);
 
 impl FogMode {
@@ -6224,7 +6224,7 @@ impl ::std::fmt::Debug for FogMode {
 impl_enum_traits!(FogMode);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct FogPName(pub types::GLenum);
 
 impl FogPName {
@@ -6241,7 +6241,7 @@ impl ::std::fmt::Debug for FogPName {
 impl_enum_traits!(FogPName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct FogParameter(pub types::GLenum);
 
 impl FogParameter {
@@ -6258,7 +6258,7 @@ impl ::std::fmt::Debug for FogParameter {
 impl_enum_traits!(FogParameter);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct FogPointerTypeEXT(pub types::GLenum);
 
 impl FogPointerTypeEXT {
@@ -6279,7 +6279,7 @@ impl ::std::fmt::Debug for FogPointerTypeEXT {
 impl_enum_traits!(FogPointerTypeEXT);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct FogPointerTypeIBM(pub types::GLenum);
 
 impl FogPointerTypeIBM {
@@ -6300,7 +6300,7 @@ impl ::std::fmt::Debug for FogPointerTypeIBM {
 impl_enum_traits!(FogPointerTypeIBM);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct FragmentLightModelParameterSGIX(pub types::GLenum);
 
 impl FragmentLightModelParameterSGIX {
@@ -6317,7 +6317,7 @@ impl ::std::fmt::Debug for FragmentLightModelParameterSGIX {
 impl_enum_traits!(FragmentLightModelParameterSGIX);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct FragmentOpATI(pub types::GLenum);
 
 impl FragmentOpATI {
@@ -6334,7 +6334,7 @@ impl ::std::fmt::Debug for FragmentOpATI {
 impl_enum_traits!(FragmentOpATI);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct FramebufferAttachment(pub types::GLenum);
 
 impl FramebufferAttachment {
@@ -6378,41 +6378,41 @@ impl FramebufferAttachment {
 impl ::std::fmt::Debug for FramebufferAttachment {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            FramebufferAttachment::COLOR_ATTACHMENT20 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT20)"),
-            FramebufferAttachment::COLOR_ATTACHMENT7 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT7)"),
-            FramebufferAttachment::COLOR_ATTACHMENT10 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT10)"),
-            FramebufferAttachment::COLOR_ATTACHMENT14 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT14)"),
-            FramebufferAttachment::COLOR_ATTACHMENT28 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT28)"),
-            FramebufferAttachment::COLOR_ATTACHMENT23 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT23)"),
-            FramebufferAttachment::COLOR_ATTACHMENT19 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT19)"),
-            FramebufferAttachment::COLOR_ATTACHMENT24 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT24)"),
-            FramebufferAttachment::COLOR_ATTACHMENT4 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT4)"),
-            FramebufferAttachment::COLOR_ATTACHMENT31 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT31)"),
-            FramebufferAttachment::DEPTH_STENCIL_ATTACHMENT => write!(fmt, "FramebufferAttachment(DEPTH_STENCIL_ATTACHMENT)"),
-            FramebufferAttachment::COLOR_ATTACHMENT25 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT25)"),
-            FramebufferAttachment::COLOR_ATTACHMENT15 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT15)"),
-            FramebufferAttachment::COLOR_ATTACHMENT27 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT27)"),
-            FramebufferAttachment::MAX_COLOR_ATTACHMENTS => write!(fmt, "FramebufferAttachment(MAX_COLOR_ATTACHMENTS)"),
-            FramebufferAttachment::COLOR_ATTACHMENT11 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT11)"),
-            FramebufferAttachment::COLOR_ATTACHMENT9 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT9)"),
-            FramebufferAttachment::COLOR_ATTACHMENT16 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT16)"),
-            FramebufferAttachment::COLOR_ATTACHMENT21 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT21)"),
-            FramebufferAttachment::DEPTH_ATTACHMENT => write!(fmt, "FramebufferAttachment(DEPTH_ATTACHMENT)"),
-            FramebufferAttachment::COLOR_ATTACHMENT26 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT26)"),
             FramebufferAttachment::COLOR_ATTACHMENT0 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT0)"),
-            FramebufferAttachment::COLOR_ATTACHMENT3 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT3)"),
-            FramebufferAttachment::COLOR_ATTACHMENT2 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT2)"),
-            FramebufferAttachment::COLOR_ATTACHMENT22 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT22)"),
-            FramebufferAttachment::COLOR_ATTACHMENT29 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT29)"),
-            FramebufferAttachment::COLOR_ATTACHMENT5 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT5)"),
-            FramebufferAttachment::COLOR_ATTACHMENT8 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT8)"),
-            FramebufferAttachment::COLOR_ATTACHMENT18 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT18)"),
             FramebufferAttachment::COLOR_ATTACHMENT1 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT1)"),
-            FramebufferAttachment::COLOR_ATTACHMENT6 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT6)"),
+            FramebufferAttachment::COLOR_ATTACHMENT10 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT10)"),
+            FramebufferAttachment::COLOR_ATTACHMENT11 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT11)"),
             FramebufferAttachment::COLOR_ATTACHMENT12 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT12)"),
-            FramebufferAttachment::COLOR_ATTACHMENT30 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT30)"),
-            FramebufferAttachment::COLOR_ATTACHMENT17 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT17)"),
             FramebufferAttachment::COLOR_ATTACHMENT13 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT13)"),
+            FramebufferAttachment::COLOR_ATTACHMENT14 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT14)"),
+            FramebufferAttachment::COLOR_ATTACHMENT15 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT15)"),
+            FramebufferAttachment::COLOR_ATTACHMENT16 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT16)"),
+            FramebufferAttachment::COLOR_ATTACHMENT17 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT17)"),
+            FramebufferAttachment::COLOR_ATTACHMENT18 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT18)"),
+            FramebufferAttachment::COLOR_ATTACHMENT19 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT19)"),
+            FramebufferAttachment::COLOR_ATTACHMENT2 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT2)"),
+            FramebufferAttachment::COLOR_ATTACHMENT20 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT20)"),
+            FramebufferAttachment::COLOR_ATTACHMENT21 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT21)"),
+            FramebufferAttachment::COLOR_ATTACHMENT22 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT22)"),
+            FramebufferAttachment::COLOR_ATTACHMENT23 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT23)"),
+            FramebufferAttachment::COLOR_ATTACHMENT24 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT24)"),
+            FramebufferAttachment::COLOR_ATTACHMENT25 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT25)"),
+            FramebufferAttachment::COLOR_ATTACHMENT26 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT26)"),
+            FramebufferAttachment::COLOR_ATTACHMENT27 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT27)"),
+            FramebufferAttachment::COLOR_ATTACHMENT28 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT28)"),
+            FramebufferAttachment::COLOR_ATTACHMENT29 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT29)"),
+            FramebufferAttachment::COLOR_ATTACHMENT3 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT3)"),
+            FramebufferAttachment::COLOR_ATTACHMENT30 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT30)"),
+            FramebufferAttachment::COLOR_ATTACHMENT31 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT31)"),
+            FramebufferAttachment::COLOR_ATTACHMENT4 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT4)"),
+            FramebufferAttachment::COLOR_ATTACHMENT5 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT5)"),
+            FramebufferAttachment::COLOR_ATTACHMENT6 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT6)"),
+            FramebufferAttachment::COLOR_ATTACHMENT7 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT7)"),
+            FramebufferAttachment::COLOR_ATTACHMENT8 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT8)"),
+            FramebufferAttachment::COLOR_ATTACHMENT9 => write!(fmt, "FramebufferAttachment(COLOR_ATTACHMENT9)"),
+            FramebufferAttachment::DEPTH_ATTACHMENT => write!(fmt, "FramebufferAttachment(DEPTH_ATTACHMENT)"),
+            FramebufferAttachment::DEPTH_STENCIL_ATTACHMENT => write!(fmt, "FramebufferAttachment(DEPTH_STENCIL_ATTACHMENT)"),
+            FramebufferAttachment::MAX_COLOR_ATTACHMENTS => write!(fmt, "FramebufferAttachment(MAX_COLOR_ATTACHMENTS)"),
             _ => write!(fmt, "FramebufferAttachment({})", self.0),
         }
     }
@@ -6421,7 +6421,7 @@ impl ::std::fmt::Debug for FramebufferAttachment {
 impl_enum_traits!(FramebufferAttachment);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct FramebufferAttachmentParameterName(pub types::GLenum);
 
 impl FramebufferAttachmentParameterName {
@@ -6443,19 +6443,19 @@ impl FramebufferAttachmentParameterName {
 impl ::std::fmt::Debug for FramebufferAttachmentParameterName {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            FramebufferAttachmentParameterName::FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE => write!(fmt, "FramebufferAttachmentParameterName(FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE)"),
-            FramebufferAttachmentParameterName::FRAMEBUFFER_ATTACHMENT_RED_SIZE => write!(fmt, "FramebufferAttachmentParameterName(FRAMEBUFFER_ATTACHMENT_RED_SIZE)"),
-            FramebufferAttachmentParameterName::FRAMEBUFFER_ATTACHMENT_OBJECT_NAME => write!(fmt, "FramebufferAttachmentParameterName(FRAMEBUFFER_ATTACHMENT_OBJECT_NAME)"),
-            FramebufferAttachmentParameterName::FRAMEBUFFER_ATTACHMENT_LAYERED => write!(fmt, "FramebufferAttachmentParameterName(FRAMEBUFFER_ATTACHMENT_LAYERED)"),
-            FramebufferAttachmentParameterName::FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE => write!(fmt, "FramebufferAttachmentParameterName(FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE)"),
+            FramebufferAttachmentParameterName::FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE => write!(fmt, "FramebufferAttachmentParameterName(FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE)"),
+            FramebufferAttachmentParameterName::FRAMEBUFFER_ATTACHMENT_BLUE_SIZE => write!(fmt, "FramebufferAttachmentParameterName(FRAMEBUFFER_ATTACHMENT_BLUE_SIZE)"),
             FramebufferAttachmentParameterName::FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING => write!(fmt, "FramebufferAttachmentParameterName(FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING)"),
             FramebufferAttachmentParameterName::FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE => write!(fmt, "FramebufferAttachmentParameterName(FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE)"),
-            FramebufferAttachmentParameterName::FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER => write!(fmt, "FramebufferAttachmentParameterName(FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER)"),
-            FramebufferAttachmentParameterName::FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE => write!(fmt, "FramebufferAttachmentParameterName(FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE)"),
+            FramebufferAttachmentParameterName::FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE => write!(fmt, "FramebufferAttachmentParameterName(FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE)"),
             FramebufferAttachmentParameterName::FRAMEBUFFER_ATTACHMENT_GREEN_SIZE => write!(fmt, "FramebufferAttachmentParameterName(FRAMEBUFFER_ATTACHMENT_GREEN_SIZE)"),
-            FramebufferAttachmentParameterName::FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE => write!(fmt, "FramebufferAttachmentParameterName(FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE)"),
+            FramebufferAttachmentParameterName::FRAMEBUFFER_ATTACHMENT_LAYERED => write!(fmt, "FramebufferAttachmentParameterName(FRAMEBUFFER_ATTACHMENT_LAYERED)"),
+            FramebufferAttachmentParameterName::FRAMEBUFFER_ATTACHMENT_OBJECT_NAME => write!(fmt, "FramebufferAttachmentParameterName(FRAMEBUFFER_ATTACHMENT_OBJECT_NAME)"),
+            FramebufferAttachmentParameterName::FRAMEBUFFER_ATTACHMENT_RED_SIZE => write!(fmt, "FramebufferAttachmentParameterName(FRAMEBUFFER_ATTACHMENT_RED_SIZE)"),
+            FramebufferAttachmentParameterName::FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE => write!(fmt, "FramebufferAttachmentParameterName(FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE)"),
+            FramebufferAttachmentParameterName::FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE => write!(fmt, "FramebufferAttachmentParameterName(FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE)"),
+            FramebufferAttachmentParameterName::FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER => write!(fmt, "FramebufferAttachmentParameterName(FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER)"),
             FramebufferAttachmentParameterName::FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL => write!(fmt, "FramebufferAttachmentParameterName(FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL)"),
-            FramebufferAttachmentParameterName::FRAMEBUFFER_ATTACHMENT_BLUE_SIZE => write!(fmt, "FramebufferAttachmentParameterName(FRAMEBUFFER_ATTACHMENT_BLUE_SIZE)"),
             _ => write!(fmt, "FramebufferAttachmentParameterName({})", self.0),
         }
     }
@@ -6464,7 +6464,7 @@ impl ::std::fmt::Debug for FramebufferAttachmentParameterName {
 impl_enum_traits!(FramebufferAttachmentParameterName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct FramebufferFetchNoncoherent(pub types::GLenum);
 
 impl FramebufferFetchNoncoherent {
@@ -6481,7 +6481,7 @@ impl ::std::fmt::Debug for FramebufferFetchNoncoherent {
 impl_enum_traits!(FramebufferFetchNoncoherent);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct FramebufferParameterName(pub types::GLenum);
 
 impl FramebufferParameterName {
@@ -6495,11 +6495,11 @@ impl FramebufferParameterName {
 impl ::std::fmt::Debug for FramebufferParameterName {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            FramebufferParameterName::FRAMEBUFFER_DEFAULT_WIDTH => write!(fmt, "FramebufferParameterName(FRAMEBUFFER_DEFAULT_WIDTH)"),
+            FramebufferParameterName::FRAMEBUFFER_DEFAULT_FIXED_SAMPLE_LOCATIONS => write!(fmt, "FramebufferParameterName(FRAMEBUFFER_DEFAULT_FIXED_SAMPLE_LOCATIONS)"),
             FramebufferParameterName::FRAMEBUFFER_DEFAULT_HEIGHT => write!(fmt, "FramebufferParameterName(FRAMEBUFFER_DEFAULT_HEIGHT)"),
             FramebufferParameterName::FRAMEBUFFER_DEFAULT_LAYERS => write!(fmt, "FramebufferParameterName(FRAMEBUFFER_DEFAULT_LAYERS)"),
-            FramebufferParameterName::FRAMEBUFFER_DEFAULT_FIXED_SAMPLE_LOCATIONS => write!(fmt, "FramebufferParameterName(FRAMEBUFFER_DEFAULT_FIXED_SAMPLE_LOCATIONS)"),
             FramebufferParameterName::FRAMEBUFFER_DEFAULT_SAMPLES => write!(fmt, "FramebufferParameterName(FRAMEBUFFER_DEFAULT_SAMPLES)"),
+            FramebufferParameterName::FRAMEBUFFER_DEFAULT_WIDTH => write!(fmt, "FramebufferParameterName(FRAMEBUFFER_DEFAULT_WIDTH)"),
             _ => write!(fmt, "FramebufferParameterName({})", self.0),
         }
     }
@@ -6508,7 +6508,7 @@ impl ::std::fmt::Debug for FramebufferParameterName {
 impl_enum_traits!(FramebufferParameterName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct FramebufferStatus(pub types::GLenum);
 
 impl FramebufferStatus {
@@ -6526,15 +6526,15 @@ impl FramebufferStatus {
 impl ::std::fmt::Debug for FramebufferStatus {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            FramebufferStatus::FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT => write!(fmt, "FramebufferStatus(FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT)"),
-            FramebufferStatus::FRAMEBUFFER_INCOMPLETE_MULTISAMPLE => write!(fmt, "FramebufferStatus(FRAMEBUFFER_INCOMPLETE_MULTISAMPLE)"),
-            FramebufferStatus::FRAMEBUFFER_UNSUPPORTED => write!(fmt, "FramebufferStatus(FRAMEBUFFER_UNSUPPORTED)"),
+            FramebufferStatus::FRAMEBUFFER_COMPLETE => write!(fmt, "FramebufferStatus(FRAMEBUFFER_COMPLETE)"),
+            FramebufferStatus::FRAMEBUFFER_INCOMPLETE_ATTACHMENT => write!(fmt, "FramebufferStatus(FRAMEBUFFER_INCOMPLETE_ATTACHMENT)"),
             FramebufferStatus::FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER => write!(fmt, "FramebufferStatus(FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER)"),
             FramebufferStatus::FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS => write!(fmt, "FramebufferStatus(FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS)"),
-            FramebufferStatus::FRAMEBUFFER_COMPLETE => write!(fmt, "FramebufferStatus(FRAMEBUFFER_COMPLETE)"),
+            FramebufferStatus::FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT => write!(fmt, "FramebufferStatus(FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT)"),
+            FramebufferStatus::FRAMEBUFFER_INCOMPLETE_MULTISAMPLE => write!(fmt, "FramebufferStatus(FRAMEBUFFER_INCOMPLETE_MULTISAMPLE)"),
             FramebufferStatus::FRAMEBUFFER_INCOMPLETE_READ_BUFFER => write!(fmt, "FramebufferStatus(FRAMEBUFFER_INCOMPLETE_READ_BUFFER)"),
             FramebufferStatus::FRAMEBUFFER_UNDEFINED => write!(fmt, "FramebufferStatus(FRAMEBUFFER_UNDEFINED)"),
-            FramebufferStatus::FRAMEBUFFER_INCOMPLETE_ATTACHMENT => write!(fmt, "FramebufferStatus(FRAMEBUFFER_INCOMPLETE_ATTACHMENT)"),
+            FramebufferStatus::FRAMEBUFFER_UNSUPPORTED => write!(fmt, "FramebufferStatus(FRAMEBUFFER_UNSUPPORTED)"),
             _ => write!(fmt, "FramebufferStatus({})", self.0),
         }
     }
@@ -6543,7 +6543,7 @@ impl ::std::fmt::Debug for FramebufferStatus {
 impl_enum_traits!(FramebufferStatus);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct FramebufferTarget(pub types::GLenum);
 
 impl FramebufferTarget {
@@ -6555,8 +6555,8 @@ impl FramebufferTarget {
 impl ::std::fmt::Debug for FramebufferTarget {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            FramebufferTarget::FRAMEBUFFER => write!(fmt, "FramebufferTarget(FRAMEBUFFER)"),
             FramebufferTarget::DRAW_FRAMEBUFFER => write!(fmt, "FramebufferTarget(DRAW_FRAMEBUFFER)"),
+            FramebufferTarget::FRAMEBUFFER => write!(fmt, "FramebufferTarget(FRAMEBUFFER)"),
             FramebufferTarget::READ_FRAMEBUFFER => write!(fmt, "FramebufferTarget(READ_FRAMEBUFFER)"),
             _ => write!(fmt, "FramebufferTarget({})", self.0),
         }
@@ -6566,7 +6566,7 @@ impl ::std::fmt::Debug for FramebufferTarget {
 impl_enum_traits!(FramebufferTarget);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct FrontFaceDirection(pub types::GLenum);
 
 impl FrontFaceDirection {
@@ -6577,8 +6577,8 @@ impl FrontFaceDirection {
 impl ::std::fmt::Debug for FrontFaceDirection {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            FrontFaceDirection::CW => write!(fmt, "FrontFaceDirection(CW)"),
             FrontFaceDirection::CCW => write!(fmt, "FrontFaceDirection(CCW)"),
+            FrontFaceDirection::CW => write!(fmt, "FrontFaceDirection(CW)"),
             _ => write!(fmt, "FrontFaceDirection({})", self.0),
         }
     }
@@ -6587,7 +6587,7 @@ impl ::std::fmt::Debug for FrontFaceDirection {
 impl_enum_traits!(FrontFaceDirection);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct GetColorTableParameterPNameSGI(pub types::GLenum);
 
 impl GetColorTableParameterPNameSGI {
@@ -6604,7 +6604,7 @@ impl ::std::fmt::Debug for GetColorTableParameterPNameSGI {
 impl_enum_traits!(GetColorTableParameterPNameSGI);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct GetConvolutionParameter(pub types::GLenum);
 
 impl GetConvolutionParameter {
@@ -6621,7 +6621,7 @@ impl ::std::fmt::Debug for GetConvolutionParameter {
 impl_enum_traits!(GetConvolutionParameter);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct GetFramebufferParameter(pub types::GLenum);
 
 impl GetFramebufferParameter {
@@ -6641,17 +6641,17 @@ impl GetFramebufferParameter {
 impl ::std::fmt::Debug for GetFramebufferParameter {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            GetFramebufferParameter::SAMPLES => write!(fmt, "GetFramebufferParameter(SAMPLES)"),
-            GetFramebufferParameter::IMPLEMENTATION_COLOR_READ_TYPE => write!(fmt, "GetFramebufferParameter(IMPLEMENTATION_COLOR_READ_TYPE)"),
+            GetFramebufferParameter::DOUBLEBUFFER => write!(fmt, "GetFramebufferParameter(DOUBLEBUFFER)"),
+            GetFramebufferParameter::FRAMEBUFFER_DEFAULT_FIXED_SAMPLE_LOCATIONS => write!(fmt, "GetFramebufferParameter(FRAMEBUFFER_DEFAULT_FIXED_SAMPLE_LOCATIONS)"),
+            GetFramebufferParameter::FRAMEBUFFER_DEFAULT_HEIGHT => write!(fmt, "GetFramebufferParameter(FRAMEBUFFER_DEFAULT_HEIGHT)"),
+            GetFramebufferParameter::FRAMEBUFFER_DEFAULT_LAYERS => write!(fmt, "GetFramebufferParameter(FRAMEBUFFER_DEFAULT_LAYERS)"),
+            GetFramebufferParameter::FRAMEBUFFER_DEFAULT_SAMPLES => write!(fmt, "GetFramebufferParameter(FRAMEBUFFER_DEFAULT_SAMPLES)"),
             GetFramebufferParameter::FRAMEBUFFER_DEFAULT_WIDTH => write!(fmt, "GetFramebufferParameter(FRAMEBUFFER_DEFAULT_WIDTH)"),
             GetFramebufferParameter::IMPLEMENTATION_COLOR_READ_FORMAT => write!(fmt, "GetFramebufferParameter(IMPLEMENTATION_COLOR_READ_FORMAT)"),
-            GetFramebufferParameter::FRAMEBUFFER_DEFAULT_LAYERS => write!(fmt, "GetFramebufferParameter(FRAMEBUFFER_DEFAULT_LAYERS)"),
-            GetFramebufferParameter::STEREO => write!(fmt, "GetFramebufferParameter(STEREO)"),
+            GetFramebufferParameter::IMPLEMENTATION_COLOR_READ_TYPE => write!(fmt, "GetFramebufferParameter(IMPLEMENTATION_COLOR_READ_TYPE)"),
+            GetFramebufferParameter::SAMPLES => write!(fmt, "GetFramebufferParameter(SAMPLES)"),
             GetFramebufferParameter::SAMPLE_BUFFERS => write!(fmt, "GetFramebufferParameter(SAMPLE_BUFFERS)"),
-            GetFramebufferParameter::FRAMEBUFFER_DEFAULT_HEIGHT => write!(fmt, "GetFramebufferParameter(FRAMEBUFFER_DEFAULT_HEIGHT)"),
-            GetFramebufferParameter::FRAMEBUFFER_DEFAULT_SAMPLES => write!(fmt, "GetFramebufferParameter(FRAMEBUFFER_DEFAULT_SAMPLES)"),
-            GetFramebufferParameter::FRAMEBUFFER_DEFAULT_FIXED_SAMPLE_LOCATIONS => write!(fmt, "GetFramebufferParameter(FRAMEBUFFER_DEFAULT_FIXED_SAMPLE_LOCATIONS)"),
-            GetFramebufferParameter::DOUBLEBUFFER => write!(fmt, "GetFramebufferParameter(DOUBLEBUFFER)"),
+            GetFramebufferParameter::STEREO => write!(fmt, "GetFramebufferParameter(STEREO)"),
             _ => write!(fmt, "GetFramebufferParameter({})", self.0),
         }
     }
@@ -6660,7 +6660,7 @@ impl ::std::fmt::Debug for GetFramebufferParameter {
 impl_enum_traits!(GetFramebufferParameter);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct GetHistogramParameterPNameEXT(pub types::GLenum);
 
 impl GetHistogramParameterPNameEXT {
@@ -6677,7 +6677,7 @@ impl ::std::fmt::Debug for GetHistogramParameterPNameEXT {
 impl_enum_traits!(GetHistogramParameterPNameEXT);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct GetMapQuery(pub types::GLenum);
 
 impl GetMapQuery {
@@ -6694,7 +6694,7 @@ impl ::std::fmt::Debug for GetMapQuery {
 impl_enum_traits!(GetMapQuery);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct GetMinmaxParameterPNameEXT(pub types::GLenum);
 
 impl GetMinmaxParameterPNameEXT {
@@ -6711,7 +6711,7 @@ impl ::std::fmt::Debug for GetMinmaxParameterPNameEXT {
 impl_enum_traits!(GetMinmaxParameterPNameEXT);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct GetPName(pub types::GLenum);
 
 impl GetPName {
@@ -6955,241 +6955,241 @@ impl GetPName {
 impl ::std::fmt::Debug for GetPName {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            GetPName::PROGRAM_BINARY_FORMATS => write!(fmt, "GetPName(PROGRAM_BINARY_FORMATS)"),
-            GetPName::MAX_COMPUTE_ATOMIC_COUNTERS => write!(fmt, "GetPName(MAX_COMPUTE_ATOMIC_COUNTERS)"),
-            GetPName::MAX_GEOMETRY_TEXTURE_IMAGE_UNITS => write!(fmt, "GetPName(MAX_GEOMETRY_TEXTURE_IMAGE_UNITS)"),
-            GetPName::TEXTURE_BINDING_RECTANGLE => write!(fmt, "GetPName(TEXTURE_BINDING_RECTANGLE)"),
-            GetPName::MAX_SAMPLE_MASK_WORDS => write!(fmt, "GetPName(MAX_SAMPLE_MASK_WORDS)"),
-            GetPName::PACK_SKIP_ROWS => write!(fmt, "GetPName(PACK_SKIP_ROWS)"),
-            GetPName::IMPLEMENTATION_COLOR_READ_TYPE => write!(fmt, "GetPName(IMPLEMENTATION_COLOR_READ_TYPE)"),
-            GetPName::MAX_COMPUTE_WORK_GROUP_COUNT => write!(fmt, "GetPName(MAX_COMPUTE_WORK_GROUP_COUNT)"),
-            GetPName::MAX_RECTANGLE_TEXTURE_SIZE => write!(fmt, "GetPName(MAX_RECTANGLE_TEXTURE_SIZE)"),
-            GetPName::MAX_TEXTURE_SIZE => write!(fmt, "GetPName(MAX_TEXTURE_SIZE)"),
-            GetPName::PACK_IMAGE_HEIGHT => write!(fmt, "GetPName(PACK_IMAGE_HEIGHT)"),
-            GetPName::MAX_DUAL_SOURCE_DRAW_BUFFERS => write!(fmt, "GetPName(MAX_DUAL_SOURCE_DRAW_BUFFERS)"),
-            GetPName::MAX_VERTEX_UNIFORM_BLOCKS => write!(fmt, "GetPName(MAX_VERTEX_UNIFORM_BLOCKS)"),
-            GetPName::TEXTURE_1D => write!(fmt, "GetPName(TEXTURE_1D)"),
-            GetPName::ELEMENT_ARRAY_BUFFER_BINDING => write!(fmt, "GetPName(ELEMENT_ARRAY_BUFFER_BINDING)"),
-            GetPName::SMOOTH_LINE_WIDTH_GRANULARITY => write!(fmt, "GetPName(SMOOTH_LINE_WIDTH_GRANULARITY)"),
-            GetPName::TEXTURE_BINDING_2D_ARRAY => write!(fmt, "GetPName(TEXTURE_BINDING_2D_ARRAY)"),
-            GetPName::TEXTURE_BINDING_1D => write!(fmt, "GetPName(TEXTURE_BINDING_1D)"),
-            GetPName::MAX_VERTEX_OUTPUT_COMPONENTS => write!(fmt, "GetPName(MAX_VERTEX_OUTPUT_COMPONENTS)"),
-            GetPName::MAX_FRAGMENT_UNIFORM_COMPONENTS => write!(fmt, "GetPName(MAX_FRAGMENT_UNIFORM_COMPONENTS)"),
-            GetPName::BLEND_EQUATION_ALPHA => write!(fmt, "GetPName(BLEND_EQUATION_ALPHA)"),
-            GetPName::MAX_DRAW_BUFFERS => write!(fmt, "GetPName(MAX_DRAW_BUFFERS)"),
-            GetPName::STENCIL_WRITEMASK => write!(fmt, "GetPName(STENCIL_WRITEMASK)"),
-            GetPName::MAX_COLOR_TEXTURE_SAMPLES => write!(fmt, "GetPName(MAX_COLOR_TEXTURE_SAMPLES)"),
-            GetPName::SAMPLE_BUFFERS => write!(fmt, "GetPName(SAMPLE_BUFFERS)"),
-            GetPName::SAMPLE_COVERAGE_VALUE => write!(fmt, "GetPName(SAMPLE_COVERAGE_VALUE)"),
-            GetPName::POLYGON_OFFSET_FACTOR => write!(fmt, "GetPName(POLYGON_OFFSET_FACTOR)"),
-            GetPName::MIN_PROGRAM_TEXEL_OFFSET => write!(fmt, "GetPName(MIN_PROGRAM_TEXEL_OFFSET)"),
-            GetPName::SHADER_STORAGE_BUFFER_BINDING => write!(fmt, "GetPName(SHADER_STORAGE_BUFFER_BINDING)"),
-            GetPName::MAX_DEBUG_GROUP_STACK_DEPTH => write!(fmt, "GetPName(MAX_DEBUG_GROUP_STACK_DEPTH)"),
-            GetPName::MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS => write!(fmt, "GetPName(MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS)"),
-            GetPName::STENCIL_BACK_WRITEMASK => write!(fmt, "GetPName(STENCIL_BACK_WRITEMASK)"),
-            GetPName::MAX_VERTEX_ATTRIB_RELATIVE_OFFSET => write!(fmt, "GetPName(MAX_VERTEX_ATTRIB_RELATIVE_OFFSET)"),
-            GetPName::MAX_VIEWPORTS => write!(fmt, "GetPName(MAX_VIEWPORTS)"),
-            GetPName::STENCIL_BACK_FAIL => write!(fmt, "GetPName(STENCIL_BACK_FAIL)"),
-            GetPName::COMPRESSED_TEXTURE_FORMATS => write!(fmt, "GetPName(COMPRESSED_TEXTURE_FORMATS)"),
-            GetPName::STENCIL_BACK_PASS_DEPTH_PASS => write!(fmt, "GetPName(STENCIL_BACK_PASS_DEPTH_PASS)"),
-            GetPName::TEXTURE_BINDING_BUFFER => write!(fmt, "GetPName(TEXTURE_BINDING_BUFFER)"),
-            GetPName::MAX_COMPUTE_ATOMIC_COUNTER_BUFFERS => write!(fmt, "GetPName(MAX_COMPUTE_ATOMIC_COUNTER_BUFFERS)"),
-            GetPName::COLOR_CLEAR_VALUE => write!(fmt, "GetPName(COLOR_CLEAR_VALUE)"),
-            GetPName::PACK_ALIGNMENT => write!(fmt, "GetPName(PACK_ALIGNMENT)"),
-            GetPName::MAX_GEOMETRY_OUTPUT_COMPONENTS => write!(fmt, "GetPName(MAX_GEOMETRY_OUTPUT_COMPONENTS)"),
-            GetPName::SMOOTH_LINE_WIDTH_RANGE => write!(fmt, "GetPName(SMOOTH_LINE_WIDTH_RANGE)"),
-            GetPName::MAX_GEOMETRY_ATOMIC_COUNTERS => write!(fmt, "GetPName(MAX_GEOMETRY_ATOMIC_COUNTERS)"),
-            GetPName::MINOR_VERSION => write!(fmt, "GetPName(MINOR_VERSION)"),
-            GetPName::POLYGON_OFFSET_UNITS => write!(fmt, "GetPName(POLYGON_OFFSET_UNITS)"),
-            GetPName::BLEND_EQUATION_RGB => write!(fmt, "GetPName(BLEND_EQUATION_RGB)"),
-            GetPName::MAX_TESS_EVALUATION_SHADER_STORAGE_BLOCKS => write!(fmt, "GetPName(MAX_TESS_EVALUATION_SHADER_STORAGE_BLOCKS)"),
-            GetPName::MAX_FRAMEBUFFER_HEIGHT => write!(fmt, "GetPName(MAX_FRAMEBUFFER_HEIGHT)"),
-            GetPName::SUBPIXEL_BITS => write!(fmt, "GetPName(SUBPIXEL_BITS)"),
-            GetPName::MAX_CUBE_MAP_TEXTURE_SIZE => write!(fmt, "GetPName(MAX_CUBE_MAP_TEXTURE_SIZE)"),
-            GetPName::CULL_FACE => write!(fmt, "GetPName(CULL_FACE)"),
-            GetPName::VERTEX_BINDING_STRIDE => write!(fmt, "GetPName(VERTEX_BINDING_STRIDE)"),
-            GetPName::MAX_FRAGMENT_UNIFORM_BLOCKS => write!(fmt, "GetPName(MAX_FRAGMENT_UNIFORM_BLOCKS)"),
-            GetPName::TEXTURE_BINDING_CUBE_MAP => write!(fmt, "GetPName(TEXTURE_BINDING_CUBE_MAP)"),
-            GetPName::TRANSFORM_FEEDBACK_BUFFER_BINDING => write!(fmt, "GetPName(TRANSFORM_FEEDBACK_BUFFER_BINDING)"),
-            GetPName::TEXTURE_BINDING_2D_MULTISAMPLE_ARRAY => write!(fmt, "GetPName(TEXTURE_BINDING_2D_MULTISAMPLE_ARRAY)"),
-            GetPName::DITHER => write!(fmt, "GetPName(DITHER)"),
-            GetPName::MAX_COMPUTE_WORK_GROUP_SIZE => write!(fmt, "GetPName(MAX_COMPUTE_WORK_GROUP_SIZE)"),
-            GetPName::MAX_FRAGMENT_UNIFORM_VECTORS => write!(fmt, "GetPName(MAX_FRAGMENT_UNIFORM_VECTORS)"),
-            GetPName::MAX_TESS_CONTROL_ATOMIC_COUNTERS => write!(fmt, "GetPName(MAX_TESS_CONTROL_ATOMIC_COUNTERS)"),
-            GetPName::MAX_COMBINED_SHADER_STORAGE_BLOCKS => write!(fmt, "GetPName(MAX_COMBINED_SHADER_STORAGE_BLOCKS)"),
-            GetPName::FRONT_FACE => write!(fmt, "GetPName(FRONT_FACE)"),
-            GetPName::MAX_UNIFORM_LOCATIONS => write!(fmt, "GetPName(MAX_UNIFORM_LOCATIONS)"),
-            GetPName::VIEWPORT_BOUNDS_RANGE => write!(fmt, "GetPName(VIEWPORT_BOUNDS_RANGE)"),
-            GetPName::MAX_VERTEX_ATTRIBS => write!(fmt, "GetPName(MAX_VERTEX_ATTRIBS)"),
-            GetPName::LAYER_PROVOKING_VERTEX => write!(fmt, "GetPName(LAYER_PROVOKING_VERTEX)"),
             GetPName::ACTIVE_TEXTURE => write!(fmt, "GetPName(ACTIVE_TEXTURE)"),
-            GetPName::NUM_COMPRESSED_TEXTURE_FORMATS => write!(fmt, "GetPName(NUM_COMPRESSED_TEXTURE_FORMATS)"),
-            GetPName::MAX_VERTEX_ATTRIB_BINDINGS => write!(fmt, "GetPName(MAX_VERTEX_ATTRIB_BINDINGS)"),
-            GetPName::DRAW_FRAMEBUFFER_BINDING => write!(fmt, "GetPName(DRAW_FRAMEBUFFER_BINDING)"),
-            GetPName::MAX_RENDERBUFFER_SIZE => write!(fmt, "GetPName(MAX_RENDERBUFFER_SIZE)"),
-            GetPName::STENCIL_BACK_VALUE_MASK => write!(fmt, "GetPName(STENCIL_BACK_VALUE_MASK)"),
-            GetPName::MAX_GEOMETRY_SHADER_STORAGE_BLOCKS => write!(fmt, "GetPName(MAX_GEOMETRY_SHADER_STORAGE_BLOCKS)"),
-            GetPName::TEXTURE_COMPRESSION_HINT => write!(fmt, "GetPName(TEXTURE_COMPRESSION_HINT)"),
-            GetPName::DISPATCH_INDIRECT_BUFFER_BINDING => write!(fmt, "GetPName(DISPATCH_INDIRECT_BUFFER_BINDING)"),
-            GetPName::BLEND => write!(fmt, "GetPName(BLEND)"),
-            GetPName::POLYGON_SMOOTH_HINT => write!(fmt, "GetPName(POLYGON_SMOOTH_HINT)"),
-            GetPName::POINT_SIZE_GRANULARITY => write!(fmt, "GetPName(POINT_SIZE_GRANULARITY)"),
-            GetPName::MAX_FRAGMENT_ATOMIC_COUNTERS => write!(fmt, "GetPName(MAX_FRAGMENT_ATOMIC_COUNTERS)"),
-            GetPName::MAX_COMPUTE_UNIFORM_BLOCKS => write!(fmt, "GetPName(MAX_COMPUTE_UNIFORM_BLOCKS)"),
-            GetPName::UNPACK_IMAGE_HEIGHT => write!(fmt, "GetPName(UNPACK_IMAGE_HEIGHT)"),
-            GetPName::VIEWPORT => write!(fmt, "GetPName(VIEWPORT)"),
-            GetPName::MAX_VERTEX_TEXTURE_IMAGE_UNITS => write!(fmt, "GetPName(MAX_VERTEX_TEXTURE_IMAGE_UNITS)"),
-            GetPName::POLYGON_OFFSET_FILL => write!(fmt, "GetPName(POLYGON_OFFSET_FILL)"),
-            GetPName::STENCIL_REF => write!(fmt, "GetPName(STENCIL_REF)"),
-            GetPName::POINT_SIZE_RANGE => write!(fmt, "GetPName(POINT_SIZE_RANGE)"),
-            GetPName::MAX_COMBINED_TEXTURE_IMAGE_UNITS => write!(fmt, "GetPName(MAX_COMBINED_TEXTURE_IMAGE_UNITS)"),
-            GetPName::TIMESTAMP => write!(fmt, "GetPName(TIMESTAMP)"),
-            GetPName::UNIFORM_BUFFER_SIZE => write!(fmt, "GetPName(UNIFORM_BUFFER_SIZE)"),
-            GetPName::STEREO => write!(fmt, "GetPName(STEREO)"),
-            GetPName::MAX_3D_TEXTURE_SIZE => write!(fmt, "GetPName(MAX_3D_TEXTURE_SIZE)"),
-            GetPName::BLEND_SRC_ALPHA => write!(fmt, "GetPName(BLEND_SRC_ALPHA)"),
-            GetPName::MAX_VERTEX_UNIFORM_COMPONENTS => write!(fmt, "GetPName(MAX_VERTEX_UNIFORM_COMPONENTS)"),
-            GetPName::BLEND_SRC_RGB => write!(fmt, "GetPName(BLEND_SRC_RGB)"),
-            GetPName::MAX_ELEMENT_INDEX => write!(fmt, "GetPName(MAX_ELEMENT_INDEX)"),
-            GetPName::MAX_VERTEX_ATOMIC_COUNTERS => write!(fmt, "GetPName(MAX_VERTEX_ATOMIC_COUNTERS)"),
-            GetPName::SCISSOR_BOX => write!(fmt, "GetPName(SCISSOR_BOX)"),
-            GetPName::UNIFORM_BUFFER_OFFSET_ALIGNMENT => write!(fmt, "GetPName(UNIFORM_BUFFER_OFFSET_ALIGNMENT)"),
-            GetPName::TEXTURE_2D => write!(fmt, "GetPName(TEXTURE_2D)"),
-            GetPName::UNPACK_SKIP_PIXELS => write!(fmt, "GetPName(UNPACK_SKIP_PIXELS)"),
-            GetPName::BLEND_DST_ALPHA => write!(fmt, "GetPName(BLEND_DST_ALPHA)"),
-            GetPName::MAX_UNIFORM_BLOCK_SIZE => write!(fmt, "GetPName(MAX_UNIFORM_BLOCK_SIZE)"),
-            GetPName::MAX_VARYING_VECTORS => write!(fmt, "GetPName(MAX_VARYING_VECTORS)"),
-            GetPName::DRAW_BUFFER => write!(fmt, "GetPName(DRAW_BUFFER)"),
-            GetPName::MAX_FRAMEBUFFER_LAYERS => write!(fmt, "GetPName(MAX_FRAMEBUFFER_LAYERS)"),
-            GetPName::MAX_TESS_EVALUATION_ATOMIC_COUNTERS => write!(fmt, "GetPName(MAX_TESS_EVALUATION_ATOMIC_COUNTERS)"),
-            GetPName::LINE_WIDTH_RANGE => write!(fmt, "GetPName(LINE_WIDTH_RANGE)"),
-            GetPName::CONTEXT_FLAGS => write!(fmt, "GetPName(CONTEXT_FLAGS)"),
-            GetPName::PACK_SKIP_PIXELS => write!(fmt, "GetPName(PACK_SKIP_PIXELS)"),
-            GetPName::MAX_COMBINED_UNIFORM_BLOCKS => write!(fmt, "GetPName(MAX_COMBINED_UNIFORM_BLOCKS)"),
-            GetPName::POLYGON_OFFSET_POINT => write!(fmt, "GetPName(POLYGON_OFFSET_POINT)"),
-            GetPName::MAX_FRAGMENT_INPUT_COMPONENTS => write!(fmt, "GetPName(MAX_FRAGMENT_INPUT_COMPONENTS)"),
-            GetPName::UNIFORM_BUFFER_BINDING => write!(fmt, "GetPName(UNIFORM_BUFFER_BINDING)"),
-            GetPName::STENCIL_BACK_PASS_DEPTH_FAIL => write!(fmt, "GetPName(STENCIL_BACK_PASS_DEPTH_FAIL)"),
-            GetPName::MAX_COMPUTE_TEXTURE_IMAGE_UNITS => write!(fmt, "GetPName(MAX_COMPUTE_TEXTURE_IMAGE_UNITS)"),
-            GetPName::TEXTURE_BINDING_2D => write!(fmt, "GetPName(TEXTURE_BINDING_2D)"),
-            GetPName::PROVOKING_VERTEX => write!(fmt, "GetPName(PROVOKING_VERTEX)"),
-            GetPName::MAX_VARYING_FLOATS => write!(fmt, "GetPName(MAX_VARYING_FLOATS)"),
-            GetPName::STENCIL_FUNC => write!(fmt, "GetPName(STENCIL_FUNC)"),
-            GetPName::MAX_VARYING_COMPONENTS => write!(fmt, "GetPName(MAX_VARYING_COMPONENTS)"),
-            GetPName::MAX_TEXTURE_BUFFER_SIZE => write!(fmt, "GetPName(MAX_TEXTURE_BUFFER_SIZE)"),
-            GetPName::VERTEX_ARRAY => write!(fmt, "GetPName(VERTEX_ARRAY)"),
-            GetPName::MAX_COMBINED_COMPUTE_UNIFORM_COMPONENTS => write!(fmt, "GetPName(MAX_COMBINED_COMPUTE_UNIFORM_COMPONENTS)"),
-            GetPName::STENCIL_PASS_DEPTH_FAIL => write!(fmt, "GetPName(STENCIL_PASS_DEPTH_FAIL)"),
             GetPName::ALIASED_LINE_WIDTH_RANGE => write!(fmt, "GetPName(ALIASED_LINE_WIDTH_RANGE)"),
-            GetPName::MAX_DEPTH_TEXTURE_SAMPLES => write!(fmt, "GetPName(MAX_DEPTH_TEXTURE_SAMPLES)"),
-            GetPName::SHADER_STORAGE_BUFFER_START => write!(fmt, "GetPName(SHADER_STORAGE_BUFFER_START)"),
-            GetPName::TEXTURE_BUFFER_OFFSET_ALIGNMENT => write!(fmt, "GetPName(TEXTURE_BUFFER_OFFSET_ALIGNMENT)"),
-            GetPName::MAX_TESS_CONTROL_SHADER_STORAGE_BLOCKS => write!(fmt, "GetPName(MAX_TESS_CONTROL_SHADER_STORAGE_BLOCKS)"),
-            GetPName::VERTEX_BINDING_OFFSET => write!(fmt, "GetPName(VERTEX_BINDING_OFFSET)"),
-            GetPName::PACK_SWAP_BYTES => write!(fmt, "GetPName(PACK_SWAP_BYTES)"),
-            GetPName::PACK_LSB_FIRST => write!(fmt, "GetPName(PACK_LSB_FIRST)"),
-            GetPName::READ_FRAMEBUFFER_BINDING => write!(fmt, "GetPName(READ_FRAMEBUFFER_BINDING)"),
-            GetPName::DEPTH_RANGE => write!(fmt, "GetPName(DEPTH_RANGE)"),
-            GetPName::PROGRAM_PIPELINE_BINDING => write!(fmt, "GetPName(PROGRAM_PIPELINE_BINDING)"),
-            GetPName::UNPACK_SKIP_ROWS => write!(fmt, "GetPName(UNPACK_SKIP_ROWS)"),
-            GetPName::PACK_ROW_LENGTH => write!(fmt, "GetPName(PACK_ROW_LENGTH)"),
-            GetPName::PIXEL_PACK_BUFFER_BINDING => write!(fmt, "GetPName(PIXEL_PACK_BUFFER_BINDING)"),
-            GetPName::MAX_FRAMEBUFFER_SAMPLES => write!(fmt, "GetPName(MAX_FRAMEBUFFER_SAMPLES)"),
-            GetPName::COLOR_WRITEMASK => write!(fmt, "GetPName(COLOR_WRITEMASK)"),
-            GetPName::NUM_EXTENSIONS => write!(fmt, "GetPName(NUM_EXTENSIONS)"),
-            GetPName::POINT_SIZE => write!(fmt, "GetPName(POINT_SIZE)"),
-            GetPName::LINE_SMOOTH_HINT => write!(fmt, "GetPName(LINE_SMOOTH_HINT)"),
-            GetPName::MAX_VERTEX_SHADER_STORAGE_BLOCKS => write!(fmt, "GetPName(MAX_VERTEX_SHADER_STORAGE_BLOCKS)"),
-            GetPName::POLYGON_SMOOTH => write!(fmt, "GetPName(POLYGON_SMOOTH)"),
-            GetPName::MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS => write!(fmt, "GetPName(MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS)"),
-            GetPName::UNIFORM_BUFFER_START => write!(fmt, "GetPName(UNIFORM_BUFFER_START)"),
-            GetPName::LINE_WIDTH_GRANULARITY => write!(fmt, "GetPName(LINE_WIDTH_GRANULARITY)"),
-            GetPName::NUM_SHADER_BINARY_FORMATS => write!(fmt, "GetPName(NUM_SHADER_BINARY_FORMATS)"),
-            GetPName::STENCIL_PASS_DEPTH_PASS => write!(fmt, "GetPName(STENCIL_PASS_DEPTH_PASS)"),
-            GetPName::FRAGMENT_SHADER_DERIVATIVE_HINT => write!(fmt, "GetPName(FRAGMENT_SHADER_DERIVATIVE_HINT)"),
-            GetPName::PIXEL_UNPACK_BUFFER_BINDING => write!(fmt, "GetPName(PIXEL_UNPACK_BUFFER_BINDING)"),
-            GetPName::VIEWPORT_SUBPIXEL_BITS => write!(fmt, "GetPName(VIEWPORT_SUBPIXEL_BITS)"),
-            GetPName::CURRENT_PROGRAM => write!(fmt, "GetPName(CURRENT_PROGRAM)"),
-            GetPName::DEPTH_CLEAR_VALUE => write!(fmt, "GetPName(DEPTH_CLEAR_VALUE)"),
-            GetPName::MAJOR_VERSION => write!(fmt, "GetPName(MAJOR_VERSION)"),
-            GetPName::DEBUG_GROUP_STACK_DEPTH => write!(fmt, "GetPName(DEBUG_GROUP_STACK_DEPTH)"),
-            GetPName::SHADER_COMPILER => write!(fmt, "GetPName(SHADER_COMPILER)"),
-            GetPName::UNPACK_ALIGNMENT => write!(fmt, "GetPName(UNPACK_ALIGNMENT)"),
-            GetPName::DEPTH_TEST => write!(fmt, "GetPName(DEPTH_TEST)"),
-            GetPName::UNPACK_ROW_LENGTH => write!(fmt, "GetPName(UNPACK_ROW_LENGTH)"),
-            GetPName::STENCIL_BACK_FUNC => write!(fmt, "GetPName(STENCIL_BACK_FUNC)"),
-            GetPName::SHADER_STORAGE_BUFFER_OFFSET_ALIGNMENT => write!(fmt, "GetPName(SHADER_STORAGE_BUFFER_OFFSET_ALIGNMENT)"),
-            GetPName::BLEND_DST_RGB => write!(fmt, "GetPName(BLEND_DST_RGB)"),
-            GetPName::MAX_CLIP_DISTANCES => write!(fmt, "GetPName(MAX_CLIP_DISTANCES)"),
-            GetPName::READ_BUFFER => write!(fmt, "GetPName(READ_BUFFER)"),
-            GetPName::MAX_COMBINED_ATOMIC_COUNTERS => write!(fmt, "GetPName(MAX_COMBINED_ATOMIC_COUNTERS)"),
-            GetPName::BLEND_DST => write!(fmt, "GetPName(BLEND_DST)"),
-            GetPName::TEXTURE_BINDING_3D => write!(fmt, "GetPName(TEXTURE_BINDING_3D)"),
-            GetPName::PRIMITIVE_RESTART_INDEX => write!(fmt, "GetPName(PRIMITIVE_RESTART_INDEX)"),
-            GetPName::DOUBLEBUFFER => write!(fmt, "GetPName(DOUBLEBUFFER)"),
-            GetPName::MAX_COMBINED_GEOMETRY_UNIFORM_COMPONENTS => write!(fmt, "GetPName(MAX_COMBINED_GEOMETRY_UNIFORM_COMPONENTS)"),
-            GetPName::SMOOTH_POINT_SIZE_GRANULARITY => write!(fmt, "GetPName(SMOOTH_POINT_SIZE_GRANULARITY)"),
-            GetPName::NUM_PROGRAM_BINARY_FORMATS => write!(fmt, "GetPName(NUM_PROGRAM_BINARY_FORMATS)"),
-            GetPName::UNPACK_SKIP_IMAGES => write!(fmt, "GetPName(UNPACK_SKIP_IMAGES)"),
-            GetPName::SAMPLE_COVERAGE_INVERT => write!(fmt, "GetPName(SAMPLE_COVERAGE_INVERT)"),
-            GetPName::MAX_TEXTURE_LOD_BIAS => write!(fmt, "GetPName(MAX_TEXTURE_LOD_BIAS)"),
-            GetPName::STENCIL_FAIL => write!(fmt, "GetPName(STENCIL_FAIL)"),
-            GetPName::POLYGON_MODE => write!(fmt, "GetPName(POLYGON_MODE)"),
-            GetPName::MAX_VIEWPORT_DIMS => write!(fmt, "GetPName(MAX_VIEWPORT_DIMS)"),
-            GetPName::STENCIL_BACK_REF => write!(fmt, "GetPName(STENCIL_BACK_REF)"),
-            GetPName::SCISSOR_TEST => write!(fmt, "GetPName(SCISSOR_TEST)"),
-            GetPName::POLYGON_OFFSET_LINE => write!(fmt, "GetPName(POLYGON_OFFSET_LINE)"),
-            GetPName::MAX_ELEMENTS_VERTICES => write!(fmt, "GetPName(MAX_ELEMENTS_VERTICES)"),
-            GetPName::MAX_PROGRAM_TEXEL_OFFSET => write!(fmt, "GetPName(MAX_PROGRAM_TEXEL_OFFSET)"),
-            GetPName::MIN_MAP_BUFFER_ALIGNMENT => write!(fmt, "GetPName(MIN_MAP_BUFFER_ALIGNMENT)"),
-            GetPName::MAX_GEOMETRY_UNIFORM_BLOCKS => write!(fmt, "GetPName(MAX_GEOMETRY_UNIFORM_BLOCKS)"),
-            GetPName::COLOR_LOGIC_OP => write!(fmt, "GetPName(COLOR_LOGIC_OP)"),
-            GetPName::STENCIL_TEST => write!(fmt, "GetPName(STENCIL_TEST)"),
-            GetPName::MAX_LABEL_LENGTH => write!(fmt, "GetPName(MAX_LABEL_LENGTH)"),
-            GetPName::POINT_FADE_THRESHOLD_SIZE => write!(fmt, "GetPName(POINT_FADE_THRESHOLD_SIZE)"),
-            GetPName::BLEND_SRC => write!(fmt, "GetPName(BLEND_SRC)"),
-            GetPName::MAX_TEXTURE_IMAGE_UNITS => write!(fmt, "GetPName(MAX_TEXTURE_IMAGE_UNITS)"),
-            GetPName::TRANSFORM_FEEDBACK_BUFFER_SIZE => write!(fmt, "GetPName(TRANSFORM_FEEDBACK_BUFFER_SIZE)"),
-            GetPName::MAX_INTEGER_SAMPLES => write!(fmt, "GetPName(MAX_INTEGER_SAMPLES)"),
-            GetPName::MAX_COMPUTE_UNIFORM_COMPONENTS => write!(fmt, "GetPName(MAX_COMPUTE_UNIFORM_COMPONENTS)"),
-            GetPName::MAX_FRAGMENT_SHADER_STORAGE_BLOCKS => write!(fmt, "GetPName(MAX_FRAGMENT_SHADER_STORAGE_BLOCKS)"),
-            GetPName::UNPACK_LSB_FIRST => write!(fmt, "GetPName(UNPACK_LSB_FIRST)"),
-            GetPName::DEPTH_WRITEMASK => write!(fmt, "GetPName(DEPTH_WRITEMASK)"),
-            GetPName::MAX_SERVER_WAIT_TIMEOUT => write!(fmt, "GetPName(MAX_SERVER_WAIT_TIMEOUT)"),
-            GetPName::STENCIL_VALUE_MASK => write!(fmt, "GetPName(STENCIL_VALUE_MASK)"),
-            GetPName::SHADER_STORAGE_BUFFER_SIZE => write!(fmt, "GetPName(SHADER_STORAGE_BUFFER_SIZE)"),
-            GetPName::SAMPLER_BINDING => write!(fmt, "GetPName(SAMPLER_BINDING)"),
-            GetPName::MAX_FRAMEBUFFER_WIDTH => write!(fmt, "GetPName(MAX_FRAMEBUFFER_WIDTH)"),
-            GetPName::MAX_COMPUTE_WORK_GROUP_INVOCATIONS => write!(fmt, "GetPName(MAX_COMPUTE_WORK_GROUP_INVOCATIONS)"),
-            GetPName::SMOOTH_POINT_SIZE_RANGE => write!(fmt, "GetPName(SMOOTH_POINT_SIZE_RANGE)"),
-            GetPName::VERTEX_BINDING_DIVISOR => write!(fmt, "GetPName(VERTEX_BINDING_DIVISOR)"),
-            GetPName::MAX_ELEMENTS_INDICES => write!(fmt, "GetPName(MAX_ELEMENTS_INDICES)"),
-            GetPName::BLEND_COLOR => write!(fmt, "GetPName(BLEND_COLOR)"),
-            GetPName::TRANSFORM_FEEDBACK_BUFFER_START => write!(fmt, "GetPName(TRANSFORM_FEEDBACK_BUFFER_START)"),
-            GetPName::PROGRAM_POINT_SIZE => write!(fmt, "GetPName(PROGRAM_POINT_SIZE)"),
-            GetPName::MAX_UNIFORM_BUFFER_BINDINGS => write!(fmt, "GetPName(MAX_UNIFORM_BUFFER_BINDINGS)"),
-            GetPName::LINE_SMOOTH => write!(fmt, "GetPName(LINE_SMOOTH)"),
-            GetPName::LINE_WIDTH => write!(fmt, "GetPName(LINE_WIDTH)"),
-            GetPName::MAX_VERTEX_UNIFORM_VECTORS => write!(fmt, "GetPName(MAX_VERTEX_UNIFORM_VECTORS)"),
-            GetPName::UNPACK_SWAP_BYTES => write!(fmt, "GetPName(UNPACK_SWAP_BYTES)"),
-            GetPName::PACK_SKIP_IMAGES => write!(fmt, "GetPName(PACK_SKIP_IMAGES)"),
-            GetPName::VERTEX_ARRAY_BINDING => write!(fmt, "GetPName(VERTEX_ARRAY_BINDING)"),
-            GetPName::DEPTH_FUNC => write!(fmt, "GetPName(DEPTH_FUNC)"),
-            GetPName::SAMPLES => write!(fmt, "GetPName(SAMPLES)"),
-            GetPName::STENCIL_CLEAR_VALUE => write!(fmt, "GetPName(STENCIL_CLEAR_VALUE)"),
-            GetPName::MAX_GEOMETRY_INPUT_COMPONENTS => write!(fmt, "GetPName(MAX_GEOMETRY_INPUT_COMPONENTS)"),
-            GetPName::MAX_GEOMETRY_UNIFORM_COMPONENTS => write!(fmt, "GetPName(MAX_GEOMETRY_UNIFORM_COMPONENTS)"),
-            GetPName::MAX_SHADER_STORAGE_BUFFER_BINDINGS => write!(fmt, "GetPName(MAX_SHADER_STORAGE_BUFFER_BINDINGS)"),
-            GetPName::VIEWPORT_INDEX_PROVOKING_VERTEX => write!(fmt, "GetPName(VIEWPORT_INDEX_PROVOKING_VERTEX)"),
-            GetPName::IMPLEMENTATION_COLOR_READ_FORMAT => write!(fmt, "GetPName(IMPLEMENTATION_COLOR_READ_FORMAT)"),
-            GetPName::MAX_ARRAY_TEXTURE_LAYERS => write!(fmt, "GetPName(MAX_ARRAY_TEXTURE_LAYERS)"),
-            GetPName::TEXTURE_BINDING_2D_MULTISAMPLE => write!(fmt, "GetPName(TEXTURE_BINDING_2D_MULTISAMPLE)"),
-            GetPName::CULL_FACE_MODE => write!(fmt, "GetPName(CULL_FACE_MODE)"),
             GetPName::ARRAY_BUFFER_BINDING => write!(fmt, "GetPName(ARRAY_BUFFER_BINDING)"),
-            GetPName::TEXTURE_BINDING_1D_ARRAY => write!(fmt, "GetPName(TEXTURE_BINDING_1D_ARRAY)"),
+            GetPName::BLEND => write!(fmt, "GetPName(BLEND)"),
+            GetPName::BLEND_COLOR => write!(fmt, "GetPName(BLEND_COLOR)"),
+            GetPName::BLEND_DST => write!(fmt, "GetPName(BLEND_DST)"),
+            GetPName::BLEND_DST_ALPHA => write!(fmt, "GetPName(BLEND_DST_ALPHA)"),
+            GetPName::BLEND_DST_RGB => write!(fmt, "GetPName(BLEND_DST_RGB)"),
+            GetPName::BLEND_EQUATION_ALPHA => write!(fmt, "GetPName(BLEND_EQUATION_ALPHA)"),
+            GetPName::BLEND_EQUATION_RGB => write!(fmt, "GetPName(BLEND_EQUATION_RGB)"),
+            GetPName::BLEND_SRC => write!(fmt, "GetPName(BLEND_SRC)"),
+            GetPName::BLEND_SRC_ALPHA => write!(fmt, "GetPName(BLEND_SRC_ALPHA)"),
+            GetPName::BLEND_SRC_RGB => write!(fmt, "GetPName(BLEND_SRC_RGB)"),
+            GetPName::COLOR_CLEAR_VALUE => write!(fmt, "GetPName(COLOR_CLEAR_VALUE)"),
+            GetPName::COLOR_LOGIC_OP => write!(fmt, "GetPName(COLOR_LOGIC_OP)"),
+            GetPName::COLOR_WRITEMASK => write!(fmt, "GetPName(COLOR_WRITEMASK)"),
+            GetPName::COMPRESSED_TEXTURE_FORMATS => write!(fmt, "GetPName(COMPRESSED_TEXTURE_FORMATS)"),
+            GetPName::CONTEXT_FLAGS => write!(fmt, "GetPName(CONTEXT_FLAGS)"),
+            GetPName::CULL_FACE => write!(fmt, "GetPName(CULL_FACE)"),
+            GetPName::CULL_FACE_MODE => write!(fmt, "GetPName(CULL_FACE_MODE)"),
+            GetPName::CURRENT_PROGRAM => write!(fmt, "GetPName(CURRENT_PROGRAM)"),
+            GetPName::DEBUG_GROUP_STACK_DEPTH => write!(fmt, "GetPName(DEBUG_GROUP_STACK_DEPTH)"),
+            GetPName::DEPTH_CLEAR_VALUE => write!(fmt, "GetPName(DEPTH_CLEAR_VALUE)"),
+            GetPName::DEPTH_FUNC => write!(fmt, "GetPName(DEPTH_FUNC)"),
+            GetPName::DEPTH_RANGE => write!(fmt, "GetPName(DEPTH_RANGE)"),
+            GetPName::DEPTH_TEST => write!(fmt, "GetPName(DEPTH_TEST)"),
+            GetPName::DEPTH_WRITEMASK => write!(fmt, "GetPName(DEPTH_WRITEMASK)"),
+            GetPName::DISPATCH_INDIRECT_BUFFER_BINDING => write!(fmt, "GetPName(DISPATCH_INDIRECT_BUFFER_BINDING)"),
+            GetPName::DITHER => write!(fmt, "GetPName(DITHER)"),
+            GetPName::DOUBLEBUFFER => write!(fmt, "GetPName(DOUBLEBUFFER)"),
+            GetPName::DRAW_BUFFER => write!(fmt, "GetPName(DRAW_BUFFER)"),
+            GetPName::DRAW_FRAMEBUFFER_BINDING => write!(fmt, "GetPName(DRAW_FRAMEBUFFER_BINDING)"),
+            GetPName::ELEMENT_ARRAY_BUFFER_BINDING => write!(fmt, "GetPName(ELEMENT_ARRAY_BUFFER_BINDING)"),
+            GetPName::FRAGMENT_SHADER_DERIVATIVE_HINT => write!(fmt, "GetPName(FRAGMENT_SHADER_DERIVATIVE_HINT)"),
+            GetPName::FRONT_FACE => write!(fmt, "GetPName(FRONT_FACE)"),
+            GetPName::IMPLEMENTATION_COLOR_READ_FORMAT => write!(fmt, "GetPName(IMPLEMENTATION_COLOR_READ_FORMAT)"),
+            GetPName::IMPLEMENTATION_COLOR_READ_TYPE => write!(fmt, "GetPName(IMPLEMENTATION_COLOR_READ_TYPE)"),
+            GetPName::LAYER_PROVOKING_VERTEX => write!(fmt, "GetPName(LAYER_PROVOKING_VERTEX)"),
+            GetPName::LINE_SMOOTH => write!(fmt, "GetPName(LINE_SMOOTH)"),
+            GetPName::LINE_SMOOTH_HINT => write!(fmt, "GetPName(LINE_SMOOTH_HINT)"),
+            GetPName::LINE_WIDTH => write!(fmt, "GetPName(LINE_WIDTH)"),
+            GetPName::LINE_WIDTH_GRANULARITY => write!(fmt, "GetPName(LINE_WIDTH_GRANULARITY)"),
+            GetPName::LINE_WIDTH_RANGE => write!(fmt, "GetPName(LINE_WIDTH_RANGE)"),
             GetPName::LOGIC_OP_MODE => write!(fmt, "GetPName(LOGIC_OP_MODE)"),
+            GetPName::MAJOR_VERSION => write!(fmt, "GetPName(MAJOR_VERSION)"),
+            GetPName::MAX_3D_TEXTURE_SIZE => write!(fmt, "GetPName(MAX_3D_TEXTURE_SIZE)"),
+            GetPName::MAX_ARRAY_TEXTURE_LAYERS => write!(fmt, "GetPName(MAX_ARRAY_TEXTURE_LAYERS)"),
+            GetPName::MAX_CLIP_DISTANCES => write!(fmt, "GetPName(MAX_CLIP_DISTANCES)"),
+            GetPName::MAX_COLOR_TEXTURE_SAMPLES => write!(fmt, "GetPName(MAX_COLOR_TEXTURE_SAMPLES)"),
+            GetPName::MAX_COMBINED_ATOMIC_COUNTERS => write!(fmt, "GetPName(MAX_COMBINED_ATOMIC_COUNTERS)"),
+            GetPName::MAX_COMBINED_COMPUTE_UNIFORM_COMPONENTS => write!(fmt, "GetPName(MAX_COMBINED_COMPUTE_UNIFORM_COMPONENTS)"),
+            GetPName::MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS => write!(fmt, "GetPName(MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS)"),
+            GetPName::MAX_COMBINED_GEOMETRY_UNIFORM_COMPONENTS => write!(fmt, "GetPName(MAX_COMBINED_GEOMETRY_UNIFORM_COMPONENTS)"),
+            GetPName::MAX_COMBINED_SHADER_STORAGE_BLOCKS => write!(fmt, "GetPName(MAX_COMBINED_SHADER_STORAGE_BLOCKS)"),
+            GetPName::MAX_COMBINED_TEXTURE_IMAGE_UNITS => write!(fmt, "GetPName(MAX_COMBINED_TEXTURE_IMAGE_UNITS)"),
+            GetPName::MAX_COMBINED_UNIFORM_BLOCKS => write!(fmt, "GetPName(MAX_COMBINED_UNIFORM_BLOCKS)"),
+            GetPName::MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS => write!(fmt, "GetPName(MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS)"),
+            GetPName::MAX_COMPUTE_ATOMIC_COUNTERS => write!(fmt, "GetPName(MAX_COMPUTE_ATOMIC_COUNTERS)"),
+            GetPName::MAX_COMPUTE_ATOMIC_COUNTER_BUFFERS => write!(fmt, "GetPName(MAX_COMPUTE_ATOMIC_COUNTER_BUFFERS)"),
             GetPName::MAX_COMPUTE_SHADER_STORAGE_BLOCKS => write!(fmt, "GetPName(MAX_COMPUTE_SHADER_STORAGE_BLOCKS)"),
+            GetPName::MAX_COMPUTE_TEXTURE_IMAGE_UNITS => write!(fmt, "GetPName(MAX_COMPUTE_TEXTURE_IMAGE_UNITS)"),
+            GetPName::MAX_COMPUTE_UNIFORM_BLOCKS => write!(fmt, "GetPName(MAX_COMPUTE_UNIFORM_BLOCKS)"),
+            GetPName::MAX_COMPUTE_UNIFORM_COMPONENTS => write!(fmt, "GetPName(MAX_COMPUTE_UNIFORM_COMPONENTS)"),
+            GetPName::MAX_COMPUTE_WORK_GROUP_COUNT => write!(fmt, "GetPName(MAX_COMPUTE_WORK_GROUP_COUNT)"),
+            GetPName::MAX_COMPUTE_WORK_GROUP_INVOCATIONS => write!(fmt, "GetPName(MAX_COMPUTE_WORK_GROUP_INVOCATIONS)"),
+            GetPName::MAX_COMPUTE_WORK_GROUP_SIZE => write!(fmt, "GetPName(MAX_COMPUTE_WORK_GROUP_SIZE)"),
+            GetPName::MAX_CUBE_MAP_TEXTURE_SIZE => write!(fmt, "GetPName(MAX_CUBE_MAP_TEXTURE_SIZE)"),
+            GetPName::MAX_DEBUG_GROUP_STACK_DEPTH => write!(fmt, "GetPName(MAX_DEBUG_GROUP_STACK_DEPTH)"),
+            GetPName::MAX_DEPTH_TEXTURE_SAMPLES => write!(fmt, "GetPName(MAX_DEPTH_TEXTURE_SAMPLES)"),
+            GetPName::MAX_DRAW_BUFFERS => write!(fmt, "GetPName(MAX_DRAW_BUFFERS)"),
+            GetPName::MAX_DUAL_SOURCE_DRAW_BUFFERS => write!(fmt, "GetPName(MAX_DUAL_SOURCE_DRAW_BUFFERS)"),
+            GetPName::MAX_ELEMENTS_INDICES => write!(fmt, "GetPName(MAX_ELEMENTS_INDICES)"),
+            GetPName::MAX_ELEMENTS_VERTICES => write!(fmt, "GetPName(MAX_ELEMENTS_VERTICES)"),
+            GetPName::MAX_ELEMENT_INDEX => write!(fmt, "GetPName(MAX_ELEMENT_INDEX)"),
+            GetPName::MAX_FRAGMENT_ATOMIC_COUNTERS => write!(fmt, "GetPName(MAX_FRAGMENT_ATOMIC_COUNTERS)"),
+            GetPName::MAX_FRAGMENT_INPUT_COMPONENTS => write!(fmt, "GetPName(MAX_FRAGMENT_INPUT_COMPONENTS)"),
+            GetPName::MAX_FRAGMENT_SHADER_STORAGE_BLOCKS => write!(fmt, "GetPName(MAX_FRAGMENT_SHADER_STORAGE_BLOCKS)"),
+            GetPName::MAX_FRAGMENT_UNIFORM_BLOCKS => write!(fmt, "GetPName(MAX_FRAGMENT_UNIFORM_BLOCKS)"),
+            GetPName::MAX_FRAGMENT_UNIFORM_COMPONENTS => write!(fmt, "GetPName(MAX_FRAGMENT_UNIFORM_COMPONENTS)"),
+            GetPName::MAX_FRAGMENT_UNIFORM_VECTORS => write!(fmt, "GetPName(MAX_FRAGMENT_UNIFORM_VECTORS)"),
+            GetPName::MAX_FRAMEBUFFER_HEIGHT => write!(fmt, "GetPName(MAX_FRAMEBUFFER_HEIGHT)"),
+            GetPName::MAX_FRAMEBUFFER_LAYERS => write!(fmt, "GetPName(MAX_FRAMEBUFFER_LAYERS)"),
+            GetPName::MAX_FRAMEBUFFER_SAMPLES => write!(fmt, "GetPName(MAX_FRAMEBUFFER_SAMPLES)"),
+            GetPName::MAX_FRAMEBUFFER_WIDTH => write!(fmt, "GetPName(MAX_FRAMEBUFFER_WIDTH)"),
+            GetPName::MAX_GEOMETRY_ATOMIC_COUNTERS => write!(fmt, "GetPName(MAX_GEOMETRY_ATOMIC_COUNTERS)"),
+            GetPName::MAX_GEOMETRY_INPUT_COMPONENTS => write!(fmt, "GetPName(MAX_GEOMETRY_INPUT_COMPONENTS)"),
+            GetPName::MAX_GEOMETRY_OUTPUT_COMPONENTS => write!(fmt, "GetPName(MAX_GEOMETRY_OUTPUT_COMPONENTS)"),
+            GetPName::MAX_GEOMETRY_SHADER_STORAGE_BLOCKS => write!(fmt, "GetPName(MAX_GEOMETRY_SHADER_STORAGE_BLOCKS)"),
+            GetPName::MAX_GEOMETRY_TEXTURE_IMAGE_UNITS => write!(fmt, "GetPName(MAX_GEOMETRY_TEXTURE_IMAGE_UNITS)"),
+            GetPName::MAX_GEOMETRY_UNIFORM_BLOCKS => write!(fmt, "GetPName(MAX_GEOMETRY_UNIFORM_BLOCKS)"),
+            GetPName::MAX_GEOMETRY_UNIFORM_COMPONENTS => write!(fmt, "GetPName(MAX_GEOMETRY_UNIFORM_COMPONENTS)"),
+            GetPName::MAX_INTEGER_SAMPLES => write!(fmt, "GetPName(MAX_INTEGER_SAMPLES)"),
+            GetPName::MAX_LABEL_LENGTH => write!(fmt, "GetPName(MAX_LABEL_LENGTH)"),
+            GetPName::MAX_PROGRAM_TEXEL_OFFSET => write!(fmt, "GetPName(MAX_PROGRAM_TEXEL_OFFSET)"),
+            GetPName::MAX_RECTANGLE_TEXTURE_SIZE => write!(fmt, "GetPName(MAX_RECTANGLE_TEXTURE_SIZE)"),
+            GetPName::MAX_RENDERBUFFER_SIZE => write!(fmt, "GetPName(MAX_RENDERBUFFER_SIZE)"),
+            GetPName::MAX_SAMPLE_MASK_WORDS => write!(fmt, "GetPName(MAX_SAMPLE_MASK_WORDS)"),
+            GetPName::MAX_SERVER_WAIT_TIMEOUT => write!(fmt, "GetPName(MAX_SERVER_WAIT_TIMEOUT)"),
+            GetPName::MAX_SHADER_STORAGE_BUFFER_BINDINGS => write!(fmt, "GetPName(MAX_SHADER_STORAGE_BUFFER_BINDINGS)"),
+            GetPName::MAX_TESS_CONTROL_ATOMIC_COUNTERS => write!(fmt, "GetPName(MAX_TESS_CONTROL_ATOMIC_COUNTERS)"),
+            GetPName::MAX_TESS_CONTROL_SHADER_STORAGE_BLOCKS => write!(fmt, "GetPName(MAX_TESS_CONTROL_SHADER_STORAGE_BLOCKS)"),
+            GetPName::MAX_TESS_EVALUATION_ATOMIC_COUNTERS => write!(fmt, "GetPName(MAX_TESS_EVALUATION_ATOMIC_COUNTERS)"),
+            GetPName::MAX_TESS_EVALUATION_SHADER_STORAGE_BLOCKS => write!(fmt, "GetPName(MAX_TESS_EVALUATION_SHADER_STORAGE_BLOCKS)"),
+            GetPName::MAX_TEXTURE_BUFFER_SIZE => write!(fmt, "GetPName(MAX_TEXTURE_BUFFER_SIZE)"),
+            GetPName::MAX_TEXTURE_IMAGE_UNITS => write!(fmt, "GetPName(MAX_TEXTURE_IMAGE_UNITS)"),
+            GetPName::MAX_TEXTURE_LOD_BIAS => write!(fmt, "GetPName(MAX_TEXTURE_LOD_BIAS)"),
+            GetPName::MAX_TEXTURE_SIZE => write!(fmt, "GetPName(MAX_TEXTURE_SIZE)"),
+            GetPName::MAX_UNIFORM_BLOCK_SIZE => write!(fmt, "GetPName(MAX_UNIFORM_BLOCK_SIZE)"),
+            GetPName::MAX_UNIFORM_BUFFER_BINDINGS => write!(fmt, "GetPName(MAX_UNIFORM_BUFFER_BINDINGS)"),
+            GetPName::MAX_UNIFORM_LOCATIONS => write!(fmt, "GetPName(MAX_UNIFORM_LOCATIONS)"),
+            GetPName::MAX_VARYING_COMPONENTS => write!(fmt, "GetPName(MAX_VARYING_COMPONENTS)"),
+            GetPName::MAX_VARYING_FLOATS => write!(fmt, "GetPName(MAX_VARYING_FLOATS)"),
+            GetPName::MAX_VARYING_VECTORS => write!(fmt, "GetPName(MAX_VARYING_VECTORS)"),
+            GetPName::MAX_VERTEX_ATOMIC_COUNTERS => write!(fmt, "GetPName(MAX_VERTEX_ATOMIC_COUNTERS)"),
+            GetPName::MAX_VERTEX_ATTRIBS => write!(fmt, "GetPName(MAX_VERTEX_ATTRIBS)"),
+            GetPName::MAX_VERTEX_ATTRIB_BINDINGS => write!(fmt, "GetPName(MAX_VERTEX_ATTRIB_BINDINGS)"),
+            GetPName::MAX_VERTEX_ATTRIB_RELATIVE_OFFSET => write!(fmt, "GetPName(MAX_VERTEX_ATTRIB_RELATIVE_OFFSET)"),
+            GetPName::MAX_VERTEX_OUTPUT_COMPONENTS => write!(fmt, "GetPName(MAX_VERTEX_OUTPUT_COMPONENTS)"),
+            GetPName::MAX_VERTEX_SHADER_STORAGE_BLOCKS => write!(fmt, "GetPName(MAX_VERTEX_SHADER_STORAGE_BLOCKS)"),
+            GetPName::MAX_VERTEX_TEXTURE_IMAGE_UNITS => write!(fmt, "GetPName(MAX_VERTEX_TEXTURE_IMAGE_UNITS)"),
+            GetPName::MAX_VERTEX_UNIFORM_BLOCKS => write!(fmt, "GetPName(MAX_VERTEX_UNIFORM_BLOCKS)"),
+            GetPName::MAX_VERTEX_UNIFORM_COMPONENTS => write!(fmt, "GetPName(MAX_VERTEX_UNIFORM_COMPONENTS)"),
+            GetPName::MAX_VERTEX_UNIFORM_VECTORS => write!(fmt, "GetPName(MAX_VERTEX_UNIFORM_VECTORS)"),
+            GetPName::MAX_VIEWPORTS => write!(fmt, "GetPName(MAX_VIEWPORTS)"),
+            GetPName::MAX_VIEWPORT_DIMS => write!(fmt, "GetPName(MAX_VIEWPORT_DIMS)"),
+            GetPName::MINOR_VERSION => write!(fmt, "GetPName(MINOR_VERSION)"),
+            GetPName::MIN_MAP_BUFFER_ALIGNMENT => write!(fmt, "GetPName(MIN_MAP_BUFFER_ALIGNMENT)"),
+            GetPName::MIN_PROGRAM_TEXEL_OFFSET => write!(fmt, "GetPName(MIN_PROGRAM_TEXEL_OFFSET)"),
+            GetPName::NUM_COMPRESSED_TEXTURE_FORMATS => write!(fmt, "GetPName(NUM_COMPRESSED_TEXTURE_FORMATS)"),
+            GetPName::NUM_EXTENSIONS => write!(fmt, "GetPName(NUM_EXTENSIONS)"),
+            GetPName::NUM_PROGRAM_BINARY_FORMATS => write!(fmt, "GetPName(NUM_PROGRAM_BINARY_FORMATS)"),
+            GetPName::NUM_SHADER_BINARY_FORMATS => write!(fmt, "GetPName(NUM_SHADER_BINARY_FORMATS)"),
+            GetPName::PACK_ALIGNMENT => write!(fmt, "GetPName(PACK_ALIGNMENT)"),
+            GetPName::PACK_IMAGE_HEIGHT => write!(fmt, "GetPName(PACK_IMAGE_HEIGHT)"),
+            GetPName::PACK_LSB_FIRST => write!(fmt, "GetPName(PACK_LSB_FIRST)"),
+            GetPName::PACK_ROW_LENGTH => write!(fmt, "GetPName(PACK_ROW_LENGTH)"),
+            GetPName::PACK_SKIP_IMAGES => write!(fmt, "GetPName(PACK_SKIP_IMAGES)"),
+            GetPName::PACK_SKIP_PIXELS => write!(fmt, "GetPName(PACK_SKIP_PIXELS)"),
+            GetPName::PACK_SKIP_ROWS => write!(fmt, "GetPName(PACK_SKIP_ROWS)"),
+            GetPName::PACK_SWAP_BYTES => write!(fmt, "GetPName(PACK_SWAP_BYTES)"),
+            GetPName::PIXEL_PACK_BUFFER_BINDING => write!(fmt, "GetPName(PIXEL_PACK_BUFFER_BINDING)"),
+            GetPName::PIXEL_UNPACK_BUFFER_BINDING => write!(fmt, "GetPName(PIXEL_UNPACK_BUFFER_BINDING)"),
+            GetPName::POINT_FADE_THRESHOLD_SIZE => write!(fmt, "GetPName(POINT_FADE_THRESHOLD_SIZE)"),
+            GetPName::POINT_SIZE => write!(fmt, "GetPName(POINT_SIZE)"),
+            GetPName::POINT_SIZE_GRANULARITY => write!(fmt, "GetPName(POINT_SIZE_GRANULARITY)"),
+            GetPName::POINT_SIZE_RANGE => write!(fmt, "GetPName(POINT_SIZE_RANGE)"),
+            GetPName::POLYGON_MODE => write!(fmt, "GetPName(POLYGON_MODE)"),
+            GetPName::POLYGON_OFFSET_FACTOR => write!(fmt, "GetPName(POLYGON_OFFSET_FACTOR)"),
+            GetPName::POLYGON_OFFSET_FILL => write!(fmt, "GetPName(POLYGON_OFFSET_FILL)"),
+            GetPName::POLYGON_OFFSET_LINE => write!(fmt, "GetPName(POLYGON_OFFSET_LINE)"),
+            GetPName::POLYGON_OFFSET_POINT => write!(fmt, "GetPName(POLYGON_OFFSET_POINT)"),
+            GetPName::POLYGON_OFFSET_UNITS => write!(fmt, "GetPName(POLYGON_OFFSET_UNITS)"),
+            GetPName::POLYGON_SMOOTH => write!(fmt, "GetPName(POLYGON_SMOOTH)"),
+            GetPName::POLYGON_SMOOTH_HINT => write!(fmt, "GetPName(POLYGON_SMOOTH_HINT)"),
+            GetPName::PRIMITIVE_RESTART_INDEX => write!(fmt, "GetPName(PRIMITIVE_RESTART_INDEX)"),
+            GetPName::PROGRAM_BINARY_FORMATS => write!(fmt, "GetPName(PROGRAM_BINARY_FORMATS)"),
+            GetPName::PROGRAM_PIPELINE_BINDING => write!(fmt, "GetPName(PROGRAM_PIPELINE_BINDING)"),
+            GetPName::PROGRAM_POINT_SIZE => write!(fmt, "GetPName(PROGRAM_POINT_SIZE)"),
+            GetPName::PROVOKING_VERTEX => write!(fmt, "GetPName(PROVOKING_VERTEX)"),
+            GetPName::READ_BUFFER => write!(fmt, "GetPName(READ_BUFFER)"),
+            GetPName::READ_FRAMEBUFFER_BINDING => write!(fmt, "GetPName(READ_FRAMEBUFFER_BINDING)"),
             GetPName::RENDERBUFFER_BINDING => write!(fmt, "GetPName(RENDERBUFFER_BINDING)"),
+            GetPName::SAMPLER_BINDING => write!(fmt, "GetPName(SAMPLER_BINDING)"),
+            GetPName::SAMPLES => write!(fmt, "GetPName(SAMPLES)"),
+            GetPName::SAMPLE_BUFFERS => write!(fmt, "GetPName(SAMPLE_BUFFERS)"),
+            GetPName::SAMPLE_COVERAGE_INVERT => write!(fmt, "GetPName(SAMPLE_COVERAGE_INVERT)"),
+            GetPName::SAMPLE_COVERAGE_VALUE => write!(fmt, "GetPName(SAMPLE_COVERAGE_VALUE)"),
+            GetPName::SCISSOR_BOX => write!(fmt, "GetPName(SCISSOR_BOX)"),
+            GetPName::SCISSOR_TEST => write!(fmt, "GetPName(SCISSOR_TEST)"),
+            GetPName::SHADER_COMPILER => write!(fmt, "GetPName(SHADER_COMPILER)"),
+            GetPName::SHADER_STORAGE_BUFFER_BINDING => write!(fmt, "GetPName(SHADER_STORAGE_BUFFER_BINDING)"),
+            GetPName::SHADER_STORAGE_BUFFER_OFFSET_ALIGNMENT => write!(fmt, "GetPName(SHADER_STORAGE_BUFFER_OFFSET_ALIGNMENT)"),
+            GetPName::SHADER_STORAGE_BUFFER_SIZE => write!(fmt, "GetPName(SHADER_STORAGE_BUFFER_SIZE)"),
+            GetPName::SHADER_STORAGE_BUFFER_START => write!(fmt, "GetPName(SHADER_STORAGE_BUFFER_START)"),
+            GetPName::SMOOTH_LINE_WIDTH_GRANULARITY => write!(fmt, "GetPName(SMOOTH_LINE_WIDTH_GRANULARITY)"),
+            GetPName::SMOOTH_LINE_WIDTH_RANGE => write!(fmt, "GetPName(SMOOTH_LINE_WIDTH_RANGE)"),
+            GetPName::SMOOTH_POINT_SIZE_GRANULARITY => write!(fmt, "GetPName(SMOOTH_POINT_SIZE_GRANULARITY)"),
+            GetPName::SMOOTH_POINT_SIZE_RANGE => write!(fmt, "GetPName(SMOOTH_POINT_SIZE_RANGE)"),
+            GetPName::STENCIL_BACK_FAIL => write!(fmt, "GetPName(STENCIL_BACK_FAIL)"),
+            GetPName::STENCIL_BACK_FUNC => write!(fmt, "GetPName(STENCIL_BACK_FUNC)"),
+            GetPName::STENCIL_BACK_PASS_DEPTH_FAIL => write!(fmt, "GetPName(STENCIL_BACK_PASS_DEPTH_FAIL)"),
+            GetPName::STENCIL_BACK_PASS_DEPTH_PASS => write!(fmt, "GetPName(STENCIL_BACK_PASS_DEPTH_PASS)"),
+            GetPName::STENCIL_BACK_REF => write!(fmt, "GetPName(STENCIL_BACK_REF)"),
+            GetPName::STENCIL_BACK_VALUE_MASK => write!(fmt, "GetPName(STENCIL_BACK_VALUE_MASK)"),
+            GetPName::STENCIL_BACK_WRITEMASK => write!(fmt, "GetPName(STENCIL_BACK_WRITEMASK)"),
+            GetPName::STENCIL_CLEAR_VALUE => write!(fmt, "GetPName(STENCIL_CLEAR_VALUE)"),
+            GetPName::STENCIL_FAIL => write!(fmt, "GetPName(STENCIL_FAIL)"),
+            GetPName::STENCIL_FUNC => write!(fmt, "GetPName(STENCIL_FUNC)"),
+            GetPName::STENCIL_PASS_DEPTH_FAIL => write!(fmt, "GetPName(STENCIL_PASS_DEPTH_FAIL)"),
+            GetPName::STENCIL_PASS_DEPTH_PASS => write!(fmt, "GetPName(STENCIL_PASS_DEPTH_PASS)"),
+            GetPName::STENCIL_REF => write!(fmt, "GetPName(STENCIL_REF)"),
+            GetPName::STENCIL_TEST => write!(fmt, "GetPName(STENCIL_TEST)"),
+            GetPName::STENCIL_VALUE_MASK => write!(fmt, "GetPName(STENCIL_VALUE_MASK)"),
+            GetPName::STENCIL_WRITEMASK => write!(fmt, "GetPName(STENCIL_WRITEMASK)"),
+            GetPName::STEREO => write!(fmt, "GetPName(STEREO)"),
+            GetPName::SUBPIXEL_BITS => write!(fmt, "GetPName(SUBPIXEL_BITS)"),
+            GetPName::TEXTURE_1D => write!(fmt, "GetPName(TEXTURE_1D)"),
+            GetPName::TEXTURE_2D => write!(fmt, "GetPName(TEXTURE_2D)"),
+            GetPName::TEXTURE_BINDING_1D => write!(fmt, "GetPName(TEXTURE_BINDING_1D)"),
+            GetPName::TEXTURE_BINDING_1D_ARRAY => write!(fmt, "GetPName(TEXTURE_BINDING_1D_ARRAY)"),
+            GetPName::TEXTURE_BINDING_2D => write!(fmt, "GetPName(TEXTURE_BINDING_2D)"),
+            GetPName::TEXTURE_BINDING_2D_ARRAY => write!(fmt, "GetPName(TEXTURE_BINDING_2D_ARRAY)"),
+            GetPName::TEXTURE_BINDING_2D_MULTISAMPLE => write!(fmt, "GetPName(TEXTURE_BINDING_2D_MULTISAMPLE)"),
+            GetPName::TEXTURE_BINDING_2D_MULTISAMPLE_ARRAY => write!(fmt, "GetPName(TEXTURE_BINDING_2D_MULTISAMPLE_ARRAY)"),
+            GetPName::TEXTURE_BINDING_3D => write!(fmt, "GetPName(TEXTURE_BINDING_3D)"),
+            GetPName::TEXTURE_BINDING_BUFFER => write!(fmt, "GetPName(TEXTURE_BINDING_BUFFER)"),
+            GetPName::TEXTURE_BINDING_CUBE_MAP => write!(fmt, "GetPName(TEXTURE_BINDING_CUBE_MAP)"),
+            GetPName::TEXTURE_BINDING_RECTANGLE => write!(fmt, "GetPName(TEXTURE_BINDING_RECTANGLE)"),
+            GetPName::TEXTURE_BUFFER_OFFSET_ALIGNMENT => write!(fmt, "GetPName(TEXTURE_BUFFER_OFFSET_ALIGNMENT)"),
+            GetPName::TEXTURE_COMPRESSION_HINT => write!(fmt, "GetPName(TEXTURE_COMPRESSION_HINT)"),
+            GetPName::TIMESTAMP => write!(fmt, "GetPName(TIMESTAMP)"),
+            GetPName::TRANSFORM_FEEDBACK_BUFFER_BINDING => write!(fmt, "GetPName(TRANSFORM_FEEDBACK_BUFFER_BINDING)"),
+            GetPName::TRANSFORM_FEEDBACK_BUFFER_SIZE => write!(fmt, "GetPName(TRANSFORM_FEEDBACK_BUFFER_SIZE)"),
+            GetPName::TRANSFORM_FEEDBACK_BUFFER_START => write!(fmt, "GetPName(TRANSFORM_FEEDBACK_BUFFER_START)"),
+            GetPName::UNIFORM_BUFFER_BINDING => write!(fmt, "GetPName(UNIFORM_BUFFER_BINDING)"),
+            GetPName::UNIFORM_BUFFER_OFFSET_ALIGNMENT => write!(fmt, "GetPName(UNIFORM_BUFFER_OFFSET_ALIGNMENT)"),
+            GetPName::UNIFORM_BUFFER_SIZE => write!(fmt, "GetPName(UNIFORM_BUFFER_SIZE)"),
+            GetPName::UNIFORM_BUFFER_START => write!(fmt, "GetPName(UNIFORM_BUFFER_START)"),
+            GetPName::UNPACK_ALIGNMENT => write!(fmt, "GetPName(UNPACK_ALIGNMENT)"),
+            GetPName::UNPACK_IMAGE_HEIGHT => write!(fmt, "GetPName(UNPACK_IMAGE_HEIGHT)"),
+            GetPName::UNPACK_LSB_FIRST => write!(fmt, "GetPName(UNPACK_LSB_FIRST)"),
+            GetPName::UNPACK_ROW_LENGTH => write!(fmt, "GetPName(UNPACK_ROW_LENGTH)"),
+            GetPName::UNPACK_SKIP_IMAGES => write!(fmt, "GetPName(UNPACK_SKIP_IMAGES)"),
+            GetPName::UNPACK_SKIP_PIXELS => write!(fmt, "GetPName(UNPACK_SKIP_PIXELS)"),
+            GetPName::UNPACK_SKIP_ROWS => write!(fmt, "GetPName(UNPACK_SKIP_ROWS)"),
+            GetPName::UNPACK_SWAP_BYTES => write!(fmt, "GetPName(UNPACK_SWAP_BYTES)"),
+            GetPName::VERTEX_ARRAY => write!(fmt, "GetPName(VERTEX_ARRAY)"),
+            GetPName::VERTEX_ARRAY_BINDING => write!(fmt, "GetPName(VERTEX_ARRAY_BINDING)"),
+            GetPName::VERTEX_BINDING_DIVISOR => write!(fmt, "GetPName(VERTEX_BINDING_DIVISOR)"),
+            GetPName::VERTEX_BINDING_OFFSET => write!(fmt, "GetPName(VERTEX_BINDING_OFFSET)"),
+            GetPName::VERTEX_BINDING_STRIDE => write!(fmt, "GetPName(VERTEX_BINDING_STRIDE)"),
+            GetPName::VIEWPORT => write!(fmt, "GetPName(VIEWPORT)"),
+            GetPName::VIEWPORT_BOUNDS_RANGE => write!(fmt, "GetPName(VIEWPORT_BOUNDS_RANGE)"),
+            GetPName::VIEWPORT_INDEX_PROVOKING_VERTEX => write!(fmt, "GetPName(VIEWPORT_INDEX_PROVOKING_VERTEX)"),
+            GetPName::VIEWPORT_SUBPIXEL_BITS => write!(fmt, "GetPName(VIEWPORT_SUBPIXEL_BITS)"),
             _ => write!(fmt, "GetPName({})", self.0),
         }
     }
@@ -7198,7 +7198,7 @@ impl ::std::fmt::Debug for GetPName {
 impl_enum_traits!(GetPName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct GetPixelMap(pub types::GLenum);
 
 impl GetPixelMap {
@@ -7215,7 +7215,7 @@ impl ::std::fmt::Debug for GetPixelMap {
 impl_enum_traits!(GetPixelMap);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct GetPointervPName(pub types::GLenum);
 
 impl GetPointervPName {
@@ -7236,7 +7236,7 @@ impl ::std::fmt::Debug for GetPointervPName {
 impl_enum_traits!(GetPointervPName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct GetTextureParameter(pub types::GLenum);
 
 impl GetTextureParameter {
@@ -7257,18 +7257,18 @@ impl GetTextureParameter {
 impl ::std::fmt::Debug for GetTextureParameter {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            GetTextureParameter::TEXTURE_GREEN_SIZE => write!(fmt, "GetTextureParameter(TEXTURE_GREEN_SIZE)"),
-            GetTextureParameter::TEXTURE_MIN_FILTER => write!(fmt, "GetTextureParameter(TEXTURE_MIN_FILTER)"),
-            GetTextureParameter::TEXTURE_MAG_FILTER => write!(fmt, "GetTextureParameter(TEXTURE_MAG_FILTER)"),
-            GetTextureParameter::TEXTURE_BORDER_COLOR => write!(fmt, "GetTextureParameter(TEXTURE_BORDER_COLOR)"),
-            GetTextureParameter::TEXTURE_WRAP_T => write!(fmt, "GetTextureParameter(TEXTURE_WRAP_T)"),
-            GetTextureParameter::TEXTURE_WRAP_S => write!(fmt, "GetTextureParameter(TEXTURE_WRAP_S)"),
             GetTextureParameter::TEXTURE_ALPHA_SIZE => write!(fmt, "GetTextureParameter(TEXTURE_ALPHA_SIZE)"),
-            GetTextureParameter::TEXTURE_RED_SIZE => write!(fmt, "GetTextureParameter(TEXTURE_RED_SIZE)"),
-            GetTextureParameter::TEXTURE_INTERNAL_FORMAT => write!(fmt, "GetTextureParameter(TEXTURE_INTERNAL_FORMAT)"),
-            GetTextureParameter::TEXTURE_WIDTH => write!(fmt, "GetTextureParameter(TEXTURE_WIDTH)"),
             GetTextureParameter::TEXTURE_BLUE_SIZE => write!(fmt, "GetTextureParameter(TEXTURE_BLUE_SIZE)"),
+            GetTextureParameter::TEXTURE_BORDER_COLOR => write!(fmt, "GetTextureParameter(TEXTURE_BORDER_COLOR)"),
+            GetTextureParameter::TEXTURE_GREEN_SIZE => write!(fmt, "GetTextureParameter(TEXTURE_GREEN_SIZE)"),
             GetTextureParameter::TEXTURE_HEIGHT => write!(fmt, "GetTextureParameter(TEXTURE_HEIGHT)"),
+            GetTextureParameter::TEXTURE_INTERNAL_FORMAT => write!(fmt, "GetTextureParameter(TEXTURE_INTERNAL_FORMAT)"),
+            GetTextureParameter::TEXTURE_MAG_FILTER => write!(fmt, "GetTextureParameter(TEXTURE_MAG_FILTER)"),
+            GetTextureParameter::TEXTURE_MIN_FILTER => write!(fmt, "GetTextureParameter(TEXTURE_MIN_FILTER)"),
+            GetTextureParameter::TEXTURE_RED_SIZE => write!(fmt, "GetTextureParameter(TEXTURE_RED_SIZE)"),
+            GetTextureParameter::TEXTURE_WIDTH => write!(fmt, "GetTextureParameter(TEXTURE_WIDTH)"),
+            GetTextureParameter::TEXTURE_WRAP_S => write!(fmt, "GetTextureParameter(TEXTURE_WRAP_S)"),
+            GetTextureParameter::TEXTURE_WRAP_T => write!(fmt, "GetTextureParameter(TEXTURE_WRAP_T)"),
             _ => write!(fmt, "GetTextureParameter({})", self.0),
         }
     }
@@ -7277,7 +7277,7 @@ impl ::std::fmt::Debug for GetTextureParameter {
 impl_enum_traits!(GetTextureParameter);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct GraphicsResetStatus(pub types::GLenum);
 
 impl GraphicsResetStatus {
@@ -7290,9 +7290,9 @@ impl GraphicsResetStatus {
 impl ::std::fmt::Debug for GraphicsResetStatus {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            GraphicsResetStatus::NO_ERROR => write!(fmt, "GraphicsResetStatus(NO_ERROR)"),
             GraphicsResetStatus::GUILTY_CONTEXT_RESET => write!(fmt, "GraphicsResetStatus(GUILTY_CONTEXT_RESET)"),
             GraphicsResetStatus::INNOCENT_CONTEXT_RESET => write!(fmt, "GraphicsResetStatus(INNOCENT_CONTEXT_RESET)"),
+            GraphicsResetStatus::NO_ERROR => write!(fmt, "GraphicsResetStatus(NO_ERROR)"),
             GraphicsResetStatus::UNKNOWN_CONTEXT_RESET => write!(fmt, "GraphicsResetStatus(UNKNOWN_CONTEXT_RESET)"),
             _ => write!(fmt, "GraphicsResetStatus({})", self.0),
         }
@@ -7302,7 +7302,7 @@ impl ::std::fmt::Debug for GraphicsResetStatus {
 impl_enum_traits!(GraphicsResetStatus);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct HintMode(pub types::GLenum);
 
 impl HintMode {
@@ -7325,7 +7325,7 @@ impl ::std::fmt::Debug for HintMode {
 impl_enum_traits!(HintMode);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct HintTarget(pub types::GLenum);
 
 impl HintTarget {
@@ -7339,10 +7339,10 @@ impl HintTarget {
 impl ::std::fmt::Debug for HintTarget {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            HintTarget::LINE_SMOOTH_HINT => write!(fmt, "HintTarget(LINE_SMOOTH_HINT)"),
             HintTarget::FRAGMENT_SHADER_DERIVATIVE_HINT => write!(fmt, "HintTarget(FRAGMENT_SHADER_DERIVATIVE_HINT)"),
-            HintTarget::PROGRAM_BINARY_RETRIEVABLE_HINT => write!(fmt, "HintTarget(PROGRAM_BINARY_RETRIEVABLE_HINT)"),
+            HintTarget::LINE_SMOOTH_HINT => write!(fmt, "HintTarget(LINE_SMOOTH_HINT)"),
             HintTarget::POLYGON_SMOOTH_HINT => write!(fmt, "HintTarget(POLYGON_SMOOTH_HINT)"),
+            HintTarget::PROGRAM_BINARY_RETRIEVABLE_HINT => write!(fmt, "HintTarget(PROGRAM_BINARY_RETRIEVABLE_HINT)"),
             HintTarget::TEXTURE_COMPRESSION_HINT => write!(fmt, "HintTarget(TEXTURE_COMPRESSION_HINT)"),
             _ => write!(fmt, "HintTarget({})", self.0),
         }
@@ -7352,7 +7352,7 @@ impl ::std::fmt::Debug for HintTarget {
 impl_enum_traits!(HintTarget);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct HistogramTargetEXT(pub types::GLenum);
 
 impl HistogramTargetEXT {
@@ -7369,7 +7369,7 @@ impl ::std::fmt::Debug for HistogramTargetEXT {
 impl_enum_traits!(HistogramTargetEXT);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct IndexPointerType(pub types::GLenum);
 
 impl IndexPointerType {
@@ -7382,10 +7382,10 @@ impl IndexPointerType {
 impl ::std::fmt::Debug for IndexPointerType {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            IndexPointerType::SHORT => write!(fmt, "IndexPointerType(SHORT)"),
-            IndexPointerType::INT => write!(fmt, "IndexPointerType(INT)"),
             IndexPointerType::DOUBLE => write!(fmt, "IndexPointerType(DOUBLE)"),
             IndexPointerType::FLOAT => write!(fmt, "IndexPointerType(FLOAT)"),
+            IndexPointerType::INT => write!(fmt, "IndexPointerType(INT)"),
+            IndexPointerType::SHORT => write!(fmt, "IndexPointerType(SHORT)"),
             _ => write!(fmt, "IndexPointerType({})", self.0),
         }
     }
@@ -7394,7 +7394,7 @@ impl ::std::fmt::Debug for IndexPointerType {
 impl_enum_traits!(IndexPointerType);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct InterleavedArrayFormat(pub types::GLenum);
 
 impl InterleavedArrayFormat {
@@ -7411,7 +7411,7 @@ impl ::std::fmt::Debug for InterleavedArrayFormat {
 impl_enum_traits!(InterleavedArrayFormat);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct InternalFormat(pub types::GLenum);
 
 impl InternalFormat {
@@ -7516,102 +7516,102 @@ impl InternalFormat {
 impl ::std::fmt::Debug for InternalFormat {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            InternalFormat::RGB16 => write!(fmt, "InternalFormat(RGB16)"),
-            InternalFormat::COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT => write!(fmt, "InternalFormat(COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT)"),
-            InternalFormat::RGBA8UI => write!(fmt, "InternalFormat(RGBA8UI)"),
-            InternalFormat::R16_SNORM => write!(fmt, "InternalFormat(R16_SNORM)"),
-            InternalFormat::RGBA12 => write!(fmt, "InternalFormat(RGBA12)"),
-            InternalFormat::RGB10_A2UI => write!(fmt, "InternalFormat(RGB10_A2UI)"),
-            InternalFormat::RGB16I => write!(fmt, "InternalFormat(RGB16I)"),
-            InternalFormat::COMPRESSED_SIGNED_RG11_EAC => write!(fmt, "InternalFormat(COMPRESSED_SIGNED_RG11_EAC)"),
-            InternalFormat::RGBA8I => write!(fmt, "InternalFormat(RGBA8I)"),
-            InternalFormat::RG32F => write!(fmt, "InternalFormat(RG32F)"),
-            InternalFormat::SRGB8 => write!(fmt, "InternalFormat(SRGB8)"),
-            InternalFormat::RGB => write!(fmt, "InternalFormat(RGB)"),
-            InternalFormat::RGB8I => write!(fmt, "InternalFormat(RGB8I)"),
-            InternalFormat::COMPRESSED_RED => write!(fmt, "InternalFormat(COMPRESSED_RED)"),
-            InternalFormat::COMPRESSED_RGB => write!(fmt, "InternalFormat(COMPRESSED_RGB)"),
-            InternalFormat::COMPRESSED_SRGB => write!(fmt, "InternalFormat(COMPRESSED_SRGB)"),
-            InternalFormat::DEPTH_COMPONENT16 => write!(fmt, "InternalFormat(DEPTH_COMPONENT16)"),
-            InternalFormat::R3_G3_B2 => write!(fmt, "InternalFormat(R3_G3_B2)"),
-            InternalFormat::COMPRESSED_RGBA8_ETC2_EAC => write!(fmt, "InternalFormat(COMPRESSED_RGBA8_ETC2_EAC)"),
-            InternalFormat::RED => write!(fmt, "InternalFormat(RED)"),
-            InternalFormat::COMPRESSED_SIGNED_R11_EAC => write!(fmt, "InternalFormat(COMPRESSED_SIGNED_R11_EAC)"),
-            InternalFormat::RGBA16 => write!(fmt, "InternalFormat(RGBA16)"),
-            InternalFormat::COMPRESSED_RG_RGTC2 => write!(fmt, "InternalFormat(COMPRESSED_RG_RGTC2)"),
-            InternalFormat::SRGB_ALPHA => write!(fmt, "InternalFormat(SRGB_ALPHA)"),
-            InternalFormat::RGBA4 => write!(fmt, "InternalFormat(RGBA4)"),
-            InternalFormat::DEPTH24_STENCIL8 => write!(fmt, "InternalFormat(DEPTH24_STENCIL8)"),
-            InternalFormat::COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2 => write!(fmt, "InternalFormat(COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2)"),
-            InternalFormat::RGBA16UI => write!(fmt, "InternalFormat(RGBA16UI)"),
-            InternalFormat::COMPRESSED_RGB_BPTC_SIGNED_FLOAT => write!(fmt, "InternalFormat(COMPRESSED_RGB_BPTC_SIGNED_FLOAT)"),
-            InternalFormat::RGB32UI => write!(fmt, "InternalFormat(RGB32UI)"),
-            InternalFormat::RGBA8_SNORM => write!(fmt, "InternalFormat(RGBA8_SNORM)"),
-            InternalFormat::R16F => write!(fmt, "InternalFormat(R16F)"),
-            InternalFormat::R8UI => write!(fmt, "InternalFormat(R8UI)"),
-            InternalFormat::R32F => write!(fmt, "InternalFormat(R32F)"),
-            InternalFormat::R32UI => write!(fmt, "InternalFormat(R32UI)"),
-            InternalFormat::RGBA16F => write!(fmt, "InternalFormat(RGBA16F)"),
-            InternalFormat::RG8 => write!(fmt, "InternalFormat(RG8)"),
-            InternalFormat::SRGB8_ALPHA8 => write!(fmt, "InternalFormat(SRGB8_ALPHA8)"),
-            InternalFormat::DEPTH32F_STENCIL8 => write!(fmt, "InternalFormat(DEPTH32F_STENCIL8)"),
-            InternalFormat::RGBA32UI => write!(fmt, "InternalFormat(RGBA32UI)"),
-            InternalFormat::RGB8 => write!(fmt, "InternalFormat(RGB8)"),
-            InternalFormat::RG8I => write!(fmt, "InternalFormat(RG8I)"),
-            InternalFormat::R8I => write!(fmt, "InternalFormat(R8I)"),
-            InternalFormat::RGB16F => write!(fmt, "InternalFormat(RGB16F)"),
             InternalFormat::COMPRESSED_R11_EAC => write!(fmt, "InternalFormat(COMPRESSED_R11_EAC)"),
-            InternalFormat::RG16UI => write!(fmt, "InternalFormat(RG16UI)"),
-            InternalFormat::RG16 => write!(fmt, "InternalFormat(RG16)"),
-            InternalFormat::COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2 => write!(fmt, "InternalFormat(COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2)"),
-            InternalFormat::R16 => write!(fmt, "InternalFormat(R16)"),
-            InternalFormat::RG => write!(fmt, "InternalFormat(RG)"),
-            InternalFormat::R8_SNORM => write!(fmt, "InternalFormat(R8_SNORM)"),
-            InternalFormat::RGB8UI => write!(fmt, "InternalFormat(RGB8UI)"),
+            InternalFormat::COMPRESSED_RED => write!(fmt, "InternalFormat(COMPRESSED_RED)"),
             InternalFormat::COMPRESSED_RED_RGTC1 => write!(fmt, "InternalFormat(COMPRESSED_RED_RGTC1)"),
-            InternalFormat::RGB8_SNORM => write!(fmt, "InternalFormat(RGB8_SNORM)"),
-            InternalFormat::R11F_G11F_B10F => write!(fmt, "InternalFormat(R11F_G11F_B10F)"),
             InternalFormat::COMPRESSED_RG => write!(fmt, "InternalFormat(COMPRESSED_RG)"),
+            InternalFormat::COMPRESSED_RG11_EAC => write!(fmt, "InternalFormat(COMPRESSED_RG11_EAC)"),
+            InternalFormat::COMPRESSED_RGB => write!(fmt, "InternalFormat(COMPRESSED_RGB)"),
+            InternalFormat::COMPRESSED_RGB8_ETC2 => write!(fmt, "InternalFormat(COMPRESSED_RGB8_ETC2)"),
+            InternalFormat::COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2 => write!(fmt, "InternalFormat(COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2)"),
+            InternalFormat::COMPRESSED_RGBA => write!(fmt, "InternalFormat(COMPRESSED_RGBA)"),
+            InternalFormat::COMPRESSED_RGBA8_ETC2_EAC => write!(fmt, "InternalFormat(COMPRESSED_RGBA8_ETC2_EAC)"),
+            InternalFormat::COMPRESSED_RGBA_BPTC_UNORM => write!(fmt, "InternalFormat(COMPRESSED_RGBA_BPTC_UNORM)"),
+            InternalFormat::COMPRESSED_RGB_BPTC_SIGNED_FLOAT => write!(fmt, "InternalFormat(COMPRESSED_RGB_BPTC_SIGNED_FLOAT)"),
+            InternalFormat::COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT => write!(fmt, "InternalFormat(COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT)"),
+            InternalFormat::COMPRESSED_RG_RGTC2 => write!(fmt, "InternalFormat(COMPRESSED_RG_RGTC2)"),
+            InternalFormat::COMPRESSED_SIGNED_R11_EAC => write!(fmt, "InternalFormat(COMPRESSED_SIGNED_R11_EAC)"),
+            InternalFormat::COMPRESSED_SIGNED_RED_RGTC1 => write!(fmt, "InternalFormat(COMPRESSED_SIGNED_RED_RGTC1)"),
+            InternalFormat::COMPRESSED_SIGNED_RG11_EAC => write!(fmt, "InternalFormat(COMPRESSED_SIGNED_RG11_EAC)"),
+            InternalFormat::COMPRESSED_SIGNED_RG_RGTC2 => write!(fmt, "InternalFormat(COMPRESSED_SIGNED_RG_RGTC2)"),
+            InternalFormat::COMPRESSED_SRGB => write!(fmt, "InternalFormat(COMPRESSED_SRGB)"),
+            InternalFormat::COMPRESSED_SRGB8_ALPHA8_ETC2_EAC => write!(fmt, "InternalFormat(COMPRESSED_SRGB8_ALPHA8_ETC2_EAC)"),
+            InternalFormat::COMPRESSED_SRGB8_ETC2 => write!(fmt, "InternalFormat(COMPRESSED_SRGB8_ETC2)"),
+            InternalFormat::COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2 => write!(fmt, "InternalFormat(COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2)"),
+            InternalFormat::COMPRESSED_SRGB_ALPHA => write!(fmt, "InternalFormat(COMPRESSED_SRGB_ALPHA)"),
+            InternalFormat::COMPRESSED_SRGB_ALPHA_BPTC_UNORM => write!(fmt, "InternalFormat(COMPRESSED_SRGB_ALPHA_BPTC_UNORM)"),
+            InternalFormat::DEPTH24_STENCIL8 => write!(fmt, "InternalFormat(DEPTH24_STENCIL8)"),
+            InternalFormat::DEPTH32F_STENCIL8 => write!(fmt, "InternalFormat(DEPTH32F_STENCIL8)"),
+            InternalFormat::DEPTH_COMPONENT => write!(fmt, "InternalFormat(DEPTH_COMPONENT)"),
+            InternalFormat::DEPTH_COMPONENT16 => write!(fmt, "InternalFormat(DEPTH_COMPONENT16)"),
+            InternalFormat::DEPTH_COMPONENT32F => write!(fmt, "InternalFormat(DEPTH_COMPONENT32F)"),
+            InternalFormat::DEPTH_STENCIL => write!(fmt, "InternalFormat(DEPTH_STENCIL)"),
+            InternalFormat::R11F_G11F_B10F => write!(fmt, "InternalFormat(R11F_G11F_B10F)"),
+            InternalFormat::R16 => write!(fmt, "InternalFormat(R16)"),
+            InternalFormat::R16F => write!(fmt, "InternalFormat(R16F)"),
+            InternalFormat::R16I => write!(fmt, "InternalFormat(R16I)"),
+            InternalFormat::R16UI => write!(fmt, "InternalFormat(R16UI)"),
+            InternalFormat::R16_SNORM => write!(fmt, "InternalFormat(R16_SNORM)"),
+            InternalFormat::R32F => write!(fmt, "InternalFormat(R32F)"),
+            InternalFormat::R32I => write!(fmt, "InternalFormat(R32I)"),
+            InternalFormat::R32UI => write!(fmt, "InternalFormat(R32UI)"),
+            InternalFormat::R3_G3_B2 => write!(fmt, "InternalFormat(R3_G3_B2)"),
+            InternalFormat::R8 => write!(fmt, "InternalFormat(R8)"),
+            InternalFormat::R8I => write!(fmt, "InternalFormat(R8I)"),
+            InternalFormat::R8UI => write!(fmt, "InternalFormat(R8UI)"),
+            InternalFormat::R8_SNORM => write!(fmt, "InternalFormat(R8_SNORM)"),
+            InternalFormat::RED => write!(fmt, "InternalFormat(RED)"),
+            InternalFormat::RG => write!(fmt, "InternalFormat(RG)"),
+            InternalFormat::RG16 => write!(fmt, "InternalFormat(RG16)"),
+            InternalFormat::RG16F => write!(fmt, "InternalFormat(RG16F)"),
             InternalFormat::RG16I => write!(fmt, "InternalFormat(RG16I)"),
-            InternalFormat::RGBA32F => write!(fmt, "InternalFormat(RGBA32F)"),
+            InternalFormat::RG16UI => write!(fmt, "InternalFormat(RG16UI)"),
+            InternalFormat::RG16_SNORM => write!(fmt, "InternalFormat(RG16_SNORM)"),
+            InternalFormat::RG32F => write!(fmt, "InternalFormat(RG32F)"),
             InternalFormat::RG32I => write!(fmt, "InternalFormat(RG32I)"),
             InternalFormat::RG32UI => write!(fmt, "InternalFormat(RG32UI)"),
+            InternalFormat::RG8 => write!(fmt, "InternalFormat(RG8)"),
+            InternalFormat::RG8I => write!(fmt, "InternalFormat(RG8I)"),
             InternalFormat::RG8UI => write!(fmt, "InternalFormat(RG8UI)"),
-            InternalFormat::DEPTH_COMPONENT32F => write!(fmt, "InternalFormat(DEPTH_COMPONENT32F)"),
-            InternalFormat::RGB12 => write!(fmt, "InternalFormat(RGB12)"),
-            InternalFormat::SRGB => write!(fmt, "InternalFormat(SRGB)"),
-            InternalFormat::RGB32I => write!(fmt, "InternalFormat(RGB32I)"),
-            InternalFormat::R32I => write!(fmt, "InternalFormat(R32I)"),
-            InternalFormat::R16UI => write!(fmt, "InternalFormat(R16UI)"),
-            InternalFormat::RGB16_SNORM => write!(fmt, "InternalFormat(RGB16_SNORM)"),
-            InternalFormat::COMPRESSED_SRGB8_ETC2 => write!(fmt, "InternalFormat(COMPRESSED_SRGB8_ETC2)"),
-            InternalFormat::R16I => write!(fmt, "InternalFormat(R16I)"),
-            InternalFormat::COMPRESSED_RG11_EAC => write!(fmt, "InternalFormat(COMPRESSED_RG11_EAC)"),
-            InternalFormat::RGB10 => write!(fmt, "InternalFormat(RGB10)"),
-            InternalFormat::RGB4 => write!(fmt, "InternalFormat(RGB4)"),
-            InternalFormat::RGBA32I => write!(fmt, "InternalFormat(RGBA32I)"),
-            InternalFormat::COMPRESSED_RGBA => write!(fmt, "InternalFormat(COMPRESSED_RGBA)"),
-            InternalFormat::DEPTH_COMPONENT => write!(fmt, "InternalFormat(DEPTH_COMPONENT)"),
-            InternalFormat::COMPRESSED_RGB8_ETC2 => write!(fmt, "InternalFormat(COMPRESSED_RGB8_ETC2)"),
-            InternalFormat::DEPTH_STENCIL => write!(fmt, "InternalFormat(DEPTH_STENCIL)"),
-            InternalFormat::RGB10_A2 => write!(fmt, "InternalFormat(RGB10_A2)"),
-            InternalFormat::RG16F => write!(fmt, "InternalFormat(RG16F)"),
-            InternalFormat::COMPRESSED_RGBA_BPTC_UNORM => write!(fmt, "InternalFormat(COMPRESSED_RGBA_BPTC_UNORM)"),
-            InternalFormat::COMPRESSED_SRGB8_ALPHA8_ETC2_EAC => write!(fmt, "InternalFormat(COMPRESSED_SRGB8_ALPHA8_ETC2_EAC)"),
-            InternalFormat::COMPRESSED_SIGNED_RG_RGTC2 => write!(fmt, "InternalFormat(COMPRESSED_SIGNED_RG_RGTC2)"),
-            InternalFormat::RGBA8 => write!(fmt, "InternalFormat(RGBA8)"),
-            InternalFormat::RGB9_E5 => write!(fmt, "InternalFormat(RGB9_E5)"),
-            InternalFormat::RGB5 => write!(fmt, "InternalFormat(RGB5)"),
-            InternalFormat::RG16_SNORM => write!(fmt, "InternalFormat(RG16_SNORM)"),
-            InternalFormat::COMPRESSED_SRGB_ALPHA_BPTC_UNORM => write!(fmt, "InternalFormat(COMPRESSED_SRGB_ALPHA_BPTC_UNORM)"),
-            InternalFormat::RGBA16I => write!(fmt, "InternalFormat(RGBA16I)"),
-            InternalFormat::COMPRESSED_SRGB_ALPHA => write!(fmt, "InternalFormat(COMPRESSED_SRGB_ALPHA)"),
-            InternalFormat::RGB16UI => write!(fmt, "InternalFormat(RGB16UI)"),
-            InternalFormat::RGBA => write!(fmt, "InternalFormat(RGBA)"),
             InternalFormat::RG8_SNORM => write!(fmt, "InternalFormat(RG8_SNORM)"),
-            InternalFormat::COMPRESSED_SIGNED_RED_RGTC1 => write!(fmt, "InternalFormat(COMPRESSED_SIGNED_RED_RGTC1)"),
+            InternalFormat::RGB => write!(fmt, "InternalFormat(RGB)"),
+            InternalFormat::RGB10 => write!(fmt, "InternalFormat(RGB10)"),
+            InternalFormat::RGB10_A2 => write!(fmt, "InternalFormat(RGB10_A2)"),
+            InternalFormat::RGB10_A2UI => write!(fmt, "InternalFormat(RGB10_A2UI)"),
+            InternalFormat::RGB12 => write!(fmt, "InternalFormat(RGB12)"),
+            InternalFormat::RGB16 => write!(fmt, "InternalFormat(RGB16)"),
+            InternalFormat::RGB16F => write!(fmt, "InternalFormat(RGB16F)"),
+            InternalFormat::RGB16I => write!(fmt, "InternalFormat(RGB16I)"),
+            InternalFormat::RGB16UI => write!(fmt, "InternalFormat(RGB16UI)"),
+            InternalFormat::RGB16_SNORM => write!(fmt, "InternalFormat(RGB16_SNORM)"),
+            InternalFormat::RGB32I => write!(fmt, "InternalFormat(RGB32I)"),
+            InternalFormat::RGB32UI => write!(fmt, "InternalFormat(RGB32UI)"),
+            InternalFormat::RGB4 => write!(fmt, "InternalFormat(RGB4)"),
+            InternalFormat::RGB5 => write!(fmt, "InternalFormat(RGB5)"),
             InternalFormat::RGB5_A1 => write!(fmt, "InternalFormat(RGB5_A1)"),
-            InternalFormat::R8 => write!(fmt, "InternalFormat(R8)"),
+            InternalFormat::RGB8 => write!(fmt, "InternalFormat(RGB8)"),
+            InternalFormat::RGB8I => write!(fmt, "InternalFormat(RGB8I)"),
+            InternalFormat::RGB8UI => write!(fmt, "InternalFormat(RGB8UI)"),
+            InternalFormat::RGB8_SNORM => write!(fmt, "InternalFormat(RGB8_SNORM)"),
+            InternalFormat::RGB9_E5 => write!(fmt, "InternalFormat(RGB9_E5)"),
+            InternalFormat::RGBA => write!(fmt, "InternalFormat(RGBA)"),
+            InternalFormat::RGBA12 => write!(fmt, "InternalFormat(RGBA12)"),
+            InternalFormat::RGBA16 => write!(fmt, "InternalFormat(RGBA16)"),
+            InternalFormat::RGBA16F => write!(fmt, "InternalFormat(RGBA16F)"),
+            InternalFormat::RGBA16I => write!(fmt, "InternalFormat(RGBA16I)"),
+            InternalFormat::RGBA16UI => write!(fmt, "InternalFormat(RGBA16UI)"),
+            InternalFormat::RGBA32F => write!(fmt, "InternalFormat(RGBA32F)"),
+            InternalFormat::RGBA32I => write!(fmt, "InternalFormat(RGBA32I)"),
+            InternalFormat::RGBA32UI => write!(fmt, "InternalFormat(RGBA32UI)"),
+            InternalFormat::RGBA4 => write!(fmt, "InternalFormat(RGBA4)"),
+            InternalFormat::RGBA8 => write!(fmt, "InternalFormat(RGBA8)"),
+            InternalFormat::RGBA8I => write!(fmt, "InternalFormat(RGBA8I)"),
+            InternalFormat::RGBA8UI => write!(fmt, "InternalFormat(RGBA8UI)"),
+            InternalFormat::RGBA8_SNORM => write!(fmt, "InternalFormat(RGBA8_SNORM)"),
+            InternalFormat::SRGB => write!(fmt, "InternalFormat(SRGB)"),
+            InternalFormat::SRGB8 => write!(fmt, "InternalFormat(SRGB8)"),
+            InternalFormat::SRGB8_ALPHA8 => write!(fmt, "InternalFormat(SRGB8_ALPHA8)"),
+            InternalFormat::SRGB_ALPHA => write!(fmt, "InternalFormat(SRGB_ALPHA)"),
             _ => write!(fmt, "InternalFormat({})", self.0),
         }
     }
@@ -7620,7 +7620,7 @@ impl ::std::fmt::Debug for InternalFormat {
 impl_enum_traits!(InternalFormat);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct InternalFormatPName(pub types::GLenum);
 
 impl InternalFormatPName {
@@ -7699,76 +7699,76 @@ impl InternalFormatPName {
 impl ::std::fmt::Debug for InternalFormatPName {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            InternalFormatPName::INTERNALFORMAT_BLUE_SIZE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_BLUE_SIZE)"),
-            InternalFormatPName::CLEAR_TEXTURE => write!(fmt, "InternalFormatPName(CLEAR_TEXTURE)"),
-            InternalFormatPName::VIEW_COMPATIBILITY_CLASS => write!(fmt, "InternalFormatPName(VIEW_COMPATIBILITY_CLASS)"),
-            InternalFormatPName::INTERNALFORMAT_GREEN_TYPE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_GREEN_TYPE)"),
-            InternalFormatPName::COLOR_RENDERABLE => write!(fmt, "InternalFormatPName(COLOR_RENDERABLE)"),
-            InternalFormatPName::READ_PIXELS_FORMAT => write!(fmt, "InternalFormatPName(READ_PIXELS_FORMAT)"),
-            InternalFormatPName::MAX_LAYERS => write!(fmt, "InternalFormatPName(MAX_LAYERS)"),
-            InternalFormatPName::FRAGMENT_TEXTURE => write!(fmt, "InternalFormatPName(FRAGMENT_TEXTURE)"),
-            InternalFormatPName::SHADER_IMAGE_LOAD => write!(fmt, "InternalFormatPName(SHADER_IMAGE_LOAD)"),
-            InternalFormatPName::INTERNALFORMAT_PREFERRED => write!(fmt, "InternalFormatPName(INTERNALFORMAT_PREFERRED)"),
-            InternalFormatPName::TEXTURE_GATHER_SHADOW => write!(fmt, "InternalFormatPName(TEXTURE_GATHER_SHADOW)"),
-            InternalFormatPName::FRAMEBUFFER_RENDERABLE_LAYERED => write!(fmt, "InternalFormatPName(FRAMEBUFFER_RENDERABLE_LAYERED)"),
-            InternalFormatPName::MAX_WIDTH => write!(fmt, "InternalFormatPName(MAX_WIDTH)"),
-            InternalFormatPName::SIMULTANEOUS_TEXTURE_AND_STENCIL_TEST => write!(fmt, "InternalFormatPName(SIMULTANEOUS_TEXTURE_AND_STENCIL_TEST)"),
-            InternalFormatPName::SIMULTANEOUS_TEXTURE_AND_DEPTH_WRITE => write!(fmt, "InternalFormatPName(SIMULTANEOUS_TEXTURE_AND_DEPTH_WRITE)"),
-            InternalFormatPName::TEXTURE_VIEW => write!(fmt, "InternalFormatPName(TEXTURE_VIEW)"),
-            InternalFormatPName::INTERNALFORMAT_ALPHA_TYPE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_ALPHA_TYPE)"),
-            InternalFormatPName::IMAGE_PIXEL_TYPE => write!(fmt, "InternalFormatPName(IMAGE_PIXEL_TYPE)"),
-            InternalFormatPName::GET_TEXTURE_IMAGE_TYPE => write!(fmt, "InternalFormatPName(GET_TEXTURE_IMAGE_TYPE)"),
-            InternalFormatPName::TEXTURE_GATHER => write!(fmt, "InternalFormatPName(TEXTURE_GATHER)"),
-            InternalFormatPName::IMAGE_FORMAT_COMPATIBILITY_TYPE => write!(fmt, "InternalFormatPName(IMAGE_FORMAT_COMPATIBILITY_TYPE)"),
-            InternalFormatPName::FILTER => write!(fmt, "InternalFormatPName(FILTER)"),
-            InternalFormatPName::VERTEX_TEXTURE => write!(fmt, "InternalFormatPName(VERTEX_TEXTURE)"),
-            InternalFormatPName::READ_PIXELS => write!(fmt, "InternalFormatPName(READ_PIXELS)"),
-            InternalFormatPName::SIMULTANEOUS_TEXTURE_AND_STENCIL_WRITE => write!(fmt, "InternalFormatPName(SIMULTANEOUS_TEXTURE_AND_STENCIL_WRITE)"),
-            InternalFormatPName::MAX_DEPTH => write!(fmt, "InternalFormatPName(MAX_DEPTH)"),
-            InternalFormatPName::TEXTURE_COMPRESSED_BLOCK_SIZE => write!(fmt, "InternalFormatPName(TEXTURE_COMPRESSED_BLOCK_SIZE)"),
-            InternalFormatPName::TEXTURE_COMPRESSED_BLOCK_HEIGHT => write!(fmt, "InternalFormatPName(TEXTURE_COMPRESSED_BLOCK_HEIGHT)"),
-            InternalFormatPName::MIPMAP => write!(fmt, "InternalFormatPName(MIPMAP)"),
-            InternalFormatPName::INTERNALFORMAT_RED_SIZE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_RED_SIZE)"),
-            InternalFormatPName::SRGB_READ => write!(fmt, "InternalFormatPName(SRGB_READ)"),
-            InternalFormatPName::TEXTURE_COMPRESSED_BLOCK_WIDTH => write!(fmt, "InternalFormatPName(TEXTURE_COMPRESSED_BLOCK_WIDTH)"),
-            InternalFormatPName::INTERNALFORMAT_DEPTH_TYPE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_DEPTH_TYPE)"),
-            InternalFormatPName::IMAGE_COMPATIBILITY_CLASS => write!(fmt, "InternalFormatPName(IMAGE_COMPATIBILITY_CLASS)"),
-            InternalFormatPName::COLOR_COMPONENTS => write!(fmt, "InternalFormatPName(COLOR_COMPONENTS)"),
-            InternalFormatPName::COLOR_ENCODING => write!(fmt, "InternalFormatPName(COLOR_ENCODING)"),
-            InternalFormatPName::TESS_CONTROL_TEXTURE => write!(fmt, "InternalFormatPName(TESS_CONTROL_TEXTURE)"),
             InternalFormatPName::AUTO_GENERATE_MIPMAP => write!(fmt, "InternalFormatPName(AUTO_GENERATE_MIPMAP)"),
             InternalFormatPName::CLEAR_BUFFER => write!(fmt, "InternalFormatPName(CLEAR_BUFFER)"),
-            InternalFormatPName::MAX_HEIGHT => write!(fmt, "InternalFormatPName(MAX_HEIGHT)"),
-            InternalFormatPName::INTERNALFORMAT_SHARED_SIZE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_SHARED_SIZE)"),
-            InternalFormatPName::INTERNALFORMAT_BLUE_TYPE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_BLUE_TYPE)"),
-            InternalFormatPName::NUM_SAMPLE_COUNTS => write!(fmt, "InternalFormatPName(NUM_SAMPLE_COUNTS)"),
-            InternalFormatPName::STENCIL_RENDERABLE => write!(fmt, "InternalFormatPName(STENCIL_RENDERABLE)"),
-            InternalFormatPName::TEXTURE_SHADOW => write!(fmt, "InternalFormatPName(TEXTURE_SHADOW)"),
-            InternalFormatPName::INTERNALFORMAT_STENCIL_TYPE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_STENCIL_TYPE)"),
+            InternalFormatPName::CLEAR_TEXTURE => write!(fmt, "InternalFormatPName(CLEAR_TEXTURE)"),
+            InternalFormatPName::COLOR_COMPONENTS => write!(fmt, "InternalFormatPName(COLOR_COMPONENTS)"),
+            InternalFormatPName::COLOR_ENCODING => write!(fmt, "InternalFormatPName(COLOR_ENCODING)"),
+            InternalFormatPName::COLOR_RENDERABLE => write!(fmt, "InternalFormatPName(COLOR_RENDERABLE)"),
+            InternalFormatPName::COMPUTE_TEXTURE => write!(fmt, "InternalFormatPName(COMPUTE_TEXTURE)"),
+            InternalFormatPName::DEPTH_RENDERABLE => write!(fmt, "InternalFormatPName(DEPTH_RENDERABLE)"),
+            InternalFormatPName::FILTER => write!(fmt, "InternalFormatPName(FILTER)"),
+            InternalFormatPName::FRAGMENT_TEXTURE => write!(fmt, "InternalFormatPName(FRAGMENT_TEXTURE)"),
+            InternalFormatPName::FRAMEBUFFER_BLEND => write!(fmt, "InternalFormatPName(FRAMEBUFFER_BLEND)"),
             InternalFormatPName::FRAMEBUFFER_RENDERABLE => write!(fmt, "InternalFormatPName(FRAMEBUFFER_RENDERABLE)"),
-            InternalFormatPName::SHADER_IMAGE_ATOMIC => write!(fmt, "InternalFormatPName(SHADER_IMAGE_ATOMIC)"),
+            InternalFormatPName::FRAMEBUFFER_RENDERABLE_LAYERED => write!(fmt, "InternalFormatPName(FRAMEBUFFER_RENDERABLE_LAYERED)"),
+            InternalFormatPName::GEOMETRY_TEXTURE => write!(fmt, "InternalFormatPName(GEOMETRY_TEXTURE)"),
+            InternalFormatPName::GET_TEXTURE_IMAGE_FORMAT => write!(fmt, "InternalFormatPName(GET_TEXTURE_IMAGE_FORMAT)"),
+            InternalFormatPName::GET_TEXTURE_IMAGE_TYPE => write!(fmt, "InternalFormatPName(GET_TEXTURE_IMAGE_TYPE)"),
+            InternalFormatPName::IMAGE_COMPATIBILITY_CLASS => write!(fmt, "InternalFormatPName(IMAGE_COMPATIBILITY_CLASS)"),
+            InternalFormatPName::IMAGE_FORMAT_COMPATIBILITY_TYPE => write!(fmt, "InternalFormatPName(IMAGE_FORMAT_COMPATIBILITY_TYPE)"),
+            InternalFormatPName::IMAGE_PIXEL_FORMAT => write!(fmt, "InternalFormatPName(IMAGE_PIXEL_FORMAT)"),
+            InternalFormatPName::IMAGE_PIXEL_TYPE => write!(fmt, "InternalFormatPName(IMAGE_PIXEL_TYPE)"),
             InternalFormatPName::IMAGE_TEXEL_SIZE => write!(fmt, "InternalFormatPName(IMAGE_TEXEL_SIZE)"),
+            InternalFormatPName::INTERNALFORMAT_ALPHA_SIZE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_ALPHA_SIZE)"),
+            InternalFormatPName::INTERNALFORMAT_ALPHA_TYPE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_ALPHA_TYPE)"),
+            InternalFormatPName::INTERNALFORMAT_BLUE_SIZE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_BLUE_SIZE)"),
+            InternalFormatPName::INTERNALFORMAT_BLUE_TYPE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_BLUE_TYPE)"),
+            InternalFormatPName::INTERNALFORMAT_DEPTH_SIZE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_DEPTH_SIZE)"),
+            InternalFormatPName::INTERNALFORMAT_DEPTH_TYPE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_DEPTH_TYPE)"),
+            InternalFormatPName::INTERNALFORMAT_GREEN_SIZE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_GREEN_SIZE)"),
+            InternalFormatPName::INTERNALFORMAT_GREEN_TYPE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_GREEN_TYPE)"),
+            InternalFormatPName::INTERNALFORMAT_PREFERRED => write!(fmt, "InternalFormatPName(INTERNALFORMAT_PREFERRED)"),
+            InternalFormatPName::INTERNALFORMAT_RED_SIZE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_RED_SIZE)"),
+            InternalFormatPName::INTERNALFORMAT_RED_TYPE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_RED_TYPE)"),
+            InternalFormatPName::INTERNALFORMAT_SHARED_SIZE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_SHARED_SIZE)"),
+            InternalFormatPName::INTERNALFORMAT_STENCIL_SIZE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_STENCIL_SIZE)"),
+            InternalFormatPName::INTERNALFORMAT_STENCIL_TYPE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_STENCIL_TYPE)"),
+            InternalFormatPName::INTERNALFORMAT_SUPPORTED => write!(fmt, "InternalFormatPName(INTERNALFORMAT_SUPPORTED)"),
+            InternalFormatPName::MAX_DEPTH => write!(fmt, "InternalFormatPName(MAX_DEPTH)"),
+            InternalFormatPName::MAX_HEIGHT => write!(fmt, "InternalFormatPName(MAX_HEIGHT)"),
+            InternalFormatPName::MAX_LAYERS => write!(fmt, "InternalFormatPName(MAX_LAYERS)"),
+            InternalFormatPName::MAX_WIDTH => write!(fmt, "InternalFormatPName(MAX_WIDTH)"),
+            InternalFormatPName::MIPMAP => write!(fmt, "InternalFormatPName(MIPMAP)"),
+            InternalFormatPName::NUM_SAMPLE_COUNTS => write!(fmt, "InternalFormatPName(NUM_SAMPLE_COUNTS)"),
+            InternalFormatPName::READ_PIXELS => write!(fmt, "InternalFormatPName(READ_PIXELS)"),
+            InternalFormatPName::READ_PIXELS_FORMAT => write!(fmt, "InternalFormatPName(READ_PIXELS_FORMAT)"),
             InternalFormatPName::READ_PIXELS_TYPE => write!(fmt, "InternalFormatPName(READ_PIXELS_TYPE)"),
             InternalFormatPName::SAMPLES => write!(fmt, "InternalFormatPName(SAMPLES)"),
-            InternalFormatPName::DEPTH_RENDERABLE => write!(fmt, "InternalFormatPName(DEPTH_RENDERABLE)"),
-            InternalFormatPName::IMAGE_PIXEL_FORMAT => write!(fmt, "InternalFormatPName(IMAGE_PIXEL_FORMAT)"),
-            InternalFormatPName::SIMULTANEOUS_TEXTURE_AND_DEPTH_TEST => write!(fmt, "InternalFormatPName(SIMULTANEOUS_TEXTURE_AND_DEPTH_TEST)"),
-            InternalFormatPName::INTERNALFORMAT_DEPTH_SIZE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_DEPTH_SIZE)"),
-            InternalFormatPName::TEXTURE_IMAGE_FORMAT => write!(fmt, "InternalFormatPName(TEXTURE_IMAGE_FORMAT)"),
-            InternalFormatPName::INTERNALFORMAT_RED_TYPE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_RED_TYPE)"),
-            InternalFormatPName::INTERNALFORMAT_SUPPORTED => write!(fmt, "InternalFormatPName(INTERNALFORMAT_SUPPORTED)"),
-            InternalFormatPName::INTERNALFORMAT_GREEN_SIZE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_GREEN_SIZE)"),
-            InternalFormatPName::GEOMETRY_TEXTURE => write!(fmt, "InternalFormatPName(GEOMETRY_TEXTURE)"),
-            InternalFormatPName::TEXTURE_COMPRESSED => write!(fmt, "InternalFormatPName(TEXTURE_COMPRESSED)"),
-            InternalFormatPName::FRAMEBUFFER_BLEND => write!(fmt, "InternalFormatPName(FRAMEBUFFER_BLEND)"),
-            InternalFormatPName::COMPUTE_TEXTURE => write!(fmt, "InternalFormatPName(COMPUTE_TEXTURE)"),
-            InternalFormatPName::GET_TEXTURE_IMAGE_FORMAT => write!(fmt, "InternalFormatPName(GET_TEXTURE_IMAGE_FORMAT)"),
-            InternalFormatPName::TEXTURE_IMAGE_TYPE => write!(fmt, "InternalFormatPName(TEXTURE_IMAGE_TYPE)"),
-            InternalFormatPName::TESS_EVALUATION_TEXTURE => write!(fmt, "InternalFormatPName(TESS_EVALUATION_TEXTURE)"),
-            InternalFormatPName::SRGB_WRITE => write!(fmt, "InternalFormatPName(SRGB_WRITE)"),
+            InternalFormatPName::SHADER_IMAGE_ATOMIC => write!(fmt, "InternalFormatPName(SHADER_IMAGE_ATOMIC)"),
+            InternalFormatPName::SHADER_IMAGE_LOAD => write!(fmt, "InternalFormatPName(SHADER_IMAGE_LOAD)"),
             InternalFormatPName::SHADER_IMAGE_STORE => write!(fmt, "InternalFormatPName(SHADER_IMAGE_STORE)"),
-            InternalFormatPName::INTERNALFORMAT_ALPHA_SIZE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_ALPHA_SIZE)"),
-            InternalFormatPName::INTERNALFORMAT_STENCIL_SIZE => write!(fmt, "InternalFormatPName(INTERNALFORMAT_STENCIL_SIZE)"),
+            InternalFormatPName::SIMULTANEOUS_TEXTURE_AND_DEPTH_TEST => write!(fmt, "InternalFormatPName(SIMULTANEOUS_TEXTURE_AND_DEPTH_TEST)"),
+            InternalFormatPName::SIMULTANEOUS_TEXTURE_AND_DEPTH_WRITE => write!(fmt, "InternalFormatPName(SIMULTANEOUS_TEXTURE_AND_DEPTH_WRITE)"),
+            InternalFormatPName::SIMULTANEOUS_TEXTURE_AND_STENCIL_TEST => write!(fmt, "InternalFormatPName(SIMULTANEOUS_TEXTURE_AND_STENCIL_TEST)"),
+            InternalFormatPName::SIMULTANEOUS_TEXTURE_AND_STENCIL_WRITE => write!(fmt, "InternalFormatPName(SIMULTANEOUS_TEXTURE_AND_STENCIL_WRITE)"),
+            InternalFormatPName::SRGB_READ => write!(fmt, "InternalFormatPName(SRGB_READ)"),
+            InternalFormatPName::SRGB_WRITE => write!(fmt, "InternalFormatPName(SRGB_WRITE)"),
+            InternalFormatPName::STENCIL_RENDERABLE => write!(fmt, "InternalFormatPName(STENCIL_RENDERABLE)"),
+            InternalFormatPName::TESS_CONTROL_TEXTURE => write!(fmt, "InternalFormatPName(TESS_CONTROL_TEXTURE)"),
+            InternalFormatPName::TESS_EVALUATION_TEXTURE => write!(fmt, "InternalFormatPName(TESS_EVALUATION_TEXTURE)"),
+            InternalFormatPName::TEXTURE_COMPRESSED => write!(fmt, "InternalFormatPName(TEXTURE_COMPRESSED)"),
+            InternalFormatPName::TEXTURE_COMPRESSED_BLOCK_HEIGHT => write!(fmt, "InternalFormatPName(TEXTURE_COMPRESSED_BLOCK_HEIGHT)"),
+            InternalFormatPName::TEXTURE_COMPRESSED_BLOCK_SIZE => write!(fmt, "InternalFormatPName(TEXTURE_COMPRESSED_BLOCK_SIZE)"),
+            InternalFormatPName::TEXTURE_COMPRESSED_BLOCK_WIDTH => write!(fmt, "InternalFormatPName(TEXTURE_COMPRESSED_BLOCK_WIDTH)"),
+            InternalFormatPName::TEXTURE_GATHER => write!(fmt, "InternalFormatPName(TEXTURE_GATHER)"),
+            InternalFormatPName::TEXTURE_GATHER_SHADOW => write!(fmt, "InternalFormatPName(TEXTURE_GATHER_SHADOW)"),
+            InternalFormatPName::TEXTURE_IMAGE_FORMAT => write!(fmt, "InternalFormatPName(TEXTURE_IMAGE_FORMAT)"),
+            InternalFormatPName::TEXTURE_IMAGE_TYPE => write!(fmt, "InternalFormatPName(TEXTURE_IMAGE_TYPE)"),
+            InternalFormatPName::TEXTURE_SHADOW => write!(fmt, "InternalFormatPName(TEXTURE_SHADOW)"),
+            InternalFormatPName::TEXTURE_VIEW => write!(fmt, "InternalFormatPName(TEXTURE_VIEW)"),
+            InternalFormatPName::VERTEX_TEXTURE => write!(fmt, "InternalFormatPName(VERTEX_TEXTURE)"),
+            InternalFormatPName::VIEW_COMPATIBILITY_CLASS => write!(fmt, "InternalFormatPName(VIEW_COMPATIBILITY_CLASS)"),
             _ => write!(fmt, "InternalFormatPName({})", self.0),
         }
     }
@@ -7777,7 +7777,7 @@ impl ::std::fmt::Debug for InternalFormatPName {
 impl_enum_traits!(InternalFormatPName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct LightEnvModeSGIX(pub types::GLenum);
 
 impl LightEnvModeSGIX {
@@ -7796,7 +7796,7 @@ impl ::std::fmt::Debug for LightEnvModeSGIX {
 impl_enum_traits!(LightEnvModeSGIX);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct LightEnvParameterSGIX(pub types::GLenum);
 
 impl LightEnvParameterSGIX {
@@ -7813,7 +7813,7 @@ impl ::std::fmt::Debug for LightEnvParameterSGIX {
 impl_enum_traits!(LightEnvParameterSGIX);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct LightModelColorControl(pub types::GLenum);
 
 impl LightModelColorControl {
@@ -7830,7 +7830,7 @@ impl ::std::fmt::Debug for LightModelColorControl {
 impl_enum_traits!(LightModelColorControl);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct LightModelParameter(pub types::GLenum);
 
 impl LightModelParameter {
@@ -7847,7 +7847,7 @@ impl ::std::fmt::Debug for LightModelParameter {
 impl_enum_traits!(LightModelParameter);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct LightName(pub types::GLenum);
 
 impl LightName {
@@ -7864,7 +7864,7 @@ impl ::std::fmt::Debug for LightName {
 impl_enum_traits!(LightName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct LightParameter(pub types::GLenum);
 
 impl LightParameter {
@@ -7881,7 +7881,7 @@ impl ::std::fmt::Debug for LightParameter {
 impl_enum_traits!(LightParameter);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ListMode(pub types::GLenum);
 
 impl ListMode {
@@ -7898,7 +7898,7 @@ impl ::std::fmt::Debug for ListMode {
 impl_enum_traits!(ListMode);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ListNameType(pub types::GLenum);
 
 impl ListNameType {
@@ -7914,13 +7914,13 @@ impl ListNameType {
 impl ::std::fmt::Debug for ListNameType {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            ListNameType::FLOAT => write!(fmt, "ListNameType(FLOAT)"),
-            ListNameType::UNSIGNED_INT => write!(fmt, "ListNameType(UNSIGNED_INT)"),
-            ListNameType::UNSIGNED_BYTE => write!(fmt, "ListNameType(UNSIGNED_BYTE)"),
-            ListNameType::INT => write!(fmt, "ListNameType(INT)"),
-            ListNameType::UNSIGNED_SHORT => write!(fmt, "ListNameType(UNSIGNED_SHORT)"),
-            ListNameType::SHORT => write!(fmt, "ListNameType(SHORT)"),
             ListNameType::BYTE => write!(fmt, "ListNameType(BYTE)"),
+            ListNameType::FLOAT => write!(fmt, "ListNameType(FLOAT)"),
+            ListNameType::INT => write!(fmt, "ListNameType(INT)"),
+            ListNameType::SHORT => write!(fmt, "ListNameType(SHORT)"),
+            ListNameType::UNSIGNED_BYTE => write!(fmt, "ListNameType(UNSIGNED_BYTE)"),
+            ListNameType::UNSIGNED_INT => write!(fmt, "ListNameType(UNSIGNED_INT)"),
+            ListNameType::UNSIGNED_SHORT => write!(fmt, "ListNameType(UNSIGNED_SHORT)"),
             _ => write!(fmt, "ListNameType({})", self.0),
         }
     }
@@ -7929,7 +7929,7 @@ impl ::std::fmt::Debug for ListNameType {
 impl_enum_traits!(ListNameType);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ListParameterName(pub types::GLenum);
 
 impl ListParameterName {
@@ -7946,7 +7946,7 @@ impl ::std::fmt::Debug for ListParameterName {
 impl_enum_traits!(ListParameterName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct LogicOp(pub types::GLenum);
 
 impl LogicOp {
@@ -7971,22 +7971,22 @@ impl LogicOp {
 impl ::std::fmt::Debug for LogicOp {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            LogicOp::AND_INVERTED => write!(fmt, "LogicOp(AND_INVERTED)"),
-            LogicOp::OR => write!(fmt, "LogicOp(OR)"),
-            LogicOp::COPY_INVERTED => write!(fmt, "LogicOp(COPY_INVERTED)"),
             LogicOp::AND => write!(fmt, "LogicOp(AND)"),
-            LogicOp::XOR => write!(fmt, "LogicOp(XOR)"),
+            LogicOp::AND_INVERTED => write!(fmt, "LogicOp(AND_INVERTED)"),
+            LogicOp::AND_REVERSE => write!(fmt, "LogicOp(AND_REVERSE)"),
             LogicOp::CLEAR => write!(fmt, "LogicOp(CLEAR)"),
+            LogicOp::COPY => write!(fmt, "LogicOp(COPY)"),
+            LogicOp::COPY_INVERTED => write!(fmt, "LogicOp(COPY_INVERTED)"),
             LogicOp::EQUIV => write!(fmt, "LogicOp(EQUIV)"),
             LogicOp::INVERT => write!(fmt, "LogicOp(INVERT)"),
-            LogicOp::SET => write!(fmt, "LogicOp(SET)"),
-            LogicOp::NOR => write!(fmt, "LogicOp(NOR)"),
-            LogicOp::NOOP => write!(fmt, "LogicOp(NOOP)"),
-            LogicOp::AND_REVERSE => write!(fmt, "LogicOp(AND_REVERSE)"),
             LogicOp::NAND => write!(fmt, "LogicOp(NAND)"),
-            LogicOp::COPY => write!(fmt, "LogicOp(COPY)"),
+            LogicOp::NOOP => write!(fmt, "LogicOp(NOOP)"),
+            LogicOp::NOR => write!(fmt, "LogicOp(NOR)"),
+            LogicOp::OR => write!(fmt, "LogicOp(OR)"),
             LogicOp::OR_INVERTED => write!(fmt, "LogicOp(OR_INVERTED)"),
             LogicOp::OR_REVERSE => write!(fmt, "LogicOp(OR_REVERSE)"),
+            LogicOp::SET => write!(fmt, "LogicOp(SET)"),
+            LogicOp::XOR => write!(fmt, "LogicOp(XOR)"),
             _ => write!(fmt, "LogicOp({})", self.0),
         }
     }
@@ -7995,7 +7995,7 @@ impl ::std::fmt::Debug for LogicOp {
 impl_enum_traits!(LogicOp);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct MapBufferUsageMask(pub types::GLenum);
 
 impl MapBufferUsageMask {
@@ -8015,16 +8015,16 @@ impl MapBufferUsageMask {
 impl ::std::fmt::Debug for MapBufferUsageMask {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            MapBufferUsageMask::MAP_FLUSH_EXPLICIT_BIT => write!(fmt, "MapBufferUsageMask(MAP_FLUSH_EXPLICIT_BIT)"),
-            MapBufferUsageMask::MAP_COHERENT_BIT => write!(fmt, "MapBufferUsageMask(MAP_COHERENT_BIT)"),
-            MapBufferUsageMask::MAP_INVALIDATE_BUFFER_BIT => write!(fmt, "MapBufferUsageMask(MAP_INVALIDATE_BUFFER_BIT)"),
-            MapBufferUsageMask::MAP_UNSYNCHRONIZED_BIT => write!(fmt, "MapBufferUsageMask(MAP_UNSYNCHRONIZED_BIT)"),
-            MapBufferUsageMask::DYNAMIC_STORAGE_BIT => write!(fmt, "MapBufferUsageMask(DYNAMIC_STORAGE_BIT)"),
-            MapBufferUsageMask::MAP_PERSISTENT_BIT => write!(fmt, "MapBufferUsageMask(MAP_PERSISTENT_BIT)"),
-            MapBufferUsageMask::MAP_WRITE_BIT => write!(fmt, "MapBufferUsageMask(MAP_WRITE_BIT)"),
-            MapBufferUsageMask::MAP_READ_BIT => write!(fmt, "MapBufferUsageMask(MAP_READ_BIT)"),
             MapBufferUsageMask::CLIENT_STORAGE_BIT => write!(fmt, "MapBufferUsageMask(CLIENT_STORAGE_BIT)"),
+            MapBufferUsageMask::DYNAMIC_STORAGE_BIT => write!(fmt, "MapBufferUsageMask(DYNAMIC_STORAGE_BIT)"),
+            MapBufferUsageMask::MAP_COHERENT_BIT => write!(fmt, "MapBufferUsageMask(MAP_COHERENT_BIT)"),
+            MapBufferUsageMask::MAP_FLUSH_EXPLICIT_BIT => write!(fmt, "MapBufferUsageMask(MAP_FLUSH_EXPLICIT_BIT)"),
+            MapBufferUsageMask::MAP_INVALIDATE_BUFFER_BIT => write!(fmt, "MapBufferUsageMask(MAP_INVALIDATE_BUFFER_BIT)"),
             MapBufferUsageMask::MAP_INVALIDATE_RANGE_BIT => write!(fmt, "MapBufferUsageMask(MAP_INVALIDATE_RANGE_BIT)"),
+            MapBufferUsageMask::MAP_PERSISTENT_BIT => write!(fmt, "MapBufferUsageMask(MAP_PERSISTENT_BIT)"),
+            MapBufferUsageMask::MAP_READ_BIT => write!(fmt, "MapBufferUsageMask(MAP_READ_BIT)"),
+            MapBufferUsageMask::MAP_UNSYNCHRONIZED_BIT => write!(fmt, "MapBufferUsageMask(MAP_UNSYNCHRONIZED_BIT)"),
+            MapBufferUsageMask::MAP_WRITE_BIT => write!(fmt, "MapBufferUsageMask(MAP_WRITE_BIT)"),
             _ => write!(fmt, "MapBufferUsageMask({})", self.0),
         }
     }
@@ -8035,7 +8035,7 @@ impl_enum_traits!(MapBufferUsageMask);
 impl_enum_bitmask_traits!(MapBufferUsageMask);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct MapQuery(pub types::GLenum);
 
 impl MapQuery {
@@ -8052,7 +8052,7 @@ impl ::std::fmt::Debug for MapQuery {
 impl_enum_traits!(MapQuery);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct MapTarget(pub types::GLenum);
 
 impl MapTarget {
@@ -8069,7 +8069,7 @@ impl ::std::fmt::Debug for MapTarget {
 impl_enum_traits!(MapTarget);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct MapTextureFormatINTEL(pub types::GLenum);
 
 impl MapTextureFormatINTEL {
@@ -8086,7 +8086,7 @@ impl ::std::fmt::Debug for MapTextureFormatINTEL {
 impl_enum_traits!(MapTextureFormatINTEL);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct MaterialFace(pub types::GLenum);
 
 impl MaterialFace {
@@ -8099,8 +8099,8 @@ impl ::std::fmt::Debug for MaterialFace {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
             MaterialFace::BACK => write!(fmt, "MaterialFace(BACK)"),
-            MaterialFace::FRONT_AND_BACK => write!(fmt, "MaterialFace(FRONT_AND_BACK)"),
             MaterialFace::FRONT => write!(fmt, "MaterialFace(FRONT)"),
+            MaterialFace::FRONT_AND_BACK => write!(fmt, "MaterialFace(FRONT_AND_BACK)"),
             _ => write!(fmt, "MaterialFace({})", self.0),
         }
     }
@@ -8109,7 +8109,7 @@ impl ::std::fmt::Debug for MaterialFace {
 impl_enum_traits!(MaterialFace);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct MaterialParameter(pub types::GLenum);
 
 impl MaterialParameter {
@@ -8126,7 +8126,7 @@ impl ::std::fmt::Debug for MaterialParameter {
 impl_enum_traits!(MaterialParameter);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct MatrixMode(pub types::GLenum);
 
 impl MatrixMode {
@@ -8145,7 +8145,7 @@ impl ::std::fmt::Debug for MatrixMode {
 impl_enum_traits!(MatrixMode);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct MemoryBarrierMask(pub types::GLenum);
 
 impl MemoryBarrierMask {
@@ -8171,22 +8171,22 @@ impl MemoryBarrierMask {
 impl ::std::fmt::Debug for MemoryBarrierMask {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
+            MemoryBarrierMask::ALL_BARRIER_BITS => write!(fmt, "MemoryBarrierMask(ALL_BARRIER_BITS)"),
+            MemoryBarrierMask::ATOMIC_COUNTER_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(ATOMIC_COUNTER_BARRIER_BIT)"),
+            MemoryBarrierMask::BUFFER_UPDATE_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(BUFFER_UPDATE_BARRIER_BIT)"),
+            MemoryBarrierMask::CLIENT_MAPPED_BUFFER_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(CLIENT_MAPPED_BUFFER_BARRIER_BIT)"),
+            MemoryBarrierMask::COMMAND_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(COMMAND_BARRIER_BIT)"),
+            MemoryBarrierMask::ELEMENT_ARRAY_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(ELEMENT_ARRAY_BARRIER_BIT)"),
+            MemoryBarrierMask::FRAMEBUFFER_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(FRAMEBUFFER_BARRIER_BIT)"),
+            MemoryBarrierMask::PIXEL_BUFFER_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(PIXEL_BUFFER_BARRIER_BIT)"),
+            MemoryBarrierMask::QUERY_BUFFER_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(QUERY_BUFFER_BARRIER_BIT)"),
+            MemoryBarrierMask::SHADER_IMAGE_ACCESS_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(SHADER_IMAGE_ACCESS_BARRIER_BIT)"),
+            MemoryBarrierMask::SHADER_STORAGE_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(SHADER_STORAGE_BARRIER_BIT)"),
+            MemoryBarrierMask::TEXTURE_FETCH_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(TEXTURE_FETCH_BARRIER_BIT)"),
             MemoryBarrierMask::TEXTURE_UPDATE_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(TEXTURE_UPDATE_BARRIER_BIT)"),
             MemoryBarrierMask::TRANSFORM_FEEDBACK_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(TRANSFORM_FEEDBACK_BARRIER_BIT)"),
-            MemoryBarrierMask::TEXTURE_FETCH_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(TEXTURE_FETCH_BARRIER_BIT)"),
-            MemoryBarrierMask::ALL_BARRIER_BITS => write!(fmt, "MemoryBarrierMask(ALL_BARRIER_BITS)"),
-            MemoryBarrierMask::BUFFER_UPDATE_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(BUFFER_UPDATE_BARRIER_BIT)"),
-            MemoryBarrierMask::COMMAND_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(COMMAND_BARRIER_BIT)"),
             MemoryBarrierMask::UNIFORM_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(UNIFORM_BARRIER_BIT)"),
-            MemoryBarrierMask::SHADER_IMAGE_ACCESS_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(SHADER_IMAGE_ACCESS_BARRIER_BIT)"),
-            MemoryBarrierMask::QUERY_BUFFER_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(QUERY_BUFFER_BARRIER_BIT)"),
-            MemoryBarrierMask::FRAMEBUFFER_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(FRAMEBUFFER_BARRIER_BIT)"),
             MemoryBarrierMask::VERTEX_ATTRIB_ARRAY_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(VERTEX_ATTRIB_ARRAY_BARRIER_BIT)"),
-            MemoryBarrierMask::CLIENT_MAPPED_BUFFER_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(CLIENT_MAPPED_BUFFER_BARRIER_BIT)"),
-            MemoryBarrierMask::ATOMIC_COUNTER_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(ATOMIC_COUNTER_BARRIER_BIT)"),
-            MemoryBarrierMask::SHADER_STORAGE_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(SHADER_STORAGE_BARRIER_BIT)"),
-            MemoryBarrierMask::PIXEL_BUFFER_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(PIXEL_BUFFER_BARRIER_BIT)"),
-            MemoryBarrierMask::ELEMENT_ARRAY_BARRIER_BIT => write!(fmt, "MemoryBarrierMask(ELEMENT_ARRAY_BARRIER_BIT)"),
             _ => write!(fmt, "MemoryBarrierMask({})", self.0),
         }
     }
@@ -8197,7 +8197,7 @@ impl_enum_traits!(MemoryBarrierMask);
 impl_enum_bitmask_traits!(MemoryBarrierMask);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct MemoryObjectParameterName(pub types::GLenum);
 
 impl MemoryObjectParameterName {
@@ -8214,7 +8214,7 @@ impl ::std::fmt::Debug for MemoryObjectParameterName {
 impl_enum_traits!(MemoryObjectParameterName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct MeshMode1(pub types::GLenum);
 
 impl MeshMode1 {
@@ -8225,8 +8225,8 @@ impl MeshMode1 {
 impl ::std::fmt::Debug for MeshMode1 {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            MeshMode1::POINT => write!(fmt, "MeshMode1(POINT)"),
             MeshMode1::LINE => write!(fmt, "MeshMode1(LINE)"),
+            MeshMode1::POINT => write!(fmt, "MeshMode1(POINT)"),
             _ => write!(fmt, "MeshMode1({})", self.0),
         }
     }
@@ -8235,7 +8235,7 @@ impl ::std::fmt::Debug for MeshMode1 {
 impl_enum_traits!(MeshMode1);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct MeshMode2(pub types::GLenum);
 
 impl MeshMode2 {
@@ -8247,9 +8247,9 @@ impl MeshMode2 {
 impl ::std::fmt::Debug for MeshMode2 {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
+            MeshMode2::FILL => write!(fmt, "MeshMode2(FILL)"),
             MeshMode2::LINE => write!(fmt, "MeshMode2(LINE)"),
             MeshMode2::POINT => write!(fmt, "MeshMode2(POINT)"),
-            MeshMode2::FILL => write!(fmt, "MeshMode2(FILL)"),
             _ => write!(fmt, "MeshMode2({})", self.0),
         }
     }
@@ -8258,7 +8258,7 @@ impl ::std::fmt::Debug for MeshMode2 {
 impl_enum_traits!(MeshMode2);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct MinmaxTargetEXT(pub types::GLenum);
 
 impl MinmaxTargetEXT {
@@ -8275,7 +8275,7 @@ impl ::std::fmt::Debug for MinmaxTargetEXT {
 impl_enum_traits!(MinmaxTargetEXT);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct NormalPointerType(pub types::GLenum);
 
 impl NormalPointerType {
@@ -8290,9 +8290,9 @@ impl ::std::fmt::Debug for NormalPointerType {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
             NormalPointerType::BYTE => write!(fmt, "NormalPointerType(BYTE)"),
-            NormalPointerType::INT => write!(fmt, "NormalPointerType(INT)"),
             NormalPointerType::DOUBLE => write!(fmt, "NormalPointerType(DOUBLE)"),
             NormalPointerType::FLOAT => write!(fmt, "NormalPointerType(FLOAT)"),
+            NormalPointerType::INT => write!(fmt, "NormalPointerType(INT)"),
             NormalPointerType::SHORT => write!(fmt, "NormalPointerType(SHORT)"),
             _ => write!(fmt, "NormalPointerType({})", self.0),
         }
@@ -8302,7 +8302,7 @@ impl ::std::fmt::Debug for NormalPointerType {
 impl_enum_traits!(NormalPointerType);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ObjectIdentifier(pub types::GLenum);
 
 impl ObjectIdentifier {
@@ -8322,17 +8322,17 @@ impl ObjectIdentifier {
 impl ::std::fmt::Debug for ObjectIdentifier {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            ObjectIdentifier::SAMPLER => write!(fmt, "ObjectIdentifier(SAMPLER)"),
-            ObjectIdentifier::PROGRAM => write!(fmt, "ObjectIdentifier(PROGRAM)"),
-            ObjectIdentifier::VERTEX_ARRAY => write!(fmt, "ObjectIdentifier(VERTEX_ARRAY)"),
-            ObjectIdentifier::RENDERBUFFER => write!(fmt, "ObjectIdentifier(RENDERBUFFER)"),
-            ObjectIdentifier::QUERY => write!(fmt, "ObjectIdentifier(QUERY)"),
-            ObjectIdentifier::TRANSFORM_FEEDBACK => write!(fmt, "ObjectIdentifier(TRANSFORM_FEEDBACK)"),
-            ObjectIdentifier::TEXTURE => write!(fmt, "ObjectIdentifier(TEXTURE)"),
-            ObjectIdentifier::SHADER => write!(fmt, "ObjectIdentifier(SHADER)"),
             ObjectIdentifier::BUFFER => write!(fmt, "ObjectIdentifier(BUFFER)"),
-            ObjectIdentifier::PROGRAM_PIPELINE => write!(fmt, "ObjectIdentifier(PROGRAM_PIPELINE)"),
             ObjectIdentifier::FRAMEBUFFER => write!(fmt, "ObjectIdentifier(FRAMEBUFFER)"),
+            ObjectIdentifier::PROGRAM => write!(fmt, "ObjectIdentifier(PROGRAM)"),
+            ObjectIdentifier::PROGRAM_PIPELINE => write!(fmt, "ObjectIdentifier(PROGRAM_PIPELINE)"),
+            ObjectIdentifier::QUERY => write!(fmt, "ObjectIdentifier(QUERY)"),
+            ObjectIdentifier::RENDERBUFFER => write!(fmt, "ObjectIdentifier(RENDERBUFFER)"),
+            ObjectIdentifier::SAMPLER => write!(fmt, "ObjectIdentifier(SAMPLER)"),
+            ObjectIdentifier::SHADER => write!(fmt, "ObjectIdentifier(SHADER)"),
+            ObjectIdentifier::TEXTURE => write!(fmt, "ObjectIdentifier(TEXTURE)"),
+            ObjectIdentifier::TRANSFORM_FEEDBACK => write!(fmt, "ObjectIdentifier(TRANSFORM_FEEDBACK)"),
+            ObjectIdentifier::VERTEX_ARRAY => write!(fmt, "ObjectIdentifier(VERTEX_ARRAY)"),
             _ => write!(fmt, "ObjectIdentifier({})", self.0),
         }
     }
@@ -8341,7 +8341,7 @@ impl ::std::fmt::Debug for ObjectIdentifier {
 impl_enum_traits!(ObjectIdentifier);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct OcclusionQueryEventMaskAMD(pub types::GLenum);
 
 impl OcclusionQueryEventMaskAMD {
@@ -8361,7 +8361,7 @@ impl_enum_traits!(OcclusionQueryEventMaskAMD);
 impl_enum_bitmask_traits!(OcclusionQueryEventMaskAMD);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PatchParameterName(pub types::GLenum);
 
 impl PatchParameterName {
@@ -8373,9 +8373,9 @@ impl PatchParameterName {
 impl ::std::fmt::Debug for PatchParameterName {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
+            PatchParameterName::PATCH_DEFAULT_INNER_LEVEL => write!(fmt, "PatchParameterName(PATCH_DEFAULT_INNER_LEVEL)"),
             PatchParameterName::PATCH_DEFAULT_OUTER_LEVEL => write!(fmt, "PatchParameterName(PATCH_DEFAULT_OUTER_LEVEL)"),
             PatchParameterName::PATCH_VERTICES => write!(fmt, "PatchParameterName(PATCH_VERTICES)"),
-            PatchParameterName::PATCH_DEFAULT_INNER_LEVEL => write!(fmt, "PatchParameterName(PATCH_DEFAULT_INNER_LEVEL)"),
             _ => write!(fmt, "PatchParameterName({})", self.0),
         }
     }
@@ -8384,7 +8384,7 @@ impl ::std::fmt::Debug for PatchParameterName {
 impl_enum_traits!(PatchParameterName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PathColor(pub types::GLenum);
 
 impl PathColor {
@@ -8401,7 +8401,7 @@ impl ::std::fmt::Debug for PathColor {
 impl_enum_traits!(PathColor);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PathCoverMode(pub types::GLenum);
 
 impl PathCoverMode {
@@ -8418,7 +8418,7 @@ impl ::std::fmt::Debug for PathCoverMode {
 impl_enum_traits!(PathCoverMode);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PathElementType(pub types::GLenum);
 
 impl PathElementType {
@@ -8435,7 +8435,7 @@ impl ::std::fmt::Debug for PathElementType {
 impl_enum_traits!(PathElementType);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PathFillMode(pub types::GLenum);
 
 impl PathFillMode {
@@ -8454,7 +8454,7 @@ impl ::std::fmt::Debug for PathFillMode {
 impl_enum_traits!(PathFillMode);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PathFontStyle(pub types::GLenum);
 
 impl PathFontStyle {
@@ -8473,7 +8473,7 @@ impl ::std::fmt::Debug for PathFontStyle {
 impl_enum_traits!(PathFontStyle);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PathFontTarget(pub types::GLenum);
 
 impl PathFontTarget {
@@ -8490,7 +8490,7 @@ impl ::std::fmt::Debug for PathFontTarget {
 impl_enum_traits!(PathFontTarget);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PathGenMode(pub types::GLenum);
 
 impl PathGenMode {
@@ -8509,7 +8509,7 @@ impl ::std::fmt::Debug for PathGenMode {
 impl_enum_traits!(PathGenMode);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PathHandleMissingGlyphs(pub types::GLenum);
 
 impl PathHandleMissingGlyphs {
@@ -8526,7 +8526,7 @@ impl ::std::fmt::Debug for PathHandleMissingGlyphs {
 impl_enum_traits!(PathHandleMissingGlyphs);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PathListMode(pub types::GLenum);
 
 impl PathListMode {
@@ -8543,7 +8543,7 @@ impl ::std::fmt::Debug for PathListMode {
 impl_enum_traits!(PathListMode);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PathMetricMask(pub types::GLenum);
 
 impl PathMetricMask {
@@ -8560,7 +8560,7 @@ impl ::std::fmt::Debug for PathMetricMask {
 impl_enum_traits!(PathMetricMask);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PathParameter(pub types::GLenum);
 
 impl PathParameter {
@@ -8577,7 +8577,7 @@ impl ::std::fmt::Debug for PathParameter {
 impl_enum_traits!(PathParameter);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PathStringFormat(pub types::GLenum);
 
 impl PathStringFormat {
@@ -8594,7 +8594,7 @@ impl ::std::fmt::Debug for PathStringFormat {
 impl_enum_traits!(PathStringFormat);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PathTransformType(pub types::GLenum);
 
 impl PathTransformType {
@@ -8613,7 +8613,7 @@ impl ::std::fmt::Debug for PathTransformType {
 impl_enum_traits!(PathTransformType);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PipelineParameterName(pub types::GLenum);
 
 impl PipelineParameterName {
@@ -8629,13 +8629,13 @@ impl PipelineParameterName {
 impl ::std::fmt::Debug for PipelineParameterName {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
+            PipelineParameterName::ACTIVE_PROGRAM => write!(fmt, "PipelineParameterName(ACTIVE_PROGRAM)"),
+            PipelineParameterName::FRAGMENT_SHADER => write!(fmt, "PipelineParameterName(FRAGMENT_SHADER)"),
+            PipelineParameterName::GEOMETRY_SHADER => write!(fmt, "PipelineParameterName(GEOMETRY_SHADER)"),
             PipelineParameterName::INFO_LOG_LENGTH => write!(fmt, "PipelineParameterName(INFO_LOG_LENGTH)"),
             PipelineParameterName::TESS_CONTROL_SHADER => write!(fmt, "PipelineParameterName(TESS_CONTROL_SHADER)"),
-            PipelineParameterName::GEOMETRY_SHADER => write!(fmt, "PipelineParameterName(GEOMETRY_SHADER)"),
             PipelineParameterName::TESS_EVALUATION_SHADER => write!(fmt, "PipelineParameterName(TESS_EVALUATION_SHADER)"),
-            PipelineParameterName::ACTIVE_PROGRAM => write!(fmt, "PipelineParameterName(ACTIVE_PROGRAM)"),
             PipelineParameterName::VERTEX_SHADER => write!(fmt, "PipelineParameterName(VERTEX_SHADER)"),
-            PipelineParameterName::FRAGMENT_SHADER => write!(fmt, "PipelineParameterName(FRAGMENT_SHADER)"),
             _ => write!(fmt, "PipelineParameterName({})", self.0),
         }
     }
@@ -8644,7 +8644,7 @@ impl ::std::fmt::Debug for PipelineParameterName {
 impl_enum_traits!(PipelineParameterName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PixelCopyType(pub types::GLenum);
 
 impl PixelCopyType {
@@ -8667,7 +8667,7 @@ impl ::std::fmt::Debug for PixelCopyType {
 impl_enum_traits!(PixelCopyType);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PixelFormat(pub types::GLenum);
 
 impl PixelFormat {
@@ -8698,27 +8698,27 @@ impl PixelFormat {
 impl ::std::fmt::Debug for PixelFormat {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            PixelFormat::RGB_INTEGER => write!(fmt, "PixelFormat(RGB_INTEGER)"),
-            PixelFormat::BLUE_INTEGER => write!(fmt, "PixelFormat(BLUE_INTEGER)"),
-            PixelFormat::GREEN => write!(fmt, "PixelFormat(GREEN)"),
-            PixelFormat::UNSIGNED_INT => write!(fmt, "PixelFormat(UNSIGNED_INT)"),
+            PixelFormat::ALPHA => write!(fmt, "PixelFormat(ALPHA)"),
+            PixelFormat::BGR => write!(fmt, "PixelFormat(BGR)"),
             PixelFormat::BGRA => write!(fmt, "PixelFormat(BGRA)"),
             PixelFormat::BGRA_INTEGER => write!(fmt, "PixelFormat(BGRA_INTEGER)"),
+            PixelFormat::BGR_INTEGER => write!(fmt, "PixelFormat(BGR_INTEGER)"),
+            PixelFormat::BLUE => write!(fmt, "PixelFormat(BLUE)"),
+            PixelFormat::BLUE_INTEGER => write!(fmt, "PixelFormat(BLUE_INTEGER)"),
             PixelFormat::DEPTH_COMPONENT => write!(fmt, "PixelFormat(DEPTH_COMPONENT)"),
             PixelFormat::DEPTH_STENCIL => write!(fmt, "PixelFormat(DEPTH_STENCIL)"),
-            PixelFormat::BLUE => write!(fmt, "PixelFormat(BLUE)"),
-            PixelFormat::RGBA => write!(fmt, "PixelFormat(RGBA)"),
-            PixelFormat::BGR => write!(fmt, "PixelFormat(BGR)"),
-            PixelFormat::ALPHA => write!(fmt, "PixelFormat(ALPHA)"),
-            PixelFormat::RED_INTEGER => write!(fmt, "PixelFormat(RED_INTEGER)"),
-            PixelFormat::RED => write!(fmt, "PixelFormat(RED)"),
-            PixelFormat::RGB => write!(fmt, "PixelFormat(RGB)"),
-            PixelFormat::STENCIL_INDEX => write!(fmt, "PixelFormat(STENCIL_INDEX)"),
+            PixelFormat::GREEN => write!(fmt, "PixelFormat(GREEN)"),
             PixelFormat::GREEN_INTEGER => write!(fmt, "PixelFormat(GREEN_INTEGER)"),
-            PixelFormat::BGR_INTEGER => write!(fmt, "PixelFormat(BGR_INTEGER)"),
-            PixelFormat::RGBA_INTEGER => write!(fmt, "PixelFormat(RGBA_INTEGER)"),
-            PixelFormat::RG_INTEGER => write!(fmt, "PixelFormat(RG_INTEGER)"),
+            PixelFormat::RED => write!(fmt, "PixelFormat(RED)"),
+            PixelFormat::RED_INTEGER => write!(fmt, "PixelFormat(RED_INTEGER)"),
             PixelFormat::RG => write!(fmt, "PixelFormat(RG)"),
+            PixelFormat::RGB => write!(fmt, "PixelFormat(RGB)"),
+            PixelFormat::RGBA => write!(fmt, "PixelFormat(RGBA)"),
+            PixelFormat::RGBA_INTEGER => write!(fmt, "PixelFormat(RGBA_INTEGER)"),
+            PixelFormat::RGB_INTEGER => write!(fmt, "PixelFormat(RGB_INTEGER)"),
+            PixelFormat::RG_INTEGER => write!(fmt, "PixelFormat(RG_INTEGER)"),
+            PixelFormat::STENCIL_INDEX => write!(fmt, "PixelFormat(STENCIL_INDEX)"),
+            PixelFormat::UNSIGNED_INT => write!(fmt, "PixelFormat(UNSIGNED_INT)"),
             PixelFormat::UNSIGNED_SHORT => write!(fmt, "PixelFormat(UNSIGNED_SHORT)"),
             _ => write!(fmt, "PixelFormat({})", self.0),
         }
@@ -8728,7 +8728,7 @@ impl ::std::fmt::Debug for PixelFormat {
 impl_enum_traits!(PixelFormat);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PixelMap(pub types::GLenum);
 
 impl PixelMap {
@@ -8745,7 +8745,7 @@ impl ::std::fmt::Debug for PixelMap {
 impl_enum_traits!(PixelMap);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PixelStoreParameter(pub types::GLenum);
 
 impl PixelStoreParameter {
@@ -8770,22 +8770,22 @@ impl PixelStoreParameter {
 impl ::std::fmt::Debug for PixelStoreParameter {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            PixelStoreParameter::PACK_SKIP_ROWS => write!(fmt, "PixelStoreParameter(PACK_SKIP_ROWS)"),
-            PixelStoreParameter::UNPACK_LSB_FIRST => write!(fmt, "PixelStoreParameter(UNPACK_LSB_FIRST)"),
-            PixelStoreParameter::PACK_ROW_LENGTH => write!(fmt, "PixelStoreParameter(PACK_ROW_LENGTH)"),
-            PixelStoreParameter::UNPACK_SKIP_IMAGES => write!(fmt, "PixelStoreParameter(UNPACK_SKIP_IMAGES)"),
-            PixelStoreParameter::UNPACK_SWAP_BYTES => write!(fmt, "PixelStoreParameter(UNPACK_SWAP_BYTES)"),
-            PixelStoreParameter::PACK_SKIP_IMAGES => write!(fmt, "PixelStoreParameter(PACK_SKIP_IMAGES)"),
-            PixelStoreParameter::PACK_SWAP_BYTES => write!(fmt, "PixelStoreParameter(PACK_SWAP_BYTES)"),
-            PixelStoreParameter::UNPACK_ROW_LENGTH => write!(fmt, "PixelStoreParameter(UNPACK_ROW_LENGTH)"),
-            PixelStoreParameter::PACK_LSB_FIRST => write!(fmt, "PixelStoreParameter(PACK_LSB_FIRST)"),
-            PixelStoreParameter::UNPACK_SKIP_PIXELS => write!(fmt, "PixelStoreParameter(UNPACK_SKIP_PIXELS)"),
-            PixelStoreParameter::PACK_SKIP_PIXELS => write!(fmt, "PixelStoreParameter(PACK_SKIP_PIXELS)"),
-            PixelStoreParameter::UNPACK_SKIP_ROWS => write!(fmt, "PixelStoreParameter(UNPACK_SKIP_ROWS)"),
             PixelStoreParameter::PACK_ALIGNMENT => write!(fmt, "PixelStoreParameter(PACK_ALIGNMENT)"),
-            PixelStoreParameter::UNPACK_ALIGNMENT => write!(fmt, "PixelStoreParameter(UNPACK_ALIGNMENT)"),
             PixelStoreParameter::PACK_IMAGE_HEIGHT => write!(fmt, "PixelStoreParameter(PACK_IMAGE_HEIGHT)"),
+            PixelStoreParameter::PACK_LSB_FIRST => write!(fmt, "PixelStoreParameter(PACK_LSB_FIRST)"),
+            PixelStoreParameter::PACK_ROW_LENGTH => write!(fmt, "PixelStoreParameter(PACK_ROW_LENGTH)"),
+            PixelStoreParameter::PACK_SKIP_IMAGES => write!(fmt, "PixelStoreParameter(PACK_SKIP_IMAGES)"),
+            PixelStoreParameter::PACK_SKIP_PIXELS => write!(fmt, "PixelStoreParameter(PACK_SKIP_PIXELS)"),
+            PixelStoreParameter::PACK_SKIP_ROWS => write!(fmt, "PixelStoreParameter(PACK_SKIP_ROWS)"),
+            PixelStoreParameter::PACK_SWAP_BYTES => write!(fmt, "PixelStoreParameter(PACK_SWAP_BYTES)"),
+            PixelStoreParameter::UNPACK_ALIGNMENT => write!(fmt, "PixelStoreParameter(UNPACK_ALIGNMENT)"),
             PixelStoreParameter::UNPACK_IMAGE_HEIGHT => write!(fmt, "PixelStoreParameter(UNPACK_IMAGE_HEIGHT)"),
+            PixelStoreParameter::UNPACK_LSB_FIRST => write!(fmt, "PixelStoreParameter(UNPACK_LSB_FIRST)"),
+            PixelStoreParameter::UNPACK_ROW_LENGTH => write!(fmt, "PixelStoreParameter(UNPACK_ROW_LENGTH)"),
+            PixelStoreParameter::UNPACK_SKIP_IMAGES => write!(fmt, "PixelStoreParameter(UNPACK_SKIP_IMAGES)"),
+            PixelStoreParameter::UNPACK_SKIP_PIXELS => write!(fmt, "PixelStoreParameter(UNPACK_SKIP_PIXELS)"),
+            PixelStoreParameter::UNPACK_SKIP_ROWS => write!(fmt, "PixelStoreParameter(UNPACK_SKIP_ROWS)"),
+            PixelStoreParameter::UNPACK_SWAP_BYTES => write!(fmt, "PixelStoreParameter(UNPACK_SWAP_BYTES)"),
             _ => write!(fmt, "PixelStoreParameter({})", self.0),
         }
     }
@@ -8794,7 +8794,7 @@ impl ::std::fmt::Debug for PixelStoreParameter {
 impl_enum_traits!(PixelStoreParameter);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PixelStoreResampleMode(pub types::GLenum);
 
 impl PixelStoreResampleMode {
@@ -8811,7 +8811,7 @@ impl ::std::fmt::Debug for PixelStoreResampleMode {
 impl_enum_traits!(PixelStoreResampleMode);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PixelStoreSubsampleRate(pub types::GLenum);
 
 impl PixelStoreSubsampleRate {
@@ -8828,7 +8828,7 @@ impl ::std::fmt::Debug for PixelStoreSubsampleRate {
 impl_enum_traits!(PixelStoreSubsampleRate);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PixelTexGenMode(pub types::GLenum);
 
 impl PixelTexGenMode {
@@ -8840,9 +8840,9 @@ impl PixelTexGenMode {
 impl ::std::fmt::Debug for PixelTexGenMode {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            PixelTexGenMode::RGBA => write!(fmt, "PixelTexGenMode(RGBA)"),
             PixelTexGenMode::NONE => write!(fmt, "PixelTexGenMode(NONE)"),
             PixelTexGenMode::RGB => write!(fmt, "PixelTexGenMode(RGB)"),
+            PixelTexGenMode::RGBA => write!(fmt, "PixelTexGenMode(RGBA)"),
             _ => write!(fmt, "PixelTexGenMode({})", self.0),
         }
     }
@@ -8851,7 +8851,7 @@ impl ::std::fmt::Debug for PixelTexGenMode {
 impl_enum_traits!(PixelTexGenMode);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PixelTexGenParameterNameSGIS(pub types::GLenum);
 
 impl PixelTexGenParameterNameSGIS {
@@ -8868,7 +8868,7 @@ impl ::std::fmt::Debug for PixelTexGenParameterNameSGIS {
 impl_enum_traits!(PixelTexGenParameterNameSGIS);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PixelTransferParameter(pub types::GLenum);
 
 impl PixelTransferParameter {
@@ -8885,7 +8885,7 @@ impl ::std::fmt::Debug for PixelTransferParameter {
 impl_enum_traits!(PixelTransferParameter);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PixelType(pub types::GLenum);
 
 impl PixelType {
@@ -8907,17 +8907,17 @@ impl ::std::fmt::Debug for PixelType {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
             PixelType::BYTE => write!(fmt, "PixelType(BYTE)"),
-            PixelType::UNSIGNED_BYTE => write!(fmt, "PixelType(UNSIGNED_BYTE)"),
             PixelType::FLOAT => write!(fmt, "PixelType(FLOAT)"),
-            PixelType::UNSIGNED_SHORT_4_4_4_4 => write!(fmt, "PixelType(UNSIGNED_SHORT_4_4_4_4)"),
-            PixelType::UNSIGNED_SHORT => write!(fmt, "PixelType(UNSIGNED_SHORT)"),
             PixelType::INT => write!(fmt, "PixelType(INT)"),
             PixelType::SHORT => write!(fmt, "PixelType(SHORT)"),
-            PixelType::UNSIGNED_SHORT_5_5_5_1 => write!(fmt, "PixelType(UNSIGNED_SHORT_5_5_5_1)"),
+            PixelType::UNSIGNED_BYTE => write!(fmt, "PixelType(UNSIGNED_BYTE)"),
+            PixelType::UNSIGNED_BYTE_3_3_2 => write!(fmt, "PixelType(UNSIGNED_BYTE_3_3_2)"),
+            PixelType::UNSIGNED_INT => write!(fmt, "PixelType(UNSIGNED_INT)"),
             PixelType::UNSIGNED_INT_10_10_10_2 => write!(fmt, "PixelType(UNSIGNED_INT_10_10_10_2)"),
             PixelType::UNSIGNED_INT_8_8_8_8 => write!(fmt, "PixelType(UNSIGNED_INT_8_8_8_8)"),
-            PixelType::UNSIGNED_INT => write!(fmt, "PixelType(UNSIGNED_INT)"),
-            PixelType::UNSIGNED_BYTE_3_3_2 => write!(fmt, "PixelType(UNSIGNED_BYTE_3_3_2)"),
+            PixelType::UNSIGNED_SHORT => write!(fmt, "PixelType(UNSIGNED_SHORT)"),
+            PixelType::UNSIGNED_SHORT_4_4_4_4 => write!(fmt, "PixelType(UNSIGNED_SHORT_4_4_4_4)"),
+            PixelType::UNSIGNED_SHORT_5_5_5_1 => write!(fmt, "PixelType(UNSIGNED_SHORT_5_5_5_1)"),
             _ => write!(fmt, "PixelType({})", self.0),
         }
     }
@@ -8926,7 +8926,7 @@ impl ::std::fmt::Debug for PixelType {
 impl_enum_traits!(PixelType);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PointParameterNameSGIS(pub types::GLenum);
 
 impl PointParameterNameSGIS {
@@ -8945,7 +8945,7 @@ impl ::std::fmt::Debug for PointParameterNameSGIS {
 impl_enum_traits!(PointParameterNameSGIS);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PolygonMode(pub types::GLenum);
 
 impl PolygonMode {
@@ -8957,9 +8957,9 @@ impl PolygonMode {
 impl ::std::fmt::Debug for PolygonMode {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
+            PolygonMode::FILL => write!(fmt, "PolygonMode(FILL)"),
             PolygonMode::LINE => write!(fmt, "PolygonMode(LINE)"),
             PolygonMode::POINT => write!(fmt, "PolygonMode(POINT)"),
-            PolygonMode::FILL => write!(fmt, "PolygonMode(FILL)"),
             _ => write!(fmt, "PolygonMode({})", self.0),
         }
     }
@@ -8968,7 +8968,7 @@ impl ::std::fmt::Debug for PolygonMode {
 impl_enum_traits!(PolygonMode);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PrecisionType(pub types::GLenum);
 
 impl PrecisionType {
@@ -8983,12 +8983,12 @@ impl PrecisionType {
 impl ::std::fmt::Debug for PrecisionType {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            PrecisionType::MEDIUM_INT => write!(fmt, "PrecisionType(MEDIUM_INT)"),
+            PrecisionType::HIGH_FLOAT => write!(fmt, "PrecisionType(HIGH_FLOAT)"),
             PrecisionType::HIGH_INT => write!(fmt, "PrecisionType(HIGH_INT)"),
             PrecisionType::LOW_FLOAT => write!(fmt, "PrecisionType(LOW_FLOAT)"),
-            PrecisionType::MEDIUM_FLOAT => write!(fmt, "PrecisionType(MEDIUM_FLOAT)"),
-            PrecisionType::HIGH_FLOAT => write!(fmt, "PrecisionType(HIGH_FLOAT)"),
             PrecisionType::LOW_INT => write!(fmt, "PrecisionType(LOW_INT)"),
+            PrecisionType::MEDIUM_FLOAT => write!(fmt, "PrecisionType(MEDIUM_FLOAT)"),
+            PrecisionType::MEDIUM_INT => write!(fmt, "PrecisionType(MEDIUM_INT)"),
             _ => write!(fmt, "PrecisionType({})", self.0),
         }
     }
@@ -8997,7 +8997,7 @@ impl ::std::fmt::Debug for PrecisionType {
 impl_enum_traits!(PrecisionType);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct PrimitiveType(pub types::GLenum);
 
 impl PrimitiveType {
@@ -9019,19 +9019,19 @@ impl PrimitiveType {
 impl ::std::fmt::Debug for PrimitiveType {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            PrimitiveType::TRIANGLES_ADJACENCY => write!(fmt, "PrimitiveType(TRIANGLES_ADJACENCY)"),
-            PrimitiveType::TRIANGLES => write!(fmt, "PrimitiveType(TRIANGLES)"),
-            PrimitiveType::LINE_STRIP_ADJACENCY => write!(fmt, "PrimitiveType(LINE_STRIP_ADJACENCY)"),
-            PrimitiveType::LINES_ADJACENCY => write!(fmt, "PrimitiveType(LINES_ADJACENCY)"),
             PrimitiveType::LINES => write!(fmt, "PrimitiveType(LINES)"),
-            PrimitiveType::TRIANGLE_STRIP => write!(fmt, "PrimitiveType(TRIANGLE_STRIP)"),
-            PrimitiveType::POINTS => write!(fmt, "PrimitiveType(POINTS)"),
-            PrimitiveType::QUADS => write!(fmt, "PrimitiveType(QUADS)"),
+            PrimitiveType::LINES_ADJACENCY => write!(fmt, "PrimitiveType(LINES_ADJACENCY)"),
             PrimitiveType::LINE_LOOP => write!(fmt, "PrimitiveType(LINE_LOOP)"),
             PrimitiveType::LINE_STRIP => write!(fmt, "PrimitiveType(LINE_STRIP)"),
+            PrimitiveType::LINE_STRIP_ADJACENCY => write!(fmt, "PrimitiveType(LINE_STRIP_ADJACENCY)"),
             PrimitiveType::PATCHES => write!(fmt, "PrimitiveType(PATCHES)"),
-            PrimitiveType::TRIANGLE_STRIP_ADJACENCY => write!(fmt, "PrimitiveType(TRIANGLE_STRIP_ADJACENCY)"),
+            PrimitiveType::POINTS => write!(fmt, "PrimitiveType(POINTS)"),
+            PrimitiveType::QUADS => write!(fmt, "PrimitiveType(QUADS)"),
+            PrimitiveType::TRIANGLES => write!(fmt, "PrimitiveType(TRIANGLES)"),
+            PrimitiveType::TRIANGLES_ADJACENCY => write!(fmt, "PrimitiveType(TRIANGLES_ADJACENCY)"),
             PrimitiveType::TRIANGLE_FAN => write!(fmt, "PrimitiveType(TRIANGLE_FAN)"),
+            PrimitiveType::TRIANGLE_STRIP => write!(fmt, "PrimitiveType(TRIANGLE_STRIP)"),
+            PrimitiveType::TRIANGLE_STRIP_ADJACENCY => write!(fmt, "PrimitiveType(TRIANGLE_STRIP_ADJACENCY)"),
             _ => write!(fmt, "PrimitiveType({})", self.0),
         }
     }
@@ -9040,7 +9040,7 @@ impl ::std::fmt::Debug for PrimitiveType {
 impl_enum_traits!(PrimitiveType);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ProgramInterface(pub types::GLenum);
 
 impl ProgramInterface {
@@ -9069,26 +9069,26 @@ impl ProgramInterface {
 impl ::std::fmt::Debug for ProgramInterface {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            ProgramInterface::TRANSFORM_FEEDBACK_BUFFER => write!(fmt, "ProgramInterface(TRANSFORM_FEEDBACK_BUFFER)"),
-            ProgramInterface::PROGRAM_INPUT => write!(fmt, "ProgramInterface(PROGRAM_INPUT)"),
             ProgramInterface::BUFFER_VARIABLE => write!(fmt, "ProgramInterface(BUFFER_VARIABLE)"),
-            ProgramInterface::UNIFORM => write!(fmt, "ProgramInterface(UNIFORM)"),
-            ProgramInterface::VERTEX_SUBROUTINE_UNIFORM => write!(fmt, "ProgramInterface(VERTEX_SUBROUTINE_UNIFORM)"),
-            ProgramInterface::TESS_CONTROL_SUBROUTINE => write!(fmt, "ProgramInterface(TESS_CONTROL_SUBROUTINE)"),
-            ProgramInterface::GEOMETRY_SUBROUTINE_UNIFORM => write!(fmt, "ProgramInterface(GEOMETRY_SUBROUTINE_UNIFORM)"),
-            ProgramInterface::COMPUTE_SUBROUTINE_UNIFORM => write!(fmt, "ProgramInterface(COMPUTE_SUBROUTINE_UNIFORM)"),
-            ProgramInterface::TRANSFORM_FEEDBACK_VARYING => write!(fmt, "ProgramInterface(TRANSFORM_FEEDBACK_VARYING)"),
-            ProgramInterface::FRAGMENT_SUBROUTINE => write!(fmt, "ProgramInterface(FRAGMENT_SUBROUTINE)"),
-            ProgramInterface::TESS_EVALUATION_SUBROUTINE => write!(fmt, "ProgramInterface(TESS_EVALUATION_SUBROUTINE)"),
-            ProgramInterface::GEOMETRY_SUBROUTINE => write!(fmt, "ProgramInterface(GEOMETRY_SUBROUTINE)"),
-            ProgramInterface::TESS_EVALUATION_SUBROUTINE_UNIFORM => write!(fmt, "ProgramInterface(TESS_EVALUATION_SUBROUTINE_UNIFORM)"),
-            ProgramInterface::SHADER_STORAGE_BLOCK => write!(fmt, "ProgramInterface(SHADER_STORAGE_BLOCK)"),
             ProgramInterface::COMPUTE_SUBROUTINE => write!(fmt, "ProgramInterface(COMPUTE_SUBROUTINE)"),
-            ProgramInterface::PROGRAM_OUTPUT => write!(fmt, "ProgramInterface(PROGRAM_OUTPUT)"),
-            ProgramInterface::UNIFORM_BLOCK => write!(fmt, "ProgramInterface(UNIFORM_BLOCK)"),
+            ProgramInterface::COMPUTE_SUBROUTINE_UNIFORM => write!(fmt, "ProgramInterface(COMPUTE_SUBROUTINE_UNIFORM)"),
+            ProgramInterface::FRAGMENT_SUBROUTINE => write!(fmt, "ProgramInterface(FRAGMENT_SUBROUTINE)"),
             ProgramInterface::FRAGMENT_SUBROUTINE_UNIFORM => write!(fmt, "ProgramInterface(FRAGMENT_SUBROUTINE_UNIFORM)"),
+            ProgramInterface::GEOMETRY_SUBROUTINE => write!(fmt, "ProgramInterface(GEOMETRY_SUBROUTINE)"),
+            ProgramInterface::GEOMETRY_SUBROUTINE_UNIFORM => write!(fmt, "ProgramInterface(GEOMETRY_SUBROUTINE_UNIFORM)"),
+            ProgramInterface::PROGRAM_INPUT => write!(fmt, "ProgramInterface(PROGRAM_INPUT)"),
+            ProgramInterface::PROGRAM_OUTPUT => write!(fmt, "ProgramInterface(PROGRAM_OUTPUT)"),
+            ProgramInterface::SHADER_STORAGE_BLOCK => write!(fmt, "ProgramInterface(SHADER_STORAGE_BLOCK)"),
+            ProgramInterface::TESS_CONTROL_SUBROUTINE => write!(fmt, "ProgramInterface(TESS_CONTROL_SUBROUTINE)"),
             ProgramInterface::TESS_CONTROL_SUBROUTINE_UNIFORM => write!(fmt, "ProgramInterface(TESS_CONTROL_SUBROUTINE_UNIFORM)"),
+            ProgramInterface::TESS_EVALUATION_SUBROUTINE => write!(fmt, "ProgramInterface(TESS_EVALUATION_SUBROUTINE)"),
+            ProgramInterface::TESS_EVALUATION_SUBROUTINE_UNIFORM => write!(fmt, "ProgramInterface(TESS_EVALUATION_SUBROUTINE_UNIFORM)"),
+            ProgramInterface::TRANSFORM_FEEDBACK_BUFFER => write!(fmt, "ProgramInterface(TRANSFORM_FEEDBACK_BUFFER)"),
+            ProgramInterface::TRANSFORM_FEEDBACK_VARYING => write!(fmt, "ProgramInterface(TRANSFORM_FEEDBACK_VARYING)"),
+            ProgramInterface::UNIFORM => write!(fmt, "ProgramInterface(UNIFORM)"),
+            ProgramInterface::UNIFORM_BLOCK => write!(fmt, "ProgramInterface(UNIFORM_BLOCK)"),
             ProgramInterface::VERTEX_SUBROUTINE => write!(fmt, "ProgramInterface(VERTEX_SUBROUTINE)"),
+            ProgramInterface::VERTEX_SUBROUTINE_UNIFORM => write!(fmt, "ProgramInterface(VERTEX_SUBROUTINE_UNIFORM)"),
             _ => write!(fmt, "ProgramInterface({})", self.0),
         }
     }
@@ -9097,7 +9097,7 @@ impl ::std::fmt::Debug for ProgramInterface {
 impl_enum_traits!(ProgramInterface);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ProgramInterfacePName(pub types::GLenum);
 
 impl ProgramInterfacePName {
@@ -9110,10 +9110,10 @@ impl ProgramInterfacePName {
 impl ::std::fmt::Debug for ProgramInterfacePName {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
+            ProgramInterfacePName::ACTIVE_RESOURCES => write!(fmt, "ProgramInterfacePName(ACTIVE_RESOURCES)"),
             ProgramInterfacePName::MAX_NAME_LENGTH => write!(fmt, "ProgramInterfacePName(MAX_NAME_LENGTH)"),
             ProgramInterfacePName::MAX_NUM_ACTIVE_VARIABLES => write!(fmt, "ProgramInterfacePName(MAX_NUM_ACTIVE_VARIABLES)"),
             ProgramInterfacePName::MAX_NUM_COMPATIBLE_SUBROUTINES => write!(fmt, "ProgramInterfacePName(MAX_NUM_COMPATIBLE_SUBROUTINES)"),
-            ProgramInterfacePName::ACTIVE_RESOURCES => write!(fmt, "ProgramInterfacePName(ACTIVE_RESOURCES)"),
             _ => write!(fmt, "ProgramInterfacePName({})", self.0),
         }
     }
@@ -9122,7 +9122,7 @@ impl ::std::fmt::Debug for ProgramInterfacePName {
 impl_enum_traits!(ProgramInterfacePName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ProgramParameterPName(pub types::GLenum);
 
 impl ProgramParameterPName {
@@ -9143,7 +9143,7 @@ impl ::std::fmt::Debug for ProgramParameterPName {
 impl_enum_traits!(ProgramParameterPName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ProgramPropertyARB(pub types::GLenum);
 
 impl ProgramPropertyARB {
@@ -9172,26 +9172,26 @@ impl ProgramPropertyARB {
 impl ::std::fmt::Debug for ProgramPropertyARB {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            ProgramPropertyARB::VALIDATE_STATUS => write!(fmt, "ProgramPropertyARB(VALIDATE_STATUS)"),
-            ProgramPropertyARB::TRANSFORM_FEEDBACK_VARYING_MAX_LENGTH => write!(fmt, "ProgramPropertyARB(TRANSFORM_FEEDBACK_VARYING_MAX_LENGTH)"),
             ProgramPropertyARB::ACTIVE_ATOMIC_COUNTER_BUFFERS => write!(fmt, "ProgramPropertyARB(ACTIVE_ATOMIC_COUNTER_BUFFERS)"),
-            ProgramPropertyARB::LINK_STATUS => write!(fmt, "ProgramPropertyARB(LINK_STATUS)"),
-            ProgramPropertyARB::DELETE_STATUS => write!(fmt, "ProgramPropertyARB(DELETE_STATUS)"),
-            ProgramPropertyARB::INFO_LOG_LENGTH => write!(fmt, "ProgramPropertyARB(INFO_LOG_LENGTH)"),
-            ProgramPropertyARB::ACTIVE_UNIFORM_MAX_LENGTH => write!(fmt, "ProgramPropertyARB(ACTIVE_UNIFORM_MAX_LENGTH)"),
-            ProgramPropertyARB::GEOMETRY_INPUT_TYPE => write!(fmt, "ProgramPropertyARB(GEOMETRY_INPUT_TYPE)"),
-            ProgramPropertyARB::TRANSFORM_FEEDBACK_VARYINGS => write!(fmt, "ProgramPropertyARB(TRANSFORM_FEEDBACK_VARYINGS)"),
-            ProgramPropertyARB::PROGRAM_BINARY_LENGTH => write!(fmt, "ProgramPropertyARB(PROGRAM_BINARY_LENGTH)"),
-            ProgramPropertyARB::TRANSFORM_FEEDBACK_BUFFER_MODE => write!(fmt, "ProgramPropertyARB(TRANSFORM_FEEDBACK_BUFFER_MODE)"),
-            ProgramPropertyARB::COMPUTE_WORK_GROUP_SIZE => write!(fmt, "ProgramPropertyARB(COMPUTE_WORK_GROUP_SIZE)"),
-            ProgramPropertyARB::GEOMETRY_VERTICES_OUT => write!(fmt, "ProgramPropertyARB(GEOMETRY_VERTICES_OUT)"),
-            ProgramPropertyARB::ACTIVE_UNIFORMS => write!(fmt, "ProgramPropertyARB(ACTIVE_UNIFORMS)"),
-            ProgramPropertyARB::ACTIVE_UNIFORM_BLOCK_MAX_NAME_LENGTH => write!(fmt, "ProgramPropertyARB(ACTIVE_UNIFORM_BLOCK_MAX_NAME_LENGTH)"),
-            ProgramPropertyARB::GEOMETRY_OUTPUT_TYPE => write!(fmt, "ProgramPropertyARB(GEOMETRY_OUTPUT_TYPE)"),
-            ProgramPropertyARB::ATTACHED_SHADERS => write!(fmt, "ProgramPropertyARB(ATTACHED_SHADERS)"),
-            ProgramPropertyARB::ACTIVE_UNIFORM_BLOCKS => write!(fmt, "ProgramPropertyARB(ACTIVE_UNIFORM_BLOCKS)"),
             ProgramPropertyARB::ACTIVE_ATTRIBUTES => write!(fmt, "ProgramPropertyARB(ACTIVE_ATTRIBUTES)"),
             ProgramPropertyARB::ACTIVE_ATTRIBUTE_MAX_LENGTH => write!(fmt, "ProgramPropertyARB(ACTIVE_ATTRIBUTE_MAX_LENGTH)"),
+            ProgramPropertyARB::ACTIVE_UNIFORMS => write!(fmt, "ProgramPropertyARB(ACTIVE_UNIFORMS)"),
+            ProgramPropertyARB::ACTIVE_UNIFORM_BLOCKS => write!(fmt, "ProgramPropertyARB(ACTIVE_UNIFORM_BLOCKS)"),
+            ProgramPropertyARB::ACTIVE_UNIFORM_BLOCK_MAX_NAME_LENGTH => write!(fmt, "ProgramPropertyARB(ACTIVE_UNIFORM_BLOCK_MAX_NAME_LENGTH)"),
+            ProgramPropertyARB::ACTIVE_UNIFORM_MAX_LENGTH => write!(fmt, "ProgramPropertyARB(ACTIVE_UNIFORM_MAX_LENGTH)"),
+            ProgramPropertyARB::ATTACHED_SHADERS => write!(fmt, "ProgramPropertyARB(ATTACHED_SHADERS)"),
+            ProgramPropertyARB::COMPUTE_WORK_GROUP_SIZE => write!(fmt, "ProgramPropertyARB(COMPUTE_WORK_GROUP_SIZE)"),
+            ProgramPropertyARB::DELETE_STATUS => write!(fmt, "ProgramPropertyARB(DELETE_STATUS)"),
+            ProgramPropertyARB::GEOMETRY_INPUT_TYPE => write!(fmt, "ProgramPropertyARB(GEOMETRY_INPUT_TYPE)"),
+            ProgramPropertyARB::GEOMETRY_OUTPUT_TYPE => write!(fmt, "ProgramPropertyARB(GEOMETRY_OUTPUT_TYPE)"),
+            ProgramPropertyARB::GEOMETRY_VERTICES_OUT => write!(fmt, "ProgramPropertyARB(GEOMETRY_VERTICES_OUT)"),
+            ProgramPropertyARB::INFO_LOG_LENGTH => write!(fmt, "ProgramPropertyARB(INFO_LOG_LENGTH)"),
+            ProgramPropertyARB::LINK_STATUS => write!(fmt, "ProgramPropertyARB(LINK_STATUS)"),
+            ProgramPropertyARB::PROGRAM_BINARY_LENGTH => write!(fmt, "ProgramPropertyARB(PROGRAM_BINARY_LENGTH)"),
+            ProgramPropertyARB::TRANSFORM_FEEDBACK_BUFFER_MODE => write!(fmt, "ProgramPropertyARB(TRANSFORM_FEEDBACK_BUFFER_MODE)"),
+            ProgramPropertyARB::TRANSFORM_FEEDBACK_VARYINGS => write!(fmt, "ProgramPropertyARB(TRANSFORM_FEEDBACK_VARYINGS)"),
+            ProgramPropertyARB::TRANSFORM_FEEDBACK_VARYING_MAX_LENGTH => write!(fmt, "ProgramPropertyARB(TRANSFORM_FEEDBACK_VARYING_MAX_LENGTH)"),
+            ProgramPropertyARB::VALIDATE_STATUS => write!(fmt, "ProgramPropertyARB(VALIDATE_STATUS)"),
             _ => write!(fmt, "ProgramPropertyARB({})", self.0),
         }
     }
@@ -9200,7 +9200,7 @@ impl ::std::fmt::Debug for ProgramPropertyARB {
 impl_enum_traits!(ProgramPropertyARB);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ProgramStagePName(pub types::GLenum);
 
 impl ProgramStagePName {
@@ -9214,10 +9214,10 @@ impl ProgramStagePName {
 impl ::std::fmt::Debug for ProgramStagePName {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            ProgramStagePName::ACTIVE_SUBROUTINE_UNIFORM_LOCATIONS => write!(fmt, "ProgramStagePName(ACTIVE_SUBROUTINE_UNIFORM_LOCATIONS)"),
             ProgramStagePName::ACTIVE_SUBROUTINES => write!(fmt, "ProgramStagePName(ACTIVE_SUBROUTINES)"),
             ProgramStagePName::ACTIVE_SUBROUTINE_MAX_LENGTH => write!(fmt, "ProgramStagePName(ACTIVE_SUBROUTINE_MAX_LENGTH)"),
             ProgramStagePName::ACTIVE_SUBROUTINE_UNIFORMS => write!(fmt, "ProgramStagePName(ACTIVE_SUBROUTINE_UNIFORMS)"),
+            ProgramStagePName::ACTIVE_SUBROUTINE_UNIFORM_LOCATIONS => write!(fmt, "ProgramStagePName(ACTIVE_SUBROUTINE_UNIFORM_LOCATIONS)"),
             ProgramStagePName::ACTIVE_SUBROUTINE_UNIFORM_MAX_LENGTH => write!(fmt, "ProgramStagePName(ACTIVE_SUBROUTINE_UNIFORM_MAX_LENGTH)"),
             _ => write!(fmt, "ProgramStagePName({})", self.0),
         }
@@ -9227,7 +9227,7 @@ impl ::std::fmt::Debug for ProgramStagePName {
 impl_enum_traits!(ProgramStagePName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct QueryCounterTarget(pub types::GLenum);
 
 impl QueryCounterTarget {
@@ -9246,7 +9246,7 @@ impl ::std::fmt::Debug for QueryCounterTarget {
 impl_enum_traits!(QueryCounterTarget);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct QueryObjectParameterName(pub types::GLenum);
 
 impl QueryObjectParameterName {
@@ -9259,10 +9259,10 @@ impl QueryObjectParameterName {
 impl ::std::fmt::Debug for QueryObjectParameterName {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            QueryObjectParameterName::QUERY_TARGET => write!(fmt, "QueryObjectParameterName(QUERY_TARGET)"),
-            QueryObjectParameterName::QUERY_RESULT_AVAILABLE => write!(fmt, "QueryObjectParameterName(QUERY_RESULT_AVAILABLE)"),
             QueryObjectParameterName::QUERY_RESULT => write!(fmt, "QueryObjectParameterName(QUERY_RESULT)"),
+            QueryObjectParameterName::QUERY_RESULT_AVAILABLE => write!(fmt, "QueryObjectParameterName(QUERY_RESULT_AVAILABLE)"),
             QueryObjectParameterName::QUERY_RESULT_NO_WAIT => write!(fmt, "QueryObjectParameterName(QUERY_RESULT_NO_WAIT)"),
+            QueryObjectParameterName::QUERY_TARGET => write!(fmt, "QueryObjectParameterName(QUERY_TARGET)"),
             _ => write!(fmt, "QueryObjectParameterName({})", self.0),
         }
     }
@@ -9271,7 +9271,7 @@ impl ::std::fmt::Debug for QueryObjectParameterName {
 impl_enum_traits!(QueryObjectParameterName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct QueryParameterName(pub types::GLenum);
 
 impl QueryParameterName {
@@ -9292,7 +9292,7 @@ impl ::std::fmt::Debug for QueryParameterName {
 impl_enum_traits!(QueryParameterName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct QueryTarget(pub types::GLenum);
 
 impl QueryTarget {
@@ -9307,12 +9307,12 @@ impl QueryTarget {
 impl ::std::fmt::Debug for QueryTarget {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            QueryTarget::TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN => write!(fmt, "QueryTarget(TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN)"),
             QueryTarget::ANY_SAMPLES_PASSED => write!(fmt, "QueryTarget(ANY_SAMPLES_PASSED)"),
             QueryTarget::ANY_SAMPLES_PASSED_CONSERVATIVE => write!(fmt, "QueryTarget(ANY_SAMPLES_PASSED_CONSERVATIVE)"),
             QueryTarget::PRIMITIVES_GENERATED => write!(fmt, "QueryTarget(PRIMITIVES_GENERATED)"),
             QueryTarget::SAMPLES_PASSED => write!(fmt, "QueryTarget(SAMPLES_PASSED)"),
             QueryTarget::TIME_ELAPSED => write!(fmt, "QueryTarget(TIME_ELAPSED)"),
+            QueryTarget::TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN => write!(fmt, "QueryTarget(TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN)"),
             _ => write!(fmt, "QueryTarget({})", self.0),
         }
     }
@@ -9321,7 +9321,7 @@ impl ::std::fmt::Debug for QueryTarget {
 impl_enum_traits!(QueryTarget);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ReadBufferMode(pub types::GLenum);
 
 impl ReadBufferMode {
@@ -9338,14 +9338,14 @@ impl ReadBufferMode {
 impl ::std::fmt::Debug for ReadBufferMode {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            ReadBufferMode::BACK_RIGHT => write!(fmt, "ReadBufferMode(BACK_RIGHT)"),
-            ReadBufferMode::LEFT => write!(fmt, "ReadBufferMode(LEFT)"),
+            ReadBufferMode::BACK => write!(fmt, "ReadBufferMode(BACK)"),
             ReadBufferMode::BACK_LEFT => write!(fmt, "ReadBufferMode(BACK_LEFT)"),
+            ReadBufferMode::BACK_RIGHT => write!(fmt, "ReadBufferMode(BACK_RIGHT)"),
+            ReadBufferMode::FRONT => write!(fmt, "ReadBufferMode(FRONT)"),
             ReadBufferMode::FRONT_LEFT => write!(fmt, "ReadBufferMode(FRONT_LEFT)"),
             ReadBufferMode::FRONT_RIGHT => write!(fmt, "ReadBufferMode(FRONT_RIGHT)"),
+            ReadBufferMode::LEFT => write!(fmt, "ReadBufferMode(LEFT)"),
             ReadBufferMode::RIGHT => write!(fmt, "ReadBufferMode(RIGHT)"),
-            ReadBufferMode::FRONT => write!(fmt, "ReadBufferMode(FRONT)"),
-            ReadBufferMode::BACK => write!(fmt, "ReadBufferMode(BACK)"),
             _ => write!(fmt, "ReadBufferMode({})", self.0),
         }
     }
@@ -9354,7 +9354,7 @@ impl ::std::fmt::Debug for ReadBufferMode {
 impl_enum_traits!(ReadBufferMode);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct RenderbufferParameterName(pub types::GLenum);
 
 impl RenderbufferParameterName {
@@ -9373,16 +9373,16 @@ impl RenderbufferParameterName {
 impl ::std::fmt::Debug for RenderbufferParameterName {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            RenderbufferParameterName::RENDERBUFFER_BLUE_SIZE => write!(fmt, "RenderbufferParameterName(RENDERBUFFER_BLUE_SIZE)"),
-            RenderbufferParameterName::RENDERBUFFER_INTERNAL_FORMAT => write!(fmt, "RenderbufferParameterName(RENDERBUFFER_INTERNAL_FORMAT)"),
-            RenderbufferParameterName::RENDERBUFFER_GREEN_SIZE => write!(fmt, "RenderbufferParameterName(RENDERBUFFER_GREEN_SIZE)"),
             RenderbufferParameterName::RENDERBUFFER_ALPHA_SIZE => write!(fmt, "RenderbufferParameterName(RENDERBUFFER_ALPHA_SIZE)"),
+            RenderbufferParameterName::RENDERBUFFER_BLUE_SIZE => write!(fmt, "RenderbufferParameterName(RENDERBUFFER_BLUE_SIZE)"),
             RenderbufferParameterName::RENDERBUFFER_DEPTH_SIZE => write!(fmt, "RenderbufferParameterName(RENDERBUFFER_DEPTH_SIZE)"),
-            RenderbufferParameterName::RENDERBUFFER_RED_SIZE => write!(fmt, "RenderbufferParameterName(RENDERBUFFER_RED_SIZE)"),
+            RenderbufferParameterName::RENDERBUFFER_GREEN_SIZE => write!(fmt, "RenderbufferParameterName(RENDERBUFFER_GREEN_SIZE)"),
             RenderbufferParameterName::RENDERBUFFER_HEIGHT => write!(fmt, "RenderbufferParameterName(RENDERBUFFER_HEIGHT)"),
-            RenderbufferParameterName::RENDERBUFFER_WIDTH => write!(fmt, "RenderbufferParameterName(RENDERBUFFER_WIDTH)"),
+            RenderbufferParameterName::RENDERBUFFER_INTERNAL_FORMAT => write!(fmt, "RenderbufferParameterName(RENDERBUFFER_INTERNAL_FORMAT)"),
+            RenderbufferParameterName::RENDERBUFFER_RED_SIZE => write!(fmt, "RenderbufferParameterName(RENDERBUFFER_RED_SIZE)"),
             RenderbufferParameterName::RENDERBUFFER_SAMPLES => write!(fmt, "RenderbufferParameterName(RENDERBUFFER_SAMPLES)"),
             RenderbufferParameterName::RENDERBUFFER_STENCIL_SIZE => write!(fmt, "RenderbufferParameterName(RENDERBUFFER_STENCIL_SIZE)"),
+            RenderbufferParameterName::RENDERBUFFER_WIDTH => write!(fmt, "RenderbufferParameterName(RENDERBUFFER_WIDTH)"),
             _ => write!(fmt, "RenderbufferParameterName({})", self.0),
         }
     }
@@ -9391,7 +9391,7 @@ impl ::std::fmt::Debug for RenderbufferParameterName {
 impl_enum_traits!(RenderbufferParameterName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct RenderbufferTarget(pub types::GLenum);
 
 impl RenderbufferTarget {
@@ -9410,7 +9410,7 @@ impl ::std::fmt::Debug for RenderbufferTarget {
 impl_enum_traits!(RenderbufferTarget);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct RenderingMode(pub types::GLenum);
 
 impl RenderingMode {
@@ -9427,7 +9427,7 @@ impl ::std::fmt::Debug for RenderingMode {
 impl_enum_traits!(RenderingMode);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct SamplePatternSGIS(pub types::GLenum);
 
 impl SamplePatternSGIS {
@@ -9444,7 +9444,7 @@ impl ::std::fmt::Debug for SamplePatternSGIS {
 impl_enum_traits!(SamplePatternSGIS);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct SamplerParameterName(pub types::GLenum);
 
 impl SamplerParameterName {
@@ -9463,16 +9463,16 @@ impl SamplerParameterName {
 impl ::std::fmt::Debug for SamplerParameterName {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            SamplerParameterName::TEXTURE_MIN_FILTER => write!(fmt, "SamplerParameterName(TEXTURE_MIN_FILTER)"),
-            SamplerParameterName::TEXTURE_WRAP_R => write!(fmt, "SamplerParameterName(TEXTURE_WRAP_R)"),
-            SamplerParameterName::TEXTURE_MIN_LOD => write!(fmt, "SamplerParameterName(TEXTURE_MIN_LOD)"),
-            SamplerParameterName::TEXTURE_MAX_LOD => write!(fmt, "SamplerParameterName(TEXTURE_MAX_LOD)"),
-            SamplerParameterName::TEXTURE_MAG_FILTER => write!(fmt, "SamplerParameterName(TEXTURE_MAG_FILTER)"),
-            SamplerParameterName::TEXTURE_WRAP_T => write!(fmt, "SamplerParameterName(TEXTURE_WRAP_T)"),
+            SamplerParameterName::TEXTURE_BORDER_COLOR => write!(fmt, "SamplerParameterName(TEXTURE_BORDER_COLOR)"),
             SamplerParameterName::TEXTURE_COMPARE_FUNC => write!(fmt, "SamplerParameterName(TEXTURE_COMPARE_FUNC)"),
             SamplerParameterName::TEXTURE_COMPARE_MODE => write!(fmt, "SamplerParameterName(TEXTURE_COMPARE_MODE)"),
+            SamplerParameterName::TEXTURE_MAG_FILTER => write!(fmt, "SamplerParameterName(TEXTURE_MAG_FILTER)"),
+            SamplerParameterName::TEXTURE_MAX_LOD => write!(fmt, "SamplerParameterName(TEXTURE_MAX_LOD)"),
+            SamplerParameterName::TEXTURE_MIN_FILTER => write!(fmt, "SamplerParameterName(TEXTURE_MIN_FILTER)"),
+            SamplerParameterName::TEXTURE_MIN_LOD => write!(fmt, "SamplerParameterName(TEXTURE_MIN_LOD)"),
+            SamplerParameterName::TEXTURE_WRAP_R => write!(fmt, "SamplerParameterName(TEXTURE_WRAP_R)"),
             SamplerParameterName::TEXTURE_WRAP_S => write!(fmt, "SamplerParameterName(TEXTURE_WRAP_S)"),
-            SamplerParameterName::TEXTURE_BORDER_COLOR => write!(fmt, "SamplerParameterName(TEXTURE_BORDER_COLOR)"),
+            SamplerParameterName::TEXTURE_WRAP_T => write!(fmt, "SamplerParameterName(TEXTURE_WRAP_T)"),
             _ => write!(fmt, "SamplerParameterName({})", self.0),
         }
     }
@@ -9481,7 +9481,7 @@ impl ::std::fmt::Debug for SamplerParameterName {
 impl_enum_traits!(SamplerParameterName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct SemaphoreParameterName(pub types::GLenum);
 
 impl SemaphoreParameterName {
@@ -9498,7 +9498,7 @@ impl ::std::fmt::Debug for SemaphoreParameterName {
 impl_enum_traits!(SemaphoreParameterName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct SeparableTargetEXT(pub types::GLenum);
 
 impl SeparableTargetEXT {
@@ -9515,7 +9515,7 @@ impl ::std::fmt::Debug for SeparableTargetEXT {
 impl_enum_traits!(SeparableTargetEXT);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ShaderParameterName(pub types::GLenum);
 
 impl ShaderParameterName {
@@ -9530,10 +9530,10 @@ impl ::std::fmt::Debug for ShaderParameterName {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
             ShaderParameterName::COMPILE_STATUS => write!(fmt, "ShaderParameterName(COMPILE_STATUS)"),
-            ShaderParameterName::SHADER_SOURCE_LENGTH => write!(fmt, "ShaderParameterName(SHADER_SOURCE_LENGTH)"),
-            ShaderParameterName::SHADER_TYPE => write!(fmt, "ShaderParameterName(SHADER_TYPE)"),
             ShaderParameterName::DELETE_STATUS => write!(fmt, "ShaderParameterName(DELETE_STATUS)"),
             ShaderParameterName::INFO_LOG_LENGTH => write!(fmt, "ShaderParameterName(INFO_LOG_LENGTH)"),
+            ShaderParameterName::SHADER_SOURCE_LENGTH => write!(fmt, "ShaderParameterName(SHADER_SOURCE_LENGTH)"),
+            ShaderParameterName::SHADER_TYPE => write!(fmt, "ShaderParameterName(SHADER_TYPE)"),
             _ => write!(fmt, "ShaderParameterName({})", self.0),
         }
     }
@@ -9542,7 +9542,7 @@ impl ::std::fmt::Debug for ShaderParameterName {
 impl_enum_traits!(ShaderParameterName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ShaderType(pub types::GLenum);
 
 impl ShaderType {
@@ -9557,12 +9557,12 @@ impl ShaderType {
 impl ::std::fmt::Debug for ShaderType {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            ShaderType::GEOMETRY_SHADER => write!(fmt, "ShaderType(GEOMETRY_SHADER)"),
-            ShaderType::VERTEX_SHADER => write!(fmt, "ShaderType(VERTEX_SHADER)"),
             ShaderType::COMPUTE_SHADER => write!(fmt, "ShaderType(COMPUTE_SHADER)"),
-            ShaderType::TESS_CONTROL_SHADER => write!(fmt, "ShaderType(TESS_CONTROL_SHADER)"),
             ShaderType::FRAGMENT_SHADER => write!(fmt, "ShaderType(FRAGMENT_SHADER)"),
+            ShaderType::GEOMETRY_SHADER => write!(fmt, "ShaderType(GEOMETRY_SHADER)"),
+            ShaderType::TESS_CONTROL_SHADER => write!(fmt, "ShaderType(TESS_CONTROL_SHADER)"),
             ShaderType::TESS_EVALUATION_SHADER => write!(fmt, "ShaderType(TESS_EVALUATION_SHADER)"),
+            ShaderType::VERTEX_SHADER => write!(fmt, "ShaderType(VERTEX_SHADER)"),
             _ => write!(fmt, "ShaderType({})", self.0),
         }
     }
@@ -9571,7 +9571,7 @@ impl ::std::fmt::Debug for ShaderType {
 impl_enum_traits!(ShaderType);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct ShadingModel(pub types::GLenum);
 
 impl ShadingModel {
@@ -9588,7 +9588,7 @@ impl ::std::fmt::Debug for ShadingModel {
 impl_enum_traits!(ShadingModel);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct StencilFaceDirection(pub types::GLenum);
 
 impl StencilFaceDirection {
@@ -9600,9 +9600,9 @@ impl StencilFaceDirection {
 impl ::std::fmt::Debug for StencilFaceDirection {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            StencilFaceDirection::FRONT_AND_BACK => write!(fmt, "StencilFaceDirection(FRONT_AND_BACK)"),
             StencilFaceDirection::BACK => write!(fmt, "StencilFaceDirection(BACK)"),
             StencilFaceDirection::FRONT => write!(fmt, "StencilFaceDirection(FRONT)"),
+            StencilFaceDirection::FRONT_AND_BACK => write!(fmt, "StencilFaceDirection(FRONT_AND_BACK)"),
             _ => write!(fmt, "StencilFaceDirection({})", self.0),
         }
     }
@@ -9611,7 +9611,7 @@ impl ::std::fmt::Debug for StencilFaceDirection {
 impl_enum_traits!(StencilFaceDirection);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct StencilFunction(pub types::GLenum);
 
 impl StencilFunction {
@@ -9628,14 +9628,14 @@ impl StencilFunction {
 impl ::std::fmt::Debug for StencilFunction {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            StencilFunction::GEQUAL => write!(fmt, "StencilFunction(GEQUAL)"),
-            StencilFunction::NEVER => write!(fmt, "StencilFunction(NEVER)"),
-            StencilFunction::LEQUAL => write!(fmt, "StencilFunction(LEQUAL)"),
-            StencilFunction::GREATER => write!(fmt, "StencilFunction(GREATER)"),
-            StencilFunction::NOTEQUAL => write!(fmt, "StencilFunction(NOTEQUAL)"),
-            StencilFunction::EQUAL => write!(fmt, "StencilFunction(EQUAL)"),
-            StencilFunction::LESS => write!(fmt, "StencilFunction(LESS)"),
             StencilFunction::ALWAYS => write!(fmt, "StencilFunction(ALWAYS)"),
+            StencilFunction::EQUAL => write!(fmt, "StencilFunction(EQUAL)"),
+            StencilFunction::GEQUAL => write!(fmt, "StencilFunction(GEQUAL)"),
+            StencilFunction::GREATER => write!(fmt, "StencilFunction(GREATER)"),
+            StencilFunction::LEQUAL => write!(fmt, "StencilFunction(LEQUAL)"),
+            StencilFunction::LESS => write!(fmt, "StencilFunction(LESS)"),
+            StencilFunction::NEVER => write!(fmt, "StencilFunction(NEVER)"),
+            StencilFunction::NOTEQUAL => write!(fmt, "StencilFunction(NOTEQUAL)"),
             _ => write!(fmt, "StencilFunction({})", self.0),
         }
     }
@@ -9644,7 +9644,7 @@ impl ::std::fmt::Debug for StencilFunction {
 impl_enum_traits!(StencilFunction);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct StencilOp(pub types::GLenum);
 
 impl StencilOp {
@@ -9661,14 +9661,14 @@ impl StencilOp {
 impl ::std::fmt::Debug for StencilOp {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            StencilOp::REPLACE => write!(fmt, "StencilOp(REPLACE)"),
-            StencilOp::INCR_WRAP => write!(fmt, "StencilOp(INCR_WRAP)"),
-            StencilOp::KEEP => write!(fmt, "StencilOp(KEEP)"),
-            StencilOp::ZERO => write!(fmt, "StencilOp(ZERO)"),
-            StencilOp::INVERT => write!(fmt, "StencilOp(INVERT)"),
+            StencilOp::DECR => write!(fmt, "StencilOp(DECR)"),
             StencilOp::DECR_WRAP => write!(fmt, "StencilOp(DECR_WRAP)"),
             StencilOp::INCR => write!(fmt, "StencilOp(INCR)"),
-            StencilOp::DECR => write!(fmt, "StencilOp(DECR)"),
+            StencilOp::INCR_WRAP => write!(fmt, "StencilOp(INCR_WRAP)"),
+            StencilOp::INVERT => write!(fmt, "StencilOp(INVERT)"),
+            StencilOp::KEEP => write!(fmt, "StencilOp(KEEP)"),
+            StencilOp::REPLACE => write!(fmt, "StencilOp(REPLACE)"),
+            StencilOp::ZERO => write!(fmt, "StencilOp(ZERO)"),
             _ => write!(fmt, "StencilOp({})", self.0),
         }
     }
@@ -9677,7 +9677,7 @@ impl ::std::fmt::Debug for StencilOp {
 impl_enum_traits!(StencilOp);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct StringName(pub types::GLenum);
 
 impl StringName {
@@ -9691,10 +9691,10 @@ impl StringName {
 impl ::std::fmt::Debug for StringName {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            StringName::SHADING_LANGUAGE_VERSION => write!(fmt, "StringName(SHADING_LANGUAGE_VERSION)"),
             StringName::EXTENSIONS => write!(fmt, "StringName(EXTENSIONS)"),
-            StringName::VENDOR => write!(fmt, "StringName(VENDOR)"),
             StringName::RENDERER => write!(fmt, "StringName(RENDERER)"),
+            StringName::SHADING_LANGUAGE_VERSION => write!(fmt, "StringName(SHADING_LANGUAGE_VERSION)"),
+            StringName::VENDOR => write!(fmt, "StringName(VENDOR)"),
             StringName::VERSION => write!(fmt, "StringName(VERSION)"),
             _ => write!(fmt, "StringName({})", self.0),
         }
@@ -9704,7 +9704,7 @@ impl ::std::fmt::Debug for StringName {
 impl_enum_traits!(StringName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct SubroutineParameterName(pub types::GLenum);
 
 impl SubroutineParameterName {
@@ -9717,10 +9717,10 @@ impl SubroutineParameterName {
 impl ::std::fmt::Debug for SubroutineParameterName {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            SubroutineParameterName::UNIFORM_SIZE => write!(fmt, "SubroutineParameterName(UNIFORM_SIZE)"),
-            SubroutineParameterName::NUM_COMPATIBLE_SUBROUTINES => write!(fmt, "SubroutineParameterName(NUM_COMPATIBLE_SUBROUTINES)"),
             SubroutineParameterName::COMPATIBLE_SUBROUTINES => write!(fmt, "SubroutineParameterName(COMPATIBLE_SUBROUTINES)"),
+            SubroutineParameterName::NUM_COMPATIBLE_SUBROUTINES => write!(fmt, "SubroutineParameterName(NUM_COMPATIBLE_SUBROUTINES)"),
             SubroutineParameterName::UNIFORM_NAME_LENGTH => write!(fmt, "SubroutineParameterName(UNIFORM_NAME_LENGTH)"),
+            SubroutineParameterName::UNIFORM_SIZE => write!(fmt, "SubroutineParameterName(UNIFORM_SIZE)"),
             _ => write!(fmt, "SubroutineParameterName({})", self.0),
         }
     }
@@ -9729,7 +9729,7 @@ impl ::std::fmt::Debug for SubroutineParameterName {
 impl_enum_traits!(SubroutineParameterName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct SyncCondition(pub types::GLenum);
 
 impl SyncCondition {
@@ -9748,7 +9748,7 @@ impl ::std::fmt::Debug for SyncCondition {
 impl_enum_traits!(SyncCondition);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct SyncObjectMask(pub types::GLenum);
 
 impl SyncObjectMask {
@@ -9770,7 +9770,7 @@ impl_enum_traits!(SyncObjectMask);
 impl_enum_bitmask_traits!(SyncObjectMask);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct SyncParameterName(pub types::GLenum);
 
 impl SyncParameterName {
@@ -9783,9 +9783,9 @@ impl SyncParameterName {
 impl ::std::fmt::Debug for SyncParameterName {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            SyncParameterName::SYNC_FLAGS => write!(fmt, "SyncParameterName(SYNC_FLAGS)"),
             SyncParameterName::OBJECT_TYPE => write!(fmt, "SyncParameterName(OBJECT_TYPE)"),
             SyncParameterName::SYNC_CONDITION => write!(fmt, "SyncParameterName(SYNC_CONDITION)"),
+            SyncParameterName::SYNC_FLAGS => write!(fmt, "SyncParameterName(SYNC_FLAGS)"),
             SyncParameterName::SYNC_STATUS => write!(fmt, "SyncParameterName(SYNC_STATUS)"),
             _ => write!(fmt, "SyncParameterName({})", self.0),
         }
@@ -9795,7 +9795,7 @@ impl ::std::fmt::Debug for SyncParameterName {
 impl_enum_traits!(SyncParameterName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct SyncStatus(pub types::GLenum);
 
 impl SyncStatus {
@@ -9808,8 +9808,8 @@ impl SyncStatus {
 impl ::std::fmt::Debug for SyncStatus {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            SyncStatus::CONDITION_SATISFIED => write!(fmt, "SyncStatus(CONDITION_SATISFIED)"),
             SyncStatus::ALREADY_SIGNALED => write!(fmt, "SyncStatus(ALREADY_SIGNALED)"),
+            SyncStatus::CONDITION_SATISFIED => write!(fmt, "SyncStatus(CONDITION_SATISFIED)"),
             SyncStatus::TIMEOUT_EXPIRED => write!(fmt, "SyncStatus(TIMEOUT_EXPIRED)"),
             SyncStatus::WAIT_FAILED => write!(fmt, "SyncStatus(WAIT_FAILED)"),
             _ => write!(fmt, "SyncStatus({})", self.0),
@@ -9820,7 +9820,7 @@ impl ::std::fmt::Debug for SyncStatus {
 impl_enum_traits!(SyncStatus);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct TexCoordPointerType(pub types::GLenum);
 
 impl TexCoordPointerType {
@@ -9833,10 +9833,10 @@ impl TexCoordPointerType {
 impl ::std::fmt::Debug for TexCoordPointerType {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
+            TexCoordPointerType::DOUBLE => write!(fmt, "TexCoordPointerType(DOUBLE)"),
+            TexCoordPointerType::FLOAT => write!(fmt, "TexCoordPointerType(FLOAT)"),
             TexCoordPointerType::INT => write!(fmt, "TexCoordPointerType(INT)"),
             TexCoordPointerType::SHORT => write!(fmt, "TexCoordPointerType(SHORT)"),
-            TexCoordPointerType::FLOAT => write!(fmt, "TexCoordPointerType(FLOAT)"),
-            TexCoordPointerType::DOUBLE => write!(fmt, "TexCoordPointerType(DOUBLE)"),
             _ => write!(fmt, "TexCoordPointerType({})", self.0),
         }
     }
@@ -9845,7 +9845,7 @@ impl ::std::fmt::Debug for TexCoordPointerType {
 impl_enum_traits!(TexCoordPointerType);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct TextureCoordName(pub types::GLenum);
 
 impl TextureCoordName {
@@ -9862,7 +9862,7 @@ impl ::std::fmt::Debug for TextureCoordName {
 impl_enum_traits!(TextureCoordName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct TextureEnvMode(pub types::GLenum);
 
 impl TextureEnvMode {
@@ -9881,7 +9881,7 @@ impl ::std::fmt::Debug for TextureEnvMode {
 impl_enum_traits!(TextureEnvMode);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct TextureEnvParameter(pub types::GLenum);
 
 impl TextureEnvParameter {
@@ -9898,7 +9898,7 @@ impl ::std::fmt::Debug for TextureEnvParameter {
 impl_enum_traits!(TextureEnvParameter);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct TextureEnvTarget(pub types::GLenum);
 
 impl TextureEnvTarget {
@@ -9915,7 +9915,7 @@ impl ::std::fmt::Debug for TextureEnvTarget {
 impl_enum_traits!(TextureEnvTarget);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct TextureFilterFuncSGIS(pub types::GLenum);
 
 impl TextureFilterFuncSGIS {
@@ -9932,7 +9932,7 @@ impl ::std::fmt::Debug for TextureFilterFuncSGIS {
 impl_enum_traits!(TextureFilterFuncSGIS);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct TextureGenMode(pub types::GLenum);
 
 impl TextureGenMode {
@@ -9949,7 +9949,7 @@ impl ::std::fmt::Debug for TextureGenMode {
 impl_enum_traits!(TextureGenMode);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct TextureGenParameter(pub types::GLenum);
 
 impl TextureGenParameter {
@@ -9966,7 +9966,7 @@ impl ::std::fmt::Debug for TextureGenParameter {
 impl_enum_traits!(TextureGenParameter);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct TextureLayout(pub types::GLenum);
 
 impl TextureLayout {
@@ -9983,7 +9983,7 @@ impl ::std::fmt::Debug for TextureLayout {
 impl_enum_traits!(TextureLayout);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct TextureMagFilter(pub types::GLenum);
 
 impl TextureMagFilter {
@@ -10004,7 +10004,7 @@ impl ::std::fmt::Debug for TextureMagFilter {
 impl_enum_traits!(TextureMagFilter);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct TextureMinFilter(pub types::GLenum);
 
 impl TextureMinFilter {
@@ -10019,12 +10019,12 @@ impl TextureMinFilter {
 impl ::std::fmt::Debug for TextureMinFilter {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            TextureMinFilter::NEAREST_MIPMAP_NEAREST => write!(fmt, "TextureMinFilter(NEAREST_MIPMAP_NEAREST)"),
             TextureMinFilter::LINEAR => write!(fmt, "TextureMinFilter(LINEAR)"),
-            TextureMinFilter::NEAREST => write!(fmt, "TextureMinFilter(NEAREST)"),
-            TextureMinFilter::LINEAR_MIPMAP_NEAREST => write!(fmt, "TextureMinFilter(LINEAR_MIPMAP_NEAREST)"),
             TextureMinFilter::LINEAR_MIPMAP_LINEAR => write!(fmt, "TextureMinFilter(LINEAR_MIPMAP_LINEAR)"),
+            TextureMinFilter::LINEAR_MIPMAP_NEAREST => write!(fmt, "TextureMinFilter(LINEAR_MIPMAP_NEAREST)"),
+            TextureMinFilter::NEAREST => write!(fmt, "TextureMinFilter(NEAREST)"),
             TextureMinFilter::NEAREST_MIPMAP_LINEAR => write!(fmt, "TextureMinFilter(NEAREST_MIPMAP_LINEAR)"),
+            TextureMinFilter::NEAREST_MIPMAP_NEAREST => write!(fmt, "TextureMinFilter(NEAREST_MIPMAP_NEAREST)"),
             _ => write!(fmt, "TextureMinFilter({})", self.0),
         }
     }
@@ -10033,7 +10033,7 @@ impl ::std::fmt::Debug for TextureMinFilter {
 impl_enum_traits!(TextureMinFilter);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct TextureParameterName(pub types::GLenum);
 
 impl TextureParameterName {
@@ -10068,32 +10068,32 @@ impl TextureParameterName {
 impl ::std::fmt::Debug for TextureParameterName {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            TextureParameterName::TEXTURE_ALPHA_SIZE => write!(fmt, "TextureParameterName(TEXTURE_ALPHA_SIZE)"),
-            TextureParameterName::TEXTURE_INTERNAL_FORMAT => write!(fmt, "TextureParameterName(TEXTURE_INTERNAL_FORMAT)"),
-            TextureParameterName::TEXTURE_MAX_LOD => write!(fmt, "TextureParameterName(TEXTURE_MAX_LOD)"),
-            TextureParameterName::TEXTURE_SWIZZLE_B => write!(fmt, "TextureParameterName(TEXTURE_SWIZZLE_B)"),
-            TextureParameterName::TEXTURE_SWIZZLE_RGBA => write!(fmt, "TextureParameterName(TEXTURE_SWIZZLE_RGBA)"),
-            TextureParameterName::TEXTURE_WRAP_T => write!(fmt, "TextureParameterName(TEXTURE_WRAP_T)"),
-            TextureParameterName::TEXTURE_HEIGHT => write!(fmt, "TextureParameterName(TEXTURE_HEIGHT)"),
-            TextureParameterName::TEXTURE_MIN_FILTER => write!(fmt, "TextureParameterName(TEXTURE_MIN_FILTER)"),
-            TextureParameterName::TEXTURE_SWIZZLE_G => write!(fmt, "TextureParameterName(TEXTURE_SWIZZLE_G)"),
-            TextureParameterName::TEXTURE_WRAP_S => write!(fmt, "TextureParameterName(TEXTURE_WRAP_S)"),
-            TextureParameterName::TEXTURE_MAG_FILTER => write!(fmt, "TextureParameterName(TEXTURE_MAG_FILTER)"),
-            TextureParameterName::TEXTURE_BORDER_COLOR => write!(fmt, "TextureParameterName(TEXTURE_BORDER_COLOR)"),
-            TextureParameterName::TEXTURE_SWIZZLE_R => write!(fmt, "TextureParameterName(TEXTURE_SWIZZLE_R)"),
-            TextureParameterName::TEXTURE_COMPARE_MODE => write!(fmt, "TextureParameterName(TEXTURE_COMPARE_MODE)"),
-            TextureParameterName::TEXTURE_WRAP_R => write!(fmt, "TextureParameterName(TEXTURE_WRAP_R)"),
-            TextureParameterName::TEXTURE_SWIZZLE_A => write!(fmt, "TextureParameterName(TEXTURE_SWIZZLE_A)"),
-            TextureParameterName::TEXTURE_BLUE_SIZE => write!(fmt, "TextureParameterName(TEXTURE_BLUE_SIZE)"),
-            TextureParameterName::TEXTURE_COMPARE_FUNC => write!(fmt, "TextureParameterName(TEXTURE_COMPARE_FUNC)"),
-            TextureParameterName::TEXTURE_GREEN_SIZE => write!(fmt, "TextureParameterName(TEXTURE_GREEN_SIZE)"),
-            TextureParameterName::TEXTURE_MIN_LOD => write!(fmt, "TextureParameterName(TEXTURE_MIN_LOD)"),
-            TextureParameterName::TEXTURE_MAX_LEVEL => write!(fmt, "TextureParameterName(TEXTURE_MAX_LEVEL)"),
-            TextureParameterName::TEXTURE_RED_SIZE => write!(fmt, "TextureParameterName(TEXTURE_RED_SIZE)"),
-            TextureParameterName::TEXTURE_BASE_LEVEL => write!(fmt, "TextureParameterName(TEXTURE_BASE_LEVEL)"),
-            TextureParameterName::TEXTURE_WIDTH => write!(fmt, "TextureParameterName(TEXTURE_WIDTH)"),
-            TextureParameterName::TEXTURE_LOD_BIAS => write!(fmt, "TextureParameterName(TEXTURE_LOD_BIAS)"),
             TextureParameterName::DEPTH_STENCIL_TEXTURE_MODE => write!(fmt, "TextureParameterName(DEPTH_STENCIL_TEXTURE_MODE)"),
+            TextureParameterName::TEXTURE_ALPHA_SIZE => write!(fmt, "TextureParameterName(TEXTURE_ALPHA_SIZE)"),
+            TextureParameterName::TEXTURE_BASE_LEVEL => write!(fmt, "TextureParameterName(TEXTURE_BASE_LEVEL)"),
+            TextureParameterName::TEXTURE_BLUE_SIZE => write!(fmt, "TextureParameterName(TEXTURE_BLUE_SIZE)"),
+            TextureParameterName::TEXTURE_BORDER_COLOR => write!(fmt, "TextureParameterName(TEXTURE_BORDER_COLOR)"),
+            TextureParameterName::TEXTURE_COMPARE_FUNC => write!(fmt, "TextureParameterName(TEXTURE_COMPARE_FUNC)"),
+            TextureParameterName::TEXTURE_COMPARE_MODE => write!(fmt, "TextureParameterName(TEXTURE_COMPARE_MODE)"),
+            TextureParameterName::TEXTURE_GREEN_SIZE => write!(fmt, "TextureParameterName(TEXTURE_GREEN_SIZE)"),
+            TextureParameterName::TEXTURE_HEIGHT => write!(fmt, "TextureParameterName(TEXTURE_HEIGHT)"),
+            TextureParameterName::TEXTURE_INTERNAL_FORMAT => write!(fmt, "TextureParameterName(TEXTURE_INTERNAL_FORMAT)"),
+            TextureParameterName::TEXTURE_LOD_BIAS => write!(fmt, "TextureParameterName(TEXTURE_LOD_BIAS)"),
+            TextureParameterName::TEXTURE_MAG_FILTER => write!(fmt, "TextureParameterName(TEXTURE_MAG_FILTER)"),
+            TextureParameterName::TEXTURE_MAX_LEVEL => write!(fmt, "TextureParameterName(TEXTURE_MAX_LEVEL)"),
+            TextureParameterName::TEXTURE_MAX_LOD => write!(fmt, "TextureParameterName(TEXTURE_MAX_LOD)"),
+            TextureParameterName::TEXTURE_MIN_FILTER => write!(fmt, "TextureParameterName(TEXTURE_MIN_FILTER)"),
+            TextureParameterName::TEXTURE_MIN_LOD => write!(fmt, "TextureParameterName(TEXTURE_MIN_LOD)"),
+            TextureParameterName::TEXTURE_RED_SIZE => write!(fmt, "TextureParameterName(TEXTURE_RED_SIZE)"),
+            TextureParameterName::TEXTURE_SWIZZLE_A => write!(fmt, "TextureParameterName(TEXTURE_SWIZZLE_A)"),
+            TextureParameterName::TEXTURE_SWIZZLE_B => write!(fmt, "TextureParameterName(TEXTURE_SWIZZLE_B)"),
+            TextureParameterName::TEXTURE_SWIZZLE_G => write!(fmt, "TextureParameterName(TEXTURE_SWIZZLE_G)"),
+            TextureParameterName::TEXTURE_SWIZZLE_R => write!(fmt, "TextureParameterName(TEXTURE_SWIZZLE_R)"),
+            TextureParameterName::TEXTURE_SWIZZLE_RGBA => write!(fmt, "TextureParameterName(TEXTURE_SWIZZLE_RGBA)"),
+            TextureParameterName::TEXTURE_WIDTH => write!(fmt, "TextureParameterName(TEXTURE_WIDTH)"),
+            TextureParameterName::TEXTURE_WRAP_R => write!(fmt, "TextureParameterName(TEXTURE_WRAP_R)"),
+            TextureParameterName::TEXTURE_WRAP_S => write!(fmt, "TextureParameterName(TEXTURE_WRAP_S)"),
+            TextureParameterName::TEXTURE_WRAP_T => write!(fmt, "TextureParameterName(TEXTURE_WRAP_T)"),
             _ => write!(fmt, "TextureParameterName({})", self.0),
         }
     }
@@ -10102,7 +10102,7 @@ impl ::std::fmt::Debug for TextureParameterName {
 impl_enum_traits!(TextureParameterName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct TextureStorageMaskAMD(pub types::GLenum);
 
 impl TextureStorageMaskAMD {
@@ -10122,7 +10122,7 @@ impl_enum_traits!(TextureStorageMaskAMD);
 impl_enum_bitmask_traits!(TextureStorageMaskAMD);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct TextureTarget(pub types::GLenum);
 
 impl TextureTarget {
@@ -10157,32 +10157,32 @@ impl TextureTarget {
 impl ::std::fmt::Debug for TextureTarget {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            TextureTarget::TEXTURE_RECTANGLE => write!(fmt, "TextureTarget(TEXTURE_RECTANGLE)"),
-            TextureTarget::PROXY_TEXTURE_2D_ARRAY => write!(fmt, "TextureTarget(PROXY_TEXTURE_2D_ARRAY)"),
-            TextureTarget::TEXTURE_2D_ARRAY => write!(fmt, "TextureTarget(TEXTURE_2D_ARRAY)"),
-            TextureTarget::PROXY_TEXTURE_CUBE_MAP => write!(fmt, "TextureTarget(PROXY_TEXTURE_CUBE_MAP)"),
-            TextureTarget::PROXY_TEXTURE_RECTANGLE => write!(fmt, "TextureTarget(PROXY_TEXTURE_RECTANGLE)"),
-            TextureTarget::TEXTURE_CUBE_MAP => write!(fmt, "TextureTarget(TEXTURE_CUBE_MAP)"),
-            TextureTarget::TEXTURE_CUBE_MAP_POSITIVE_X => write!(fmt, "TextureTarget(TEXTURE_CUBE_MAP_POSITIVE_X)"),
-            TextureTarget::TEXTURE_CUBE_MAP_NEGATIVE_X => write!(fmt, "TextureTarget(TEXTURE_CUBE_MAP_NEGATIVE_X)"),
             TextureTarget::PROXY_TEXTURE_1D => write!(fmt, "TextureTarget(PROXY_TEXTURE_1D)"),
             TextureTarget::PROXY_TEXTURE_1D_ARRAY => write!(fmt, "TextureTarget(PROXY_TEXTURE_1D_ARRAY)"),
-            TextureTarget::PROXY_TEXTURE_CUBE_MAP_ARRAY => write!(fmt, "TextureTarget(PROXY_TEXTURE_CUBE_MAP_ARRAY)"),
-            TextureTarget::TEXTURE_1D => write!(fmt, "TextureTarget(TEXTURE_1D)"),
-            TextureTarget::TEXTURE_2D_MULTISAMPLE => write!(fmt, "TextureTarget(TEXTURE_2D_MULTISAMPLE)"),
-            TextureTarget::TEXTURE_CUBE_MAP_NEGATIVE_Y => write!(fmt, "TextureTarget(TEXTURE_CUBE_MAP_NEGATIVE_Y)"),
-            TextureTarget::TEXTURE_1D_ARRAY => write!(fmt, "TextureTarget(TEXTURE_1D_ARRAY)"),
-            TextureTarget::PROXY_TEXTURE_3D => write!(fmt, "TextureTarget(PROXY_TEXTURE_3D)"),
-            TextureTarget::PROXY_TEXTURE_2D_MULTISAMPLE => write!(fmt, "TextureTarget(PROXY_TEXTURE_2D_MULTISAMPLE)"),
-            TextureTarget::TEXTURE_3D => write!(fmt, "TextureTarget(TEXTURE_3D)"),
             TextureTarget::PROXY_TEXTURE_2D => write!(fmt, "TextureTarget(PROXY_TEXTURE_2D)"),
-            TextureTarget::TEXTURE_2D => write!(fmt, "TextureTarget(TEXTURE_2D)"),
+            TextureTarget::PROXY_TEXTURE_2D_ARRAY => write!(fmt, "TextureTarget(PROXY_TEXTURE_2D_ARRAY)"),
+            TextureTarget::PROXY_TEXTURE_2D_MULTISAMPLE => write!(fmt, "TextureTarget(PROXY_TEXTURE_2D_MULTISAMPLE)"),
             TextureTarget::PROXY_TEXTURE_2D_MULTISAMPLE_ARRAY => write!(fmt, "TextureTarget(PROXY_TEXTURE_2D_MULTISAMPLE_ARRAY)"),
-            TextureTarget::TEXTURE_CUBE_MAP_POSITIVE_Y => write!(fmt, "TextureTarget(TEXTURE_CUBE_MAP_POSITIVE_Y)"),
-            TextureTarget::TEXTURE_CUBE_MAP_ARRAY => write!(fmt, "TextureTarget(TEXTURE_CUBE_MAP_ARRAY)"),
-            TextureTarget::TEXTURE_CUBE_MAP_POSITIVE_Z => write!(fmt, "TextureTarget(TEXTURE_CUBE_MAP_POSITIVE_Z)"),
-            TextureTarget::TEXTURE_CUBE_MAP_NEGATIVE_Z => write!(fmt, "TextureTarget(TEXTURE_CUBE_MAP_NEGATIVE_Z)"),
+            TextureTarget::PROXY_TEXTURE_3D => write!(fmt, "TextureTarget(PROXY_TEXTURE_3D)"),
+            TextureTarget::PROXY_TEXTURE_CUBE_MAP => write!(fmt, "TextureTarget(PROXY_TEXTURE_CUBE_MAP)"),
+            TextureTarget::PROXY_TEXTURE_CUBE_MAP_ARRAY => write!(fmt, "TextureTarget(PROXY_TEXTURE_CUBE_MAP_ARRAY)"),
+            TextureTarget::PROXY_TEXTURE_RECTANGLE => write!(fmt, "TextureTarget(PROXY_TEXTURE_RECTANGLE)"),
+            TextureTarget::TEXTURE_1D => write!(fmt, "TextureTarget(TEXTURE_1D)"),
+            TextureTarget::TEXTURE_1D_ARRAY => write!(fmt, "TextureTarget(TEXTURE_1D_ARRAY)"),
+            TextureTarget::TEXTURE_2D => write!(fmt, "TextureTarget(TEXTURE_2D)"),
+            TextureTarget::TEXTURE_2D_ARRAY => write!(fmt, "TextureTarget(TEXTURE_2D_ARRAY)"),
+            TextureTarget::TEXTURE_2D_MULTISAMPLE => write!(fmt, "TextureTarget(TEXTURE_2D_MULTISAMPLE)"),
             TextureTarget::TEXTURE_2D_MULTISAMPLE_ARRAY => write!(fmt, "TextureTarget(TEXTURE_2D_MULTISAMPLE_ARRAY)"),
+            TextureTarget::TEXTURE_3D => write!(fmt, "TextureTarget(TEXTURE_3D)"),
+            TextureTarget::TEXTURE_CUBE_MAP => write!(fmt, "TextureTarget(TEXTURE_CUBE_MAP)"),
+            TextureTarget::TEXTURE_CUBE_MAP_ARRAY => write!(fmt, "TextureTarget(TEXTURE_CUBE_MAP_ARRAY)"),
+            TextureTarget::TEXTURE_CUBE_MAP_NEGATIVE_X => write!(fmt, "TextureTarget(TEXTURE_CUBE_MAP_NEGATIVE_X)"),
+            TextureTarget::TEXTURE_CUBE_MAP_NEGATIVE_Y => write!(fmt, "TextureTarget(TEXTURE_CUBE_MAP_NEGATIVE_Y)"),
+            TextureTarget::TEXTURE_CUBE_MAP_NEGATIVE_Z => write!(fmt, "TextureTarget(TEXTURE_CUBE_MAP_NEGATIVE_Z)"),
+            TextureTarget::TEXTURE_CUBE_MAP_POSITIVE_X => write!(fmt, "TextureTarget(TEXTURE_CUBE_MAP_POSITIVE_X)"),
+            TextureTarget::TEXTURE_CUBE_MAP_POSITIVE_Y => write!(fmt, "TextureTarget(TEXTURE_CUBE_MAP_POSITIVE_Y)"),
+            TextureTarget::TEXTURE_CUBE_MAP_POSITIVE_Z => write!(fmt, "TextureTarget(TEXTURE_CUBE_MAP_POSITIVE_Z)"),
+            TextureTarget::TEXTURE_RECTANGLE => write!(fmt, "TextureTarget(TEXTURE_RECTANGLE)"),
             _ => write!(fmt, "TextureTarget({})", self.0),
         }
     }
@@ -10191,7 +10191,7 @@ impl ::std::fmt::Debug for TextureTarget {
 impl_enum_traits!(TextureTarget);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct TextureUnit(pub types::GLenum);
 
 impl TextureUnit {
@@ -10232,38 +10232,38 @@ impl TextureUnit {
 impl ::std::fmt::Debug for TextureUnit {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            TextureUnit::TEXTURE9 => write!(fmt, "TextureUnit(TEXTURE9)"),
-            TextureUnit::TEXTURE19 => write!(fmt, "TextureUnit(TEXTURE19)"),
-            TextureUnit::TEXTURE11 => write!(fmt, "TextureUnit(TEXTURE11)"),
-            TextureUnit::TEXTURE14 => write!(fmt, "TextureUnit(TEXTURE14)"),
-            TextureUnit::TEXTURE26 => write!(fmt, "TextureUnit(TEXTURE26)"),
-            TextureUnit::TEXTURE25 => write!(fmt, "TextureUnit(TEXTURE25)"),
-            TextureUnit::TEXTURE12 => write!(fmt, "TextureUnit(TEXTURE12)"),
-            TextureUnit::TEXTURE15 => write!(fmt, "TextureUnit(TEXTURE15)"),
-            TextureUnit::TEXTURE18 => write!(fmt, "TextureUnit(TEXTURE18)"),
-            TextureUnit::TEXTURE22 => write!(fmt, "TextureUnit(TEXTURE22)"),
-            TextureUnit::TEXTURE21 => write!(fmt, "TextureUnit(TEXTURE21)"),
-            TextureUnit::TEXTURE4 => write!(fmt, "TextureUnit(TEXTURE4)"),
-            TextureUnit::TEXTURE5 => write!(fmt, "TextureUnit(TEXTURE5)"),
-            TextureUnit::TEXTURE28 => write!(fmt, "TextureUnit(TEXTURE28)"),
             TextureUnit::TEXTURE0 => write!(fmt, "TextureUnit(TEXTURE0)"),
-            TextureUnit::TEXTURE7 => write!(fmt, "TextureUnit(TEXTURE7)"),
-            TextureUnit::TEXTURE23 => write!(fmt, "TextureUnit(TEXTURE23)"),
-            TextureUnit::TEXTURE6 => write!(fmt, "TextureUnit(TEXTURE6)"),
+            TextureUnit::TEXTURE1 => write!(fmt, "TextureUnit(TEXTURE1)"),
             TextureUnit::TEXTURE10 => write!(fmt, "TextureUnit(TEXTURE10)"),
-            TextureUnit::TEXTURE24 => write!(fmt, "TextureUnit(TEXTURE24)"),
-            TextureUnit::TEXTURE30 => write!(fmt, "TextureUnit(TEXTURE30)"),
+            TextureUnit::TEXTURE11 => write!(fmt, "TextureUnit(TEXTURE11)"),
+            TextureUnit::TEXTURE12 => write!(fmt, "TextureUnit(TEXTURE12)"),
             TextureUnit::TEXTURE13 => write!(fmt, "TextureUnit(TEXTURE13)"),
+            TextureUnit::TEXTURE14 => write!(fmt, "TextureUnit(TEXTURE14)"),
+            TextureUnit::TEXTURE15 => write!(fmt, "TextureUnit(TEXTURE15)"),
+            TextureUnit::TEXTURE16 => write!(fmt, "TextureUnit(TEXTURE16)"),
+            TextureUnit::TEXTURE17 => write!(fmt, "TextureUnit(TEXTURE17)"),
+            TextureUnit::TEXTURE18 => write!(fmt, "TextureUnit(TEXTURE18)"),
+            TextureUnit::TEXTURE19 => write!(fmt, "TextureUnit(TEXTURE19)"),
+            TextureUnit::TEXTURE2 => write!(fmt, "TextureUnit(TEXTURE2)"),
+            TextureUnit::TEXTURE20 => write!(fmt, "TextureUnit(TEXTURE20)"),
+            TextureUnit::TEXTURE21 => write!(fmt, "TextureUnit(TEXTURE21)"),
+            TextureUnit::TEXTURE22 => write!(fmt, "TextureUnit(TEXTURE22)"),
+            TextureUnit::TEXTURE23 => write!(fmt, "TextureUnit(TEXTURE23)"),
+            TextureUnit::TEXTURE24 => write!(fmt, "TextureUnit(TEXTURE24)"),
+            TextureUnit::TEXTURE25 => write!(fmt, "TextureUnit(TEXTURE25)"),
+            TextureUnit::TEXTURE26 => write!(fmt, "TextureUnit(TEXTURE26)"),
+            TextureUnit::TEXTURE27 => write!(fmt, "TextureUnit(TEXTURE27)"),
+            TextureUnit::TEXTURE28 => write!(fmt, "TextureUnit(TEXTURE28)"),
             TextureUnit::TEXTURE29 => write!(fmt, "TextureUnit(TEXTURE29)"),
             TextureUnit::TEXTURE3 => write!(fmt, "TextureUnit(TEXTURE3)"),
-            TextureUnit::TEXTURE27 => write!(fmt, "TextureUnit(TEXTURE27)"),
-            TextureUnit::TEXTURE1 => write!(fmt, "TextureUnit(TEXTURE1)"),
-            TextureUnit::TEXTURE20 => write!(fmt, "TextureUnit(TEXTURE20)"),
-            TextureUnit::TEXTURE2 => write!(fmt, "TextureUnit(TEXTURE2)"),
-            TextureUnit::TEXTURE17 => write!(fmt, "TextureUnit(TEXTURE17)"),
-            TextureUnit::TEXTURE16 => write!(fmt, "TextureUnit(TEXTURE16)"),
+            TextureUnit::TEXTURE30 => write!(fmt, "TextureUnit(TEXTURE30)"),
             TextureUnit::TEXTURE31 => write!(fmt, "TextureUnit(TEXTURE31)"),
+            TextureUnit::TEXTURE4 => write!(fmt, "TextureUnit(TEXTURE4)"),
+            TextureUnit::TEXTURE5 => write!(fmt, "TextureUnit(TEXTURE5)"),
+            TextureUnit::TEXTURE6 => write!(fmt, "TextureUnit(TEXTURE6)"),
+            TextureUnit::TEXTURE7 => write!(fmt, "TextureUnit(TEXTURE7)"),
             TextureUnit::TEXTURE8 => write!(fmt, "TextureUnit(TEXTURE8)"),
+            TextureUnit::TEXTURE9 => write!(fmt, "TextureUnit(TEXTURE9)"),
             _ => write!(fmt, "TextureUnit({})", self.0),
         }
     }
@@ -10272,7 +10272,7 @@ impl ::std::fmt::Debug for TextureUnit {
 impl_enum_traits!(TextureUnit);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct TextureWrapMode(pub types::GLenum);
 
 impl TextureWrapMode {
@@ -10295,7 +10295,7 @@ impl ::std::fmt::Debug for TextureWrapMode {
 impl_enum_traits!(TextureWrapMode);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct TransformFeedbackPName(pub types::GLenum);
 
 impl TransformFeedbackPName {
@@ -10309,11 +10309,11 @@ impl TransformFeedbackPName {
 impl ::std::fmt::Debug for TransformFeedbackPName {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            TransformFeedbackPName::TRANSFORM_FEEDBACK_PAUSED => write!(fmt, "TransformFeedbackPName(TRANSFORM_FEEDBACK_PAUSED)"),
-            TransformFeedbackPName::TRANSFORM_FEEDBACK_BUFFER_START => write!(fmt, "TransformFeedbackPName(TRANSFORM_FEEDBACK_BUFFER_START)"),
             TransformFeedbackPName::TRANSFORM_FEEDBACK_ACTIVE => write!(fmt, "TransformFeedbackPName(TRANSFORM_FEEDBACK_ACTIVE)"),
             TransformFeedbackPName::TRANSFORM_FEEDBACK_BUFFER_BINDING => write!(fmt, "TransformFeedbackPName(TRANSFORM_FEEDBACK_BUFFER_BINDING)"),
             TransformFeedbackPName::TRANSFORM_FEEDBACK_BUFFER_SIZE => write!(fmt, "TransformFeedbackPName(TRANSFORM_FEEDBACK_BUFFER_SIZE)"),
+            TransformFeedbackPName::TRANSFORM_FEEDBACK_BUFFER_START => write!(fmt, "TransformFeedbackPName(TRANSFORM_FEEDBACK_BUFFER_START)"),
+            TransformFeedbackPName::TRANSFORM_FEEDBACK_PAUSED => write!(fmt, "TransformFeedbackPName(TRANSFORM_FEEDBACK_PAUSED)"),
             _ => write!(fmt, "TransformFeedbackPName({})", self.0),
         }
     }
@@ -10322,7 +10322,7 @@ impl ::std::fmt::Debug for TransformFeedbackPName {
 impl_enum_traits!(TransformFeedbackPName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct TypeEnum(pub types::GLenum);
 
 impl TypeEnum {
@@ -10336,9 +10336,9 @@ impl ::std::fmt::Debug for TypeEnum {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
             TypeEnum::QUERY_BY_REGION_NO_WAIT => write!(fmt, "TypeEnum(QUERY_BY_REGION_NO_WAIT)"),
+            TypeEnum::QUERY_BY_REGION_WAIT => write!(fmt, "TypeEnum(QUERY_BY_REGION_WAIT)"),
             TypeEnum::QUERY_NO_WAIT => write!(fmt, "TypeEnum(QUERY_NO_WAIT)"),
             TypeEnum::QUERY_WAIT => write!(fmt, "TypeEnum(QUERY_WAIT)"),
-            TypeEnum::QUERY_BY_REGION_WAIT => write!(fmt, "TypeEnum(QUERY_BY_REGION_WAIT)"),
             _ => write!(fmt, "TypeEnum({})", self.0),
         }
     }
@@ -10347,7 +10347,7 @@ impl ::std::fmt::Debug for TypeEnum {
 impl_enum_traits!(TypeEnum);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct UniformBlockPName(pub types::GLenum);
 
 impl UniformBlockPName {
@@ -10367,17 +10367,17 @@ impl UniformBlockPName {
 impl ::std::fmt::Debug for UniformBlockPName {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            UniformBlockPName::UNIFORM_BLOCK_REFERENCED_BY_TESS_EVALUATION_SHADER => write!(fmt, "UniformBlockPName(UNIFORM_BLOCK_REFERENCED_BY_TESS_EVALUATION_SHADER)"),
-            UniformBlockPName::UNIFORM_BLOCK_REFERENCED_BY_COMPUTE_SHADER => write!(fmt, "UniformBlockPName(UNIFORM_BLOCK_REFERENCED_BY_COMPUTE_SHADER)"),
-            UniformBlockPName::UNIFORM_BLOCK_BINDING => write!(fmt, "UniformBlockPName(UNIFORM_BLOCK_BINDING)"),
-            UniformBlockPName::UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER => write!(fmt, "UniformBlockPName(UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER)"),
-            UniformBlockPName::UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER => write!(fmt, "UniformBlockPName(UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER)"),
             UniformBlockPName::UNIFORM_BLOCK_ACTIVE_UNIFORMS => write!(fmt, "UniformBlockPName(UNIFORM_BLOCK_ACTIVE_UNIFORMS)"),
             UniformBlockPName::UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES => write!(fmt, "UniformBlockPName(UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES)"),
+            UniformBlockPName::UNIFORM_BLOCK_BINDING => write!(fmt, "UniformBlockPName(UNIFORM_BLOCK_BINDING)"),
             UniformBlockPName::UNIFORM_BLOCK_DATA_SIZE => write!(fmt, "UniformBlockPName(UNIFORM_BLOCK_DATA_SIZE)"),
-            UniformBlockPName::UNIFORM_BLOCK_REFERENCED_BY_TESS_CONTROL_SHADER => write!(fmt, "UniformBlockPName(UNIFORM_BLOCK_REFERENCED_BY_TESS_CONTROL_SHADER)"),
             UniformBlockPName::UNIFORM_BLOCK_NAME_LENGTH => write!(fmt, "UniformBlockPName(UNIFORM_BLOCK_NAME_LENGTH)"),
+            UniformBlockPName::UNIFORM_BLOCK_REFERENCED_BY_COMPUTE_SHADER => write!(fmt, "UniformBlockPName(UNIFORM_BLOCK_REFERENCED_BY_COMPUTE_SHADER)"),
+            UniformBlockPName::UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER => write!(fmt, "UniformBlockPName(UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER)"),
             UniformBlockPName::UNIFORM_BLOCK_REFERENCED_BY_GEOMETRY_SHADER => write!(fmt, "UniformBlockPName(UNIFORM_BLOCK_REFERENCED_BY_GEOMETRY_SHADER)"),
+            UniformBlockPName::UNIFORM_BLOCK_REFERENCED_BY_TESS_CONTROL_SHADER => write!(fmt, "UniformBlockPName(UNIFORM_BLOCK_REFERENCED_BY_TESS_CONTROL_SHADER)"),
+            UniformBlockPName::UNIFORM_BLOCK_REFERENCED_BY_TESS_EVALUATION_SHADER => write!(fmt, "UniformBlockPName(UNIFORM_BLOCK_REFERENCED_BY_TESS_EVALUATION_SHADER)"),
+            UniformBlockPName::UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER => write!(fmt, "UniformBlockPName(UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER)"),
             _ => write!(fmt, "UniformBlockPName({})", self.0),
         }
     }
@@ -10386,7 +10386,7 @@ impl ::std::fmt::Debug for UniformBlockPName {
 impl_enum_traits!(UniformBlockPName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct UniformPName(pub types::GLenum);
 
 impl UniformPName {
@@ -10404,15 +10404,15 @@ impl UniformPName {
 impl ::std::fmt::Debug for UniformPName {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            UniformPName::UNIFORM_BLOCK_INDEX => write!(fmt, "UniformPName(UNIFORM_BLOCK_INDEX)"),
-            UniformPName::UNIFORM_MATRIX_STRIDE => write!(fmt, "UniformPName(UNIFORM_MATRIX_STRIDE)"),
-            UniformPName::UNIFORM_IS_ROW_MAJOR => write!(fmt, "UniformPName(UNIFORM_IS_ROW_MAJOR)"),
-            UniformPName::UNIFORM_NAME_LENGTH => write!(fmt, "UniformPName(UNIFORM_NAME_LENGTH)"),
-            UniformPName::UNIFORM_TYPE => write!(fmt, "UniformPName(UNIFORM_TYPE)"),
-            UniformPName::UNIFORM_ATOMIC_COUNTER_BUFFER_INDEX => write!(fmt, "UniformPName(UNIFORM_ATOMIC_COUNTER_BUFFER_INDEX)"),
-            UniformPName::UNIFORM_SIZE => write!(fmt, "UniformPName(UNIFORM_SIZE)"),
             UniformPName::UNIFORM_ARRAY_STRIDE => write!(fmt, "UniformPName(UNIFORM_ARRAY_STRIDE)"),
+            UniformPName::UNIFORM_ATOMIC_COUNTER_BUFFER_INDEX => write!(fmt, "UniformPName(UNIFORM_ATOMIC_COUNTER_BUFFER_INDEX)"),
+            UniformPName::UNIFORM_BLOCK_INDEX => write!(fmt, "UniformPName(UNIFORM_BLOCK_INDEX)"),
+            UniformPName::UNIFORM_IS_ROW_MAJOR => write!(fmt, "UniformPName(UNIFORM_IS_ROW_MAJOR)"),
+            UniformPName::UNIFORM_MATRIX_STRIDE => write!(fmt, "UniformPName(UNIFORM_MATRIX_STRIDE)"),
+            UniformPName::UNIFORM_NAME_LENGTH => write!(fmt, "UniformPName(UNIFORM_NAME_LENGTH)"),
             UniformPName::UNIFORM_OFFSET => write!(fmt, "UniformPName(UNIFORM_OFFSET)"),
+            UniformPName::UNIFORM_SIZE => write!(fmt, "UniformPName(UNIFORM_SIZE)"),
+            UniformPName::UNIFORM_TYPE => write!(fmt, "UniformPName(UNIFORM_TYPE)"),
             _ => write!(fmt, "UniformPName({})", self.0),
         }
     }
@@ -10421,7 +10421,7 @@ impl ::std::fmt::Debug for UniformPName {
 impl_enum_traits!(UniformPName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct UseProgramStageMask(pub types::GLenum);
 
 impl UseProgramStageMask {
@@ -10439,12 +10439,12 @@ impl ::std::fmt::Debug for UseProgramStageMask {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
             UseProgramStageMask::ALL_SHADER_BITS => write!(fmt, "UseProgramStageMask(ALL_SHADER_BITS)"),
-            UseProgramStageMask::GEOMETRY_SHADER_BIT => write!(fmt, "UseProgramStageMask(GEOMETRY_SHADER_BIT)"),
-            UseProgramStageMask::TESS_EVALUATION_SHADER_BIT => write!(fmt, "UseProgramStageMask(TESS_EVALUATION_SHADER_BIT)"),
             UseProgramStageMask::COMPUTE_SHADER_BIT => write!(fmt, "UseProgramStageMask(COMPUTE_SHADER_BIT)"),
-            UseProgramStageMask::VERTEX_SHADER_BIT => write!(fmt, "UseProgramStageMask(VERTEX_SHADER_BIT)"),
-            UseProgramStageMask::TESS_CONTROL_SHADER_BIT => write!(fmt, "UseProgramStageMask(TESS_CONTROL_SHADER_BIT)"),
             UseProgramStageMask::FRAGMENT_SHADER_BIT => write!(fmt, "UseProgramStageMask(FRAGMENT_SHADER_BIT)"),
+            UseProgramStageMask::GEOMETRY_SHADER_BIT => write!(fmt, "UseProgramStageMask(GEOMETRY_SHADER_BIT)"),
+            UseProgramStageMask::TESS_CONTROL_SHADER_BIT => write!(fmt, "UseProgramStageMask(TESS_CONTROL_SHADER_BIT)"),
+            UseProgramStageMask::TESS_EVALUATION_SHADER_BIT => write!(fmt, "UseProgramStageMask(TESS_EVALUATION_SHADER_BIT)"),
+            UseProgramStageMask::VERTEX_SHADER_BIT => write!(fmt, "UseProgramStageMask(VERTEX_SHADER_BIT)"),
             _ => write!(fmt, "UseProgramStageMask({})", self.0),
         }
     }
@@ -10455,7 +10455,7 @@ impl_enum_traits!(UseProgramStageMask);
 impl_enum_bitmask_traits!(UseProgramStageMask);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct VertexArrayPName(pub types::GLenum);
 
 impl VertexArrayPName {
@@ -10473,15 +10473,15 @@ impl VertexArrayPName {
 impl ::std::fmt::Debug for VertexArrayPName {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            VertexArrayPName::VERTEX_ATTRIB_ARRAY_ENABLED => write!(fmt, "VertexArrayPName(VERTEX_ATTRIB_ARRAY_ENABLED)"),
-            VertexArrayPName::VERTEX_ATTRIB_ARRAY_TYPE => write!(fmt, "VertexArrayPName(VERTEX_ATTRIB_ARRAY_TYPE)"),
-            VertexArrayPName::VERTEX_ATTRIB_ARRAY_NORMALIZED => write!(fmt, "VertexArrayPName(VERTEX_ATTRIB_ARRAY_NORMALIZED)"),
-            VertexArrayPName::VERTEX_ATTRIB_ARRAY_STRIDE => write!(fmt, "VertexArrayPName(VERTEX_ATTRIB_ARRAY_STRIDE)"),
-            VertexArrayPName::VERTEX_ATTRIB_ARRAY_SIZE => write!(fmt, "VertexArrayPName(VERTEX_ATTRIB_ARRAY_SIZE)"),
-            VertexArrayPName::VERTEX_ATTRIB_ARRAY_LONG => write!(fmt, "VertexArrayPName(VERTEX_ATTRIB_ARRAY_LONG)"),
             VertexArrayPName::VERTEX_ATTRIB_ARRAY_DIVISOR => write!(fmt, "VertexArrayPName(VERTEX_ATTRIB_ARRAY_DIVISOR)"),
-            VertexArrayPName::VERTEX_ATTRIB_RELATIVE_OFFSET => write!(fmt, "VertexArrayPName(VERTEX_ATTRIB_RELATIVE_OFFSET)"),
+            VertexArrayPName::VERTEX_ATTRIB_ARRAY_ENABLED => write!(fmt, "VertexArrayPName(VERTEX_ATTRIB_ARRAY_ENABLED)"),
             VertexArrayPName::VERTEX_ATTRIB_ARRAY_INTEGER => write!(fmt, "VertexArrayPName(VERTEX_ATTRIB_ARRAY_INTEGER)"),
+            VertexArrayPName::VERTEX_ATTRIB_ARRAY_LONG => write!(fmt, "VertexArrayPName(VERTEX_ATTRIB_ARRAY_LONG)"),
+            VertexArrayPName::VERTEX_ATTRIB_ARRAY_NORMALIZED => write!(fmt, "VertexArrayPName(VERTEX_ATTRIB_ARRAY_NORMALIZED)"),
+            VertexArrayPName::VERTEX_ATTRIB_ARRAY_SIZE => write!(fmt, "VertexArrayPName(VERTEX_ATTRIB_ARRAY_SIZE)"),
+            VertexArrayPName::VERTEX_ATTRIB_ARRAY_STRIDE => write!(fmt, "VertexArrayPName(VERTEX_ATTRIB_ARRAY_STRIDE)"),
+            VertexArrayPName::VERTEX_ATTRIB_ARRAY_TYPE => write!(fmt, "VertexArrayPName(VERTEX_ATTRIB_ARRAY_TYPE)"),
+            VertexArrayPName::VERTEX_ATTRIB_RELATIVE_OFFSET => write!(fmt, "VertexArrayPName(VERTEX_ATTRIB_RELATIVE_OFFSET)"),
             _ => write!(fmt, "VertexArrayPName({})", self.0),
         }
     }
@@ -10490,7 +10490,7 @@ impl ::std::fmt::Debug for VertexArrayPName {
 impl_enum_traits!(VertexArrayPName);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct VertexAttribEnum(pub types::GLenum);
 
 impl VertexAttribEnum {
@@ -10508,15 +10508,15 @@ impl VertexAttribEnum {
 impl ::std::fmt::Debug for VertexAttribEnum {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
+            VertexAttribEnum::CURRENT_VERTEX_ATTRIB => write!(fmt, "VertexAttribEnum(CURRENT_VERTEX_ATTRIB)"),
+            VertexAttribEnum::VERTEX_ATTRIB_ARRAY_BUFFER_BINDING => write!(fmt, "VertexAttribEnum(VERTEX_ATTRIB_ARRAY_BUFFER_BINDING)"),
             VertexAttribEnum::VERTEX_ATTRIB_ARRAY_DIVISOR => write!(fmt, "VertexAttribEnum(VERTEX_ATTRIB_ARRAY_DIVISOR)"),
+            VertexAttribEnum::VERTEX_ATTRIB_ARRAY_ENABLED => write!(fmt, "VertexAttribEnum(VERTEX_ATTRIB_ARRAY_ENABLED)"),
+            VertexAttribEnum::VERTEX_ATTRIB_ARRAY_INTEGER => write!(fmt, "VertexAttribEnum(VERTEX_ATTRIB_ARRAY_INTEGER)"),
             VertexAttribEnum::VERTEX_ATTRIB_ARRAY_NORMALIZED => write!(fmt, "VertexAttribEnum(VERTEX_ATTRIB_ARRAY_NORMALIZED)"),
             VertexAttribEnum::VERTEX_ATTRIB_ARRAY_SIZE => write!(fmt, "VertexAttribEnum(VERTEX_ATTRIB_ARRAY_SIZE)"),
-            VertexAttribEnum::VERTEX_ATTRIB_ARRAY_BUFFER_BINDING => write!(fmt, "VertexAttribEnum(VERTEX_ATTRIB_ARRAY_BUFFER_BINDING)"),
-            VertexAttribEnum::CURRENT_VERTEX_ATTRIB => write!(fmt, "VertexAttribEnum(CURRENT_VERTEX_ATTRIB)"),
             VertexAttribEnum::VERTEX_ATTRIB_ARRAY_STRIDE => write!(fmt, "VertexAttribEnum(VERTEX_ATTRIB_ARRAY_STRIDE)"),
             VertexAttribEnum::VERTEX_ATTRIB_ARRAY_TYPE => write!(fmt, "VertexAttribEnum(VERTEX_ATTRIB_ARRAY_TYPE)"),
-            VertexAttribEnum::VERTEX_ATTRIB_ARRAY_INTEGER => write!(fmt, "VertexAttribEnum(VERTEX_ATTRIB_ARRAY_INTEGER)"),
-            VertexAttribEnum::VERTEX_ATTRIB_ARRAY_ENABLED => write!(fmt, "VertexAttribEnum(VERTEX_ATTRIB_ARRAY_ENABLED)"),
             _ => write!(fmt, "VertexAttribEnum({})", self.0),
         }
     }
@@ -10525,7 +10525,7 @@ impl ::std::fmt::Debug for VertexAttribEnum {
 impl_enum_traits!(VertexAttribEnum);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct VertexAttribPointerType(pub types::GLenum);
 
 impl VertexAttribPointerType {
@@ -10547,19 +10547,19 @@ impl VertexAttribPointerType {
 impl ::std::fmt::Debug for VertexAttribPointerType {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            VertexAttribPointerType::UNSIGNED_INT => write!(fmt, "VertexAttribPointerType(UNSIGNED_INT)"),
-            VertexAttribPointerType::UNSIGNED_INT_10F_11F_11F_REV => write!(fmt, "VertexAttribPointerType(UNSIGNED_INT_10F_11F_11F_REV)"),
+            VertexAttribPointerType::BYTE => write!(fmt, "VertexAttribPointerType(BYTE)"),
+            VertexAttribPointerType::DOUBLE => write!(fmt, "VertexAttribPointerType(DOUBLE)"),
             VertexAttribPointerType::FIXED => write!(fmt, "VertexAttribPointerType(FIXED)"),
-            VertexAttribPointerType::UNSIGNED_INT_2_10_10_10_REV => write!(fmt, "VertexAttribPointerType(UNSIGNED_INT_2_10_10_10_REV)"),
-            VertexAttribPointerType::SHORT => write!(fmt, "VertexAttribPointerType(SHORT)"),
-            VertexAttribPointerType::UNSIGNED_SHORT => write!(fmt, "VertexAttribPointerType(UNSIGNED_SHORT)"),
+            VertexAttribPointerType::FLOAT => write!(fmt, "VertexAttribPointerType(FLOAT)"),
             VertexAttribPointerType::HALF_FLOAT => write!(fmt, "VertexAttribPointerType(HALF_FLOAT)"),
-            VertexAttribPointerType::UNSIGNED_BYTE => write!(fmt, "VertexAttribPointerType(UNSIGNED_BYTE)"),
             VertexAttribPointerType::INT => write!(fmt, "VertexAttribPointerType(INT)"),
             VertexAttribPointerType::INT_2_10_10_10_REV => write!(fmt, "VertexAttribPointerType(INT_2_10_10_10_REV)"),
-            VertexAttribPointerType::BYTE => write!(fmt, "VertexAttribPointerType(BYTE)"),
-            VertexAttribPointerType::FLOAT => write!(fmt, "VertexAttribPointerType(FLOAT)"),
-            VertexAttribPointerType::DOUBLE => write!(fmt, "VertexAttribPointerType(DOUBLE)"),
+            VertexAttribPointerType::SHORT => write!(fmt, "VertexAttribPointerType(SHORT)"),
+            VertexAttribPointerType::UNSIGNED_BYTE => write!(fmt, "VertexAttribPointerType(UNSIGNED_BYTE)"),
+            VertexAttribPointerType::UNSIGNED_INT => write!(fmt, "VertexAttribPointerType(UNSIGNED_INT)"),
+            VertexAttribPointerType::UNSIGNED_INT_10F_11F_11F_REV => write!(fmt, "VertexAttribPointerType(UNSIGNED_INT_10F_11F_11F_REV)"),
+            VertexAttribPointerType::UNSIGNED_INT_2_10_10_10_REV => write!(fmt, "VertexAttribPointerType(UNSIGNED_INT_2_10_10_10_REV)"),
+            VertexAttribPointerType::UNSIGNED_SHORT => write!(fmt, "VertexAttribPointerType(UNSIGNED_SHORT)"),
             _ => write!(fmt, "VertexAttribPointerType({})", self.0),
         }
     }
@@ -10568,7 +10568,7 @@ impl ::std::fmt::Debug for VertexAttribPointerType {
 impl_enum_traits!(VertexAttribPointerType);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct VertexAttribType(pub types::GLenum);
 
 impl VertexAttribType {
@@ -10590,19 +10590,19 @@ impl VertexAttribType {
 impl ::std::fmt::Debug for VertexAttribType {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            VertexAttribType::UNSIGNED_SHORT => write!(fmt, "VertexAttribType(UNSIGNED_SHORT)"),
-            VertexAttribType::UNSIGNED_INT_2_10_10_10_REV => write!(fmt, "VertexAttribType(UNSIGNED_INT_2_10_10_10_REV)"),
-            VertexAttribType::DOUBLE => write!(fmt, "VertexAttribType(DOUBLE)"),
-            VertexAttribType::INT_2_10_10_10_REV => write!(fmt, "VertexAttribType(INT_2_10_10_10_REV)"),
-            VertexAttribType::INT => write!(fmt, "VertexAttribType(INT)"),
-            VertexAttribType::FLOAT => write!(fmt, "VertexAttribType(FLOAT)"),
-            VertexAttribType::UNSIGNED_BYTE => write!(fmt, "VertexAttribType(UNSIGNED_BYTE)"),
             VertexAttribType::BYTE => write!(fmt, "VertexAttribType(BYTE)"),
+            VertexAttribType::DOUBLE => write!(fmt, "VertexAttribType(DOUBLE)"),
+            VertexAttribType::FIXED => write!(fmt, "VertexAttribType(FIXED)"),
+            VertexAttribType::FLOAT => write!(fmt, "VertexAttribType(FLOAT)"),
+            VertexAttribType::HALF_FLOAT => write!(fmt, "VertexAttribType(HALF_FLOAT)"),
+            VertexAttribType::INT => write!(fmt, "VertexAttribType(INT)"),
+            VertexAttribType::INT_2_10_10_10_REV => write!(fmt, "VertexAttribType(INT_2_10_10_10_REV)"),
+            VertexAttribType::SHORT => write!(fmt, "VertexAttribType(SHORT)"),
+            VertexAttribType::UNSIGNED_BYTE => write!(fmt, "VertexAttribType(UNSIGNED_BYTE)"),
             VertexAttribType::UNSIGNED_INT => write!(fmt, "VertexAttribType(UNSIGNED_INT)"),
             VertexAttribType::UNSIGNED_INT_10F_11F_11F_REV => write!(fmt, "VertexAttribType(UNSIGNED_INT_10F_11F_11F_REV)"),
-            VertexAttribType::FIXED => write!(fmt, "VertexAttribType(FIXED)"),
-            VertexAttribType::SHORT => write!(fmt, "VertexAttribType(SHORT)"),
-            VertexAttribType::HALF_FLOAT => write!(fmt, "VertexAttribType(HALF_FLOAT)"),
+            VertexAttribType::UNSIGNED_INT_2_10_10_10_REV => write!(fmt, "VertexAttribType(UNSIGNED_INT_2_10_10_10_REV)"),
+            VertexAttribType::UNSIGNED_SHORT => write!(fmt, "VertexAttribType(UNSIGNED_SHORT)"),
             _ => write!(fmt, "VertexAttribType({})", self.0),
         }
     }
@@ -10611,7 +10611,7 @@ impl ::std::fmt::Debug for VertexAttribType {
 impl_enum_traits!(VertexAttribType);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct VertexBufferObjectParameter(pub types::GLenum);
 
 impl VertexBufferObjectParameter {
@@ -10630,14 +10630,14 @@ impl ::std::fmt::Debug for VertexBufferObjectParameter {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
             VertexBufferObjectParameter::BUFFER_ACCESS => write!(fmt, "VertexBufferObjectParameter(BUFFER_ACCESS)"),
-            VertexBufferObjectParameter::BUFFER_MAP_LENGTH => write!(fmt, "VertexBufferObjectParameter(BUFFER_MAP_LENGTH)"),
             VertexBufferObjectParameter::BUFFER_ACCESS_FLAGS => write!(fmt, "VertexBufferObjectParameter(BUFFER_ACCESS_FLAGS)"),
+            VertexBufferObjectParameter::BUFFER_IMMUTABLE_STORAGE => write!(fmt, "VertexBufferObjectParameter(BUFFER_IMMUTABLE_STORAGE)"),
+            VertexBufferObjectParameter::BUFFER_MAPPED => write!(fmt, "VertexBufferObjectParameter(BUFFER_MAPPED)"),
+            VertexBufferObjectParameter::BUFFER_MAP_LENGTH => write!(fmt, "VertexBufferObjectParameter(BUFFER_MAP_LENGTH)"),
+            VertexBufferObjectParameter::BUFFER_MAP_OFFSET => write!(fmt, "VertexBufferObjectParameter(BUFFER_MAP_OFFSET)"),
             VertexBufferObjectParameter::BUFFER_SIZE => write!(fmt, "VertexBufferObjectParameter(BUFFER_SIZE)"),
             VertexBufferObjectParameter::BUFFER_STORAGE_FLAGS => write!(fmt, "VertexBufferObjectParameter(BUFFER_STORAGE_FLAGS)"),
-            VertexBufferObjectParameter::BUFFER_MAP_OFFSET => write!(fmt, "VertexBufferObjectParameter(BUFFER_MAP_OFFSET)"),
             VertexBufferObjectParameter::BUFFER_USAGE => write!(fmt, "VertexBufferObjectParameter(BUFFER_USAGE)"),
-            VertexBufferObjectParameter::BUFFER_MAPPED => write!(fmt, "VertexBufferObjectParameter(BUFFER_MAPPED)"),
-            VertexBufferObjectParameter::BUFFER_IMMUTABLE_STORAGE => write!(fmt, "VertexBufferObjectParameter(BUFFER_IMMUTABLE_STORAGE)"),
             _ => write!(fmt, "VertexBufferObjectParameter({})", self.0),
         }
     }
@@ -10646,7 +10646,7 @@ impl ::std::fmt::Debug for VertexBufferObjectParameter {
 impl_enum_traits!(VertexBufferObjectParameter);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct VertexBufferObjectUsage(pub types::GLenum);
 
 impl VertexBufferObjectUsage {
@@ -10664,15 +10664,15 @@ impl VertexBufferObjectUsage {
 impl ::std::fmt::Debug for VertexBufferObjectUsage {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
-            VertexBufferObjectUsage::STATIC_READ => write!(fmt, "VertexBufferObjectUsage(STATIC_READ)"),
-            VertexBufferObjectUsage::STATIC_COPY => write!(fmt, "VertexBufferObjectUsage(STATIC_COPY)"),
-            VertexBufferObjectUsage::STREAM_DRAW => write!(fmt, "VertexBufferObjectUsage(STREAM_DRAW)"),
-            VertexBufferObjectUsage::STATIC_DRAW => write!(fmt, "VertexBufferObjectUsage(STATIC_DRAW)"),
-            VertexBufferObjectUsage::STREAM_COPY => write!(fmt, "VertexBufferObjectUsage(STREAM_COPY)"),
-            VertexBufferObjectUsage::DYNAMIC_READ => write!(fmt, "VertexBufferObjectUsage(DYNAMIC_READ)"),
-            VertexBufferObjectUsage::STREAM_READ => write!(fmt, "VertexBufferObjectUsage(STREAM_READ)"),
-            VertexBufferObjectUsage::DYNAMIC_DRAW => write!(fmt, "VertexBufferObjectUsage(DYNAMIC_DRAW)"),
             VertexBufferObjectUsage::DYNAMIC_COPY => write!(fmt, "VertexBufferObjectUsage(DYNAMIC_COPY)"),
+            VertexBufferObjectUsage::DYNAMIC_DRAW => write!(fmt, "VertexBufferObjectUsage(DYNAMIC_DRAW)"),
+            VertexBufferObjectUsage::DYNAMIC_READ => write!(fmt, "VertexBufferObjectUsage(DYNAMIC_READ)"),
+            VertexBufferObjectUsage::STATIC_COPY => write!(fmt, "VertexBufferObjectUsage(STATIC_COPY)"),
+            VertexBufferObjectUsage::STATIC_DRAW => write!(fmt, "VertexBufferObjectUsage(STATIC_DRAW)"),
+            VertexBufferObjectUsage::STATIC_READ => write!(fmt, "VertexBufferObjectUsage(STATIC_READ)"),
+            VertexBufferObjectUsage::STREAM_COPY => write!(fmt, "VertexBufferObjectUsage(STREAM_COPY)"),
+            VertexBufferObjectUsage::STREAM_DRAW => write!(fmt, "VertexBufferObjectUsage(STREAM_DRAW)"),
+            VertexBufferObjectUsage::STREAM_READ => write!(fmt, "VertexBufferObjectUsage(STREAM_READ)"),
             _ => write!(fmt, "VertexBufferObjectUsage({})", self.0),
         }
     }
@@ -10681,7 +10681,7 @@ impl ::std::fmt::Debug for VertexBufferObjectUsage {
 impl_enum_traits!(VertexBufferObjectUsage);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct VertexPointerType(pub types::GLenum);
 
 impl VertexPointerType {
@@ -10694,10 +10694,10 @@ impl VertexPointerType {
 impl ::std::fmt::Debug for VertexPointerType {
     fn fmt(&self, fmt: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
         match *self {
+            VertexPointerType::DOUBLE => write!(fmt, "VertexPointerType(DOUBLE)"),
+            VertexPointerType::FLOAT => write!(fmt, "VertexPointerType(FLOAT)"),
             VertexPointerType::INT => write!(fmt, "VertexPointerType(INT)"),
             VertexPointerType::SHORT => write!(fmt, "VertexPointerType(SHORT)"),
-            VertexPointerType::FLOAT => write!(fmt, "VertexPointerType(FLOAT)"),
-            VertexPointerType::DOUBLE => write!(fmt, "VertexPointerType(DOUBLE)"),
             _ => write!(fmt, "VertexPointerType({})", self.0),
         }
     }
@@ -10706,7 +10706,7 @@ impl ::std::fmt::Debug for VertexPointerType {
 impl_enum_traits!(VertexPointerType);
 
 #[repr(transparent)]
-#[derive(Copy, Clone, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialEq, Eq, Hash, Default)]
 pub struct VertexProvokingMode(pub types::GLenum);
 
 impl VertexProvokingMode {
